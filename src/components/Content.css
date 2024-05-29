@@ -1,5 +1,6 @@
 .content {
-    padding: 20px;
+  padding: 10px 20px; 
+  max-width:100%;
   }
 
 section{
@@ -13,3 +14,8 @@ section h2{
 section p{
         color: #000000;
         }
+@media (max-width: 1000px) {
+    .content {
+      padding: 10px 20px; 
+          }
+    }
