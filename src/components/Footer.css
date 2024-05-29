@@ -1,11 +1,11 @@
 .footer {
   background-color: #0d45b6;
   color: white;
-  padding: 20px;
+  padding: 10px 20px; 
   text-align: center;
   position: relative;
   bottom: 0;
-  width: 100%;
+  max-width:100%;
 }
 
 .footer-content {
@@ -47,4 +47,14 @@
 
 .social-icons a:hover {
   color: #ddd;
+}
+@media (max-width: 1000px) {
+  .footer-content {
+    padding: 10px 20px; 
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
