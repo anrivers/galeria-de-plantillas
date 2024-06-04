@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
@@ -17,29 +18,29 @@ const FooterComponent = () => {
                 </div>
                 <div className="box__footer">
                     <h2>Enlaces</h2>
-                    <a href="#">Política de privacidad</a>
-                    <a href="#">Política de calidad</a>
-                    <a href="#">Preguntas Frecuentes</a>
+                    <Link to="/Contact">Política de privacidad</Link>
+                    <Link to="/Contact">Política de calidad</Link>
+                    <Link to="/Contact">Preguntas Frecuentes</Link>
                 </div>
 
                 <div className="box__footer">
                     <h2>Contacto</h2>
-                    <a href="#">Dirección</a>
-                    <a href="#">Número</a>
-                    <a href="#">Correo</a>            
+                    <Link to="/Contact">Dirección</Link>
+                    <Link to="/Contact">Número</Link>
+                    <Link to="/Contact">Correo</Link>           
                 </div>
 
                 <div className="box__footer">
                     <h2>Redes Sociales</h2>
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <Link to="https://facebook.com" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faFacebook} size="2x" />
-      </a>
-      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+      </Link>
+      <Link to="https://twitter.com" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faTwitter} size="2x" />
-      </a>
-      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+      </Link>
+      <Link to="https://instagram.com" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faInstagram} size="2x" />
-      </a>
+      </Link>
                 </div>
             </div>
 
