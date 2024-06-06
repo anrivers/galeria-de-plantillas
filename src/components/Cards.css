@@ -33,7 +33,7 @@
     padding: 10px 20px;
     font-size: 1rem;
     color: white;
-    background-color: #007bff;
+    background-color: #0d45b6;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -41,5 +41,5 @@
   }
   
   .card-button:hover {
-    background-color: #0056b3;
+    background-color: #0055ff;
   }
