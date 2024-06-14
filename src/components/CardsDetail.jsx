@@ -1,23 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { getTemplateById } from '../services/templateService'; 
 import './CardsDetail.css';
+import { Link } from 'react-router-dom';
 
-const CardsDetail = () => {
+const CardsDetail = ({ id }) => {
+  const [template, setTemplate] = useState(null);
+
+  useEffect(() => {
+    getTemplateById(id).then(data => setTemplate(data)).catch(error => console.error(error));
+  }, [id]);
+
+  if (!template) {
+    return <div>Cargando...</div>;
+  }
+
   return (
     <div className="template-detail-container">
       <div className="template-detail-content">
-        <h1>NOMBRE DE TU PLANTILLA</h1>
-        <h2>Subtema</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
-        </p>
+        <h1>{template.name}</h1>
+        <h2>{template.subtheme}</h2>
+        <p>{template.description}</p>
         <div className="buttons">
-          <button className="btn">Descargar</button>
-          <button className="btn">Ver</button>
-          <button className="btn">Editar</button>
+          <Link to={`/DownloadTemplate/${id}`}>
+            <button className="btn">Descargar</button>
+          </Link>
+          <Link to={`/ViewTemplate/${id}`}>
+            <button className="btn">Ver</button>
+          </Link>
+          <Link to={`/EditTemplate/${id}`}>
+            <button className="btn">Editar</button>
+          </Link>
         </div>
       </div>
       <div className="template-detail-image">
-        <img src="/images/estructura-web.png" alt="Plantilla" />
+      <img src={template.imageUrl} />
       </div>
     </div>
   );
