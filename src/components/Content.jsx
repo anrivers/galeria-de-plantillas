@@ -1,8 +1,15 @@
-import React from 'react';
+import React,  { useEffect, useState } from 'react';
 import './Content.css'; 
 import Card from './Cards';
+import { getTemplates } from '../services/templateService';
 
 const Content = () => {
+  const [templates, setTemplates] = useState([]);
+
+  useEffect(() => {
+    getTemplates().then(data => setTemplates(data));
+  }, []);
+
   return (
     <main className="content">
         <section id="home">
@@ -11,36 +18,15 @@ const Content = () => {
           </p>
         </section>
       <div className="card-container">
-        <Card
-          imageUrl="images/estructura-web.png"
-          title="Nombre de la plantilla"
-          description="CLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dousmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
-        />
-        <Card
-          imageUrl="images/estructura-web.png"
-          title="Nombre de la plantilla"
-          description="CLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dousmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
-        />
-        <Card
-          imageUrl="images/estructura-web.png"
-          title="Nombre de la plantilla"
-          description="CLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dousmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
-        />
-        <Card
-          imageUrl="images/estructura-web.png"
-          title="Nombre de la plantilla"
-          description="CLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dousmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
-        />
-        <Card
-          imageUrl="images/estructura-web.png"
-          title="Nombre de la plantilla"
-          description="CLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dousmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
-        />
-        <Card
-          imageUrl="images/estructura-web.png"
-          title="Nombre de la plantilla"
-          description="CLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dousmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
-        />
+      {templates.map(template => (
+          <Card
+            key={template.id}
+            imageUrl={template.imageUrl}
+            title={template.name}
+            description={template.description}
+            templateId={template.id} 
+          />
+        ))}
       </div>
         <section id="contact">
           <h2>Ejemplo de contenido</h2>
