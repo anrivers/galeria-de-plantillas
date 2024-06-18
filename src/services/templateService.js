@@ -1,114 +1,311 @@
 let templates = [
-    {
-      id: 1,
-      name: 'Plantilla Completa',
-      subtheme: 'Negocios',
-      imageUrl:'/images/estructura-web.png',
-      description: 'Una plantilla completa para negocios',
-      htmlContent: `
+  {
+    id: 1,
+    name: 'Plantilla Completa',
+    subtheme: 'Negocios',
+    imageUrl: '/images/estructura-web.png',
+    description: 'Una plantilla completa para negocios',
+    htmlContent: `
+  <body>
+    <header>
+        <div class="logo">MiLogo</div>
         <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
         </nav>
-        <header>
-          <h1>Welcome to Our Business</h1>
-          <p>Your success is our priority</p>
-        </header>
-        <section class="banner">
-          <img src="banner.jpg" alt="Business Banner">
+    </header>
+    
+    <div class="banner">
+        <h1>Bienvenido a Nuestra Página</h1>
+        <p>Descubre más sobre nuestros servicios y productos</p>
+    </div>
+    
+    <main>
+        <section class="principal">
+            <h2>Sección Principal</h2>
+            <p>Esta es la sección principal donde se presenta la información más relevante.</p>
         </section>
-        <section class="main">
-          <h2>Main Services</h2>
-          <p>We provide a wide range of business solutions to help you succeed.</p>
+        
+        <section class="imagenes">
+            <h2>Galería de Imágenes</h2>
+            <div class="galeria">
+                <img src="imagen1.jpg" alt="Imagen 1">
+                <img src="imagen2.jpg" alt="Imagen 2">
+                <img src="imagen3.jpg" alt="Imagen 3">
+            </div>
         </section>
-        <section class="images">
-          <h2>Our Work</h2>
-          <div class="image-gallery">
-            <img src="work1.jpg" alt="Work 1">
-            <img src="work2.jpg" alt="Work 2">
-            <img src="work3.jpg" alt="Work 3">
-          </div>
+        
+        <section class="carrusel">
+            <h2>Carrusel de Imágenes</h2>
+            <div class="carrusel-container">
+                <div class="carrusel-imagen">
+                    <img src="imagen1.jpg" alt="Imagen 1">
+                </div>
+                <div class="carrusel-imagen">
+                    <img src="imagen2.jpg" alt="Imagen 2">
+                </div>
+                <div class="carrusel-imagen">
+                    <img src="imagen3.jpg" alt="Imagen 3">
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </section>
-        <section class="carousel">
-          <h2>Testimonials</h2>
-          <div class="carousel-container">
-            <!-- Carrusel de testimonios -->
-          </div>
+        
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </section>
-        <section class="contact">
-          <h2>Contact Us</h2>
-          <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-            <button type="submit">Send</button>
-          </form>
-        </section>
-        <footer>
-          <p>&copy; 2023 Business Inc. All rights reserved.</p>
-        </footer>
-        <section class="newsletter">
-          <h2>Subscribe to our Newsletter</h2>
-          <form>
-            <input type="email" placeholder="Enter your email">
-            <button type="submit">Subscribe</button>
-          </form>
-        </section>
-      `,
-      cssContent: `
-        nav {
-          background-color: #333;
-          color: #fff;
-        }
-        nav ul {
-          list-style: none;
-          display: flex;
-          justify-content: space-around;
-        }
-        nav a {
-          color: #fff;
-          text-decoration: none;
-        }
-        header {
-          text-align: center;
-          padding: 50px;
-          background-color: #f4f4f4;
-        }
-        .banner img {
-          width: 100%;
-          height: auto;
-        }
-        .main, .images, .carousel, .contact, .newsletter {
-          padding: 20px;
-          margin: 20px 0;
-        }
-        .image-gallery img {
-          width: 30%;
-          margin: 5px;
-        }
-        .carousel-container {
-          /* Estilos para el contenedor del carrusel */
-        }
-        footer {
-          text-align: center;
-          padding: 10px;
-          background-color: #333;
-          color: #fff;
-        }
-      `,
-      jsContent: `
-        document.addEventListener('DOMContentLoaded', function() {
-          // Código para inicializar el carrusel de imágenes
-          const carouselContainer = document.querySelector('.carousel-container');
-          // Lógica para el carrusel
-        });
+    </main>
+    
+    <section class="newsletter">
+        <h2>Suscríbete a nuestro Newsletter</h2>
+        <form>
+            <label for="correo">Email:</label>
+            <input type="email" id="correo" name="correo" required>
+            <button type="submit">Suscribirse</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+  `,
+  cssContent: `
+   /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilos del banner */
+.banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5em 1em;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 1em;
+}
+
+main section {
+    margin-bottom: 2em;
+}
+
+.principal, .imagenes, .carrusel, .contacto {
+    background: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.galeria {
+    display: flex;
+    gap: 1em;
+}
+
+.galeria img {
+    width: calc(33.333% - 1em);
+    border-radius: 8px;
+}
+
+/* Estilos del carrusel */
+.carrusel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.carrusel-imagen {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-imagen img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+/* Estilos del formulario de contacto */
+form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Estilos del newsletter */
+.newsletter {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2em;
+    margin: 2em 0;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.newsletter input {
+    padding: 0.5em;
+    border-radius: 4px;
+    border: none;
+}
+
+.newsletter button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.newsletter button:hover {
+    background-color: #777;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+  `,
+  jsContent: `
+   
+let slideIndex = 0;
+
+function showSlides(n) {
+    let slides = document.querySelectorAll(".carrusel-imagen");
+    if (n >= slides.length) { slideIndex = 0 }
+    if (n < 0) { slideIndex = slides.length - 1 }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+}
+
+function moveSlide(n) {
+    slideIndex += n;
+    showSlides(slideIndex);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    showSlides(slideIndex);
+});
       `,
     },
     {
@@ -193,8 +390,8 @@ let templates = [
       `,
       jsContent: `
         document.addEventListener('DOMContentLoaded', function() {
-          // Código para inicializar la galería de portafolio
-        });
+        const carouselContainer = document.querySelector('.carousel-container');
+      });
       `,
     },
     {
