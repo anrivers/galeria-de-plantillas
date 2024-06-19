@@ -1,32 +1,60 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
+import { getTemplateById } from '../services/templateService';
 import { useDrag, useDrop } from 'react-dnd';
-import { getTemplateById, updateTemplate } from '../services/templateService';
+import { saveAs } from 'file-saver';
+import 'draft-js/dist/Draft.css';
 
 const ItemTypes = {
   ELEMENT: 'element',
 };
 
-const DraggableElement = ({ id, children, moveElement }) => {
+const DraggableElement = ({ id, index, children, moveElement }) => {
   const [, ref] = useDrag({
     type: ItemTypes.ELEMENT,
-    item: { id },
+    item: { id, index },
   });
 
   const [, drop] = useDrop({
     accept: ItemTypes.ELEMENT,
     hover(item) {
-      if (item.id !== id) {
-        moveElement(item.id, id);
-        item.id = id;
+      if (item.index !== index) {
+        moveElement(item.index, index);
+        item.index = index;
       }
     },
   });
 
   return (
-    <div ref={(node) => ref(drop(node))} style={{ border: '1px solid gray', padding: '10px', margin: '10px' }}>
+    <div ref={node => ref(drop(node))} style={{ border: '1px solid gray', padding: '10px', margin: '10px' }}>
       {children}
     </div>
+  );
+};
+
+const EditableContent = ({ content, onChange }) => {
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.innerHTML = content;
+    }
+  }, [content]);
+
+  const handleInput = () => {
+    if (contentRef.current) {
+      onChange(contentRef.current.innerHTML);
+    }
+  };
+
+  return (
+    <div
+      ref={contentRef}
+      contentEditable
+      suppressContentEditableWarning
+      onInput={handleInput}
+      style={{ border: '1px solid #ccc', padding: '10px', minHeight: '100px' }}
+    />
   );
 };
 
@@ -37,32 +65,52 @@ const EditTemplate = () => {
 
   useEffect(() => {
     if (id) {
-      getTemplateById(id)
-        .then(data => {
-          setTemplate(data);
-          setElements(data.htmlContent.split('<section>').map((section, index) => ({ id: index + 1, content: section })));
-        })
-        .catch(error => console.error(error));
+      getTemplateById(id).then(data => {
+        setTemplate(data);
+        const sections = data.htmlContent.split('<section>').map((section, index) => ({
+          id: index,
+          content: section,
+        }));
+        setElements(sections);
+      }).catch(error => console.error(error));
     }
   }, [id]);
 
-  const moveElement = (draggedId, hoveredId) => {
-    const draggedIndex = elements.findIndex(el => el.id === draggedId);
-    const hoveredIndex = elements.findIndex(el => el.id === hoveredId);
+  const moveElement = (fromIndex, toIndex) => {
     const updatedElements = [...elements];
-    const [draggedElement] = updatedElements.splice(draggedIndex, 1);
-    updatedElements.splice(hoveredIndex, 0, draggedElement);
+    const [movedElement] = updatedElements.splice(fromIndex, 1);
+    updatedElements.splice(toIndex, 0, movedElement);
     setElements(updatedElements);
   };
 
-  const handleSave = () => {
-    const updatedHtmlContent = elements.map(el => el.content).join('<section>');
-    const updatedTemplate = { ...template, htmlContent: updatedHtmlContent };
-    updateTemplate(id, updatedTemplate)
-      .then(() => {
-        console.log('Template updated successfully');
-      })
-      .catch(error => console.error(error));
+  const handleContentChange = (index, newContent) => {
+    const updatedElements = [...elements];
+    updatedElements[index].content = newContent;
+    setElements(updatedElements);
+  };
+
+  const handleDownload = () => {
+    const htmlContent = elements.map(element => `<section>${element.content}</section>`).join('');
+    const cssContent = template.cssContent;
+    const jsContent = template.jsContent;
+
+    const blob = new Blob([`
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>${template.name}</title>
+        <style>${cssContent}</style>
+      </head>
+      <body>
+        ${htmlContent}
+        <script>${jsContent}</script>
+      </body>
+      </html>
+    `], { type: 'text/html;charset=utf-8' });
+
+    saveAs(blob, `${template.name}.html`);
   };
 
   if (!template) {
@@ -71,15 +119,18 @@ const EditTemplate = () => {
 
   return (
     <div>
-      <h1>Edit {template.name}</h1>
+      <h1>Edita {template.name}</h1>
       <div>
-        {elements.map((element) => (
-          <DraggableElement key={element.id} id={element.id} moveElement={moveElement}>
-            <div dangerouslySetInnerHTML={{ __html: element.content }} />
+        {elements.map((element, index) => (
+          <DraggableElement key={element.id} id={element.id} index={index} moveElement={moveElement}>
+            <EditableContent
+              content={element.content}
+              onChange={(newContent) => handleContentChange(index, newContent)}
+            />
           </DraggableElement>
         ))}
       </div>
-      <button onClick={handleSave}>Save</button>
+      <button onClick={handleDownload}>Descargar cambios</button>
     </div>
   );
 };
