@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getTemplateById } from '../services/templateService';
 import { useDrag, useDrop } from 'react-dnd';
 import { saveAs } from 'file-saver';
 import 'draft-js/dist/Draft.css';
+import EditableContent from './EditableContent';
 
 const ItemTypes = {
   ELEMENT: 'element',
@@ -29,32 +30,6 @@ const DraggableElement = ({ id, index, children, moveElement }) => {
     <div ref={node => ref(drop(node))} style={{ border: '1px solid gray', padding: '10px', margin: '10px' }}>
       {children}
     </div>
-  );
-};
-
-const EditableContent = ({ content, onChange }) => {
-  const contentRef = useRef(null);
-
-  useEffect(() => {
-    if (contentRef.current) {
-      contentRef.current.innerHTML = content;
-    }
-  }, [content]);
-
-  const handleInput = () => {
-    if (contentRef.current) {
-      onChange(contentRef.current.innerHTML);
-    }
-  };
-
-  return (
-    <div
-      ref={contentRef}
-      contentEditable
-      suppressContentEditableWarning
-      onInput={handleInput}
-      style={{ border: '1px solid #ccc', padding: '10px', minHeight: '100px' }}
-    />
   );
 };
 
@@ -120,17 +95,18 @@ const EditTemplate = () => {
   return (
     <div>
       <h1>Edita {template.name}</h1>
-      <div>
+      <div className="template-editor-container">
         {elements.map((element, index) => (
           <DraggableElement key={element.id} id={element.id} index={index} moveElement={moveElement}>
             <EditableContent
               content={element.content}
+              cssContent={template.cssContent}
               onChange={(newContent) => handleContentChange(index, newContent)}
             />
           </DraggableElement>
         ))}
       </div>
-      <button onClick={handleDownload}>Descargar cambios</button>
+      <button onClick={handleDownload}>Descarga cambios</button>
     </div>
   );
 };
