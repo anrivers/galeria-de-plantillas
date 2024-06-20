@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import { getTemplateById } from '../services/templateService';
 import { useDrag, useDrop } from 'react-dnd';
@@ -37,19 +37,30 @@ const EditTemplate = () => {
   const { id } = useParams();
   const [template, setTemplate] = useState(null);
   const [elements, setElements] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  const fetchTemplate = useCallback(async () => {
     if (id) {
-      getTemplateById(id).then(data => {
+      setLoading(true);
+      try {
+        const data = await getTemplateById(id);
         setTemplate(data);
         const sections = data.htmlContent.split('<section>').map((section, index) => ({
           id: index,
           content: section,
         }));
         setElements(sections);
-      }).catch(error => console.error(error));
+      } catch (error) {
+        console.error(error);
+      } finally {
+        setLoading(false);
+      }
     }
   }, [id]);
+
+  useEffect(() => {
+    fetchTemplate();
+  }, [fetchTemplate]);
 
   const moveElement = (fromIndex, toIndex) => {
     const updatedElements = [...elements];
@@ -88,8 +99,12 @@ const EditTemplate = () => {
     saveAs(blob, `${template.name}.html`);
   };
 
+  if (loading) {
+    return <div>Cargando...</div>;
+  }
+
   if (!template) {
-    return <div>Loading...</div>;
+    return <div>Error cargando plantilla</div>;
   }
 
   return (
