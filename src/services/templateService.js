@@ -33,9 +33,9 @@ let templates = [
         <section class="imagenes">
             <h2>Galería de Imágenes</h2>
             <div class="galeria">
-                <img src="imagen1.jpg" alt="Imagen 1">
-                <img src="imagen2.jpg" alt="Imagen 2">
-                <img src="imagen3.jpg" alt="Imagen 3">
+                <img src='/images/aboutus1.jpg' alt="Imagen 1">
+                <img src='/images/aboutus2.jpg' alt="Imagen 2">
+                <img src='/images/aboutus3.jpg' alt="Imagen 3">
             </div>
         </section>
         
@@ -137,7 +137,7 @@ nav ul li a:hover {
 /* Estilos del banner */
 .banner {
     background: url('banner.jpg') no-repeat center center/cover;
-    color: white;
+    color: black;
     text-align: center;
     padding: 5em 1em;
 }
