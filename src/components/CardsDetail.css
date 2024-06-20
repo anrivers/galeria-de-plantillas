@@ -95,10 +95,11 @@
       width: 100%;
       gap: 20px;
       align-items: center;
+
     }
   
     .btn {
-      width: 40%;
+      width: 200px;
       padding: 10px 100px; 
       align-content: center;
       font-size: 1.2rem; 
