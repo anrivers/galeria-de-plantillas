@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { getTemplateById } from '../services/templateService'; 
-import './CardsDetail.css';
+import { getTemplateById } from '../services/templateService';
 import { Link } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
 
 const CardsDetail = ({ id }) => {
   const [template, setTemplate] = useState(null);
@@ -10,10 +8,6 @@ const CardsDetail = ({ id }) => {
   useEffect(() => {
     getTemplateById(id).then(data => setTemplate(data)).catch(error => console.error(error));
   }, [id]);
-
-  if (!template) {
-    return <div>Cargando...</div>;
-  }
 
   const handleDownload = () => {
     if (!template) return;
@@ -44,27 +38,27 @@ const CardsDetail = ({ id }) => {
   };
 
   if (!template) {
-    return <div>Cargando...</div>;
+    return <div className="text-center">Cargando...</div>;
   }
-  
+
   return (
-    <div className="template-detail-container">
-      <div className="template-detail-content">
-        <h1>{template.name}</h1>
-        <h2>{template.subtheme}</h2>
-        <p>{template.description}</p>
-        <div className="buttons">
-            <button className="btn" onClick={handleDownload}>Descargar</button>
+    <div className="max-w-6xl mx-auto p-5 bg-white rounded-lg flex flex-col lg:flex-row items-center">
+      <div className="w-full lg:w-1/2 p-5 text-center lg:text-left">
+        <h1 className="text-5xl font-bold">{template.name}</h1>
+        <h2 className="text-4xl mt-2">{template.subtheme}</h2>
+        <p className="text-2xl mt-4">{template.description}</p>
+        <div className="mt-5 flex flex-col lg:flex-row lg:justify-start gap-3 items-center">
+          <button onClick={handleDownload} className="px-6 py-2.5 w-32 bg-blue-700 text-white rounded-md hover:bg-blue-500 transition-colors">Descargar</button>
           <Link to={`/ViewTemplate/${id}`}>
-            <button className="btn">Ver</button>
+            <button className="px-6 py-2.5 w-32 bg-blue-700 text-white rounded-md hover:bg-blue-500 transition-colors">Ver</button>
           </Link>
           <Link to={`/EditTemplate/${id}`}>
-            <button className="btn">Editar</button>
+            <button className="px-6 py-2.5 w-32 bg-blue-700 text-white rounded-md hover:bg-blue-500 transition-colors">Editar</button>
           </Link>
         </div>
       </div>
-      <div className="template-detail-image">
-      <img src={template.imageUrl} />
+      <div className="w-full lg:w-1/2 p-5">
+        <img src={template.imageUrl} alt={template.name} className="rounded-lg w-full" />
       </div>
     </div>
   );
