@@ -1,490 +1,810 @@
 let templates = [
   {
     id: 1,
-    name: 'Plantilla Completa',
-    subtheme: 'Negocios',
+    name: 'Plantilla de Portafolio',
+    subtheme: 'Freelance',
     imageUrl: '/images/estructura-web.png',
-    description: 'Una plantilla completa para negocios',
+    description: 'Una plantilla completa para los desarrolladores suban su contenido.',
     htmlContent: `
-  <body>
-    <header>
-        <div class="logo">MiLogo</div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="banner">
-        <h1>Bienvenido a Nuestra Página</h1>
-        <p>Descubre más sobre nuestros servicios y productos</p>
+<body>
+  <!-- Barra de Navegación -->
+  <nav class="navbar">
+    <div class="logo">Mi Portafolio</div>
+    <ul class="nav-links">
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#about">Sobre Mí</a></li>
+      <li><a href="#portfolio">Portafolio</a></li>
+      <li><a href="#contact">Contacto</a></li>
+      <li><a href="#newsletter">Newsletter</a></li>
+    </ul>
+    <div class="menu-toggle">&#9776;</div>
+  </nav>
+
+  <!-- Header / Banner -->
+  <header id="home" class="header">
+    <h1>Bienvenido a Mi Portafolio</h1>
+    <p>Descubre mis proyectos y habilidades</p>
+  </header>
+
+  <!-- Sección Principal -->
+  <section id="about" class="about">
+    <h2>Sobre Mí</h2>
+    <p>Hola, soy un desarrollador web con experiencia en diversas tecnologías...</p>
+  </section>
+
+  <!-- Sección de Imágenes -->
+  <section id="portfolio" class="portfolio">
+    <h2>Portafolio</h2>
+    <div class="portfolio-container">
+      <div class="portfolio-item">
+        <img src="project1.jpg" alt="Proyecto 1">
+        <h3>Proyecto 1</h3>
+        <p>Descripción del proyecto 1...</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="project2.jpg" alt="Proyecto 2">
+        <h3>Proyecto 2</h3>
+        <p>Descripción del proyecto 2...</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="project3.jpg" alt="Proyecto 3">
+        <h3>Proyecto 3</h3>
+        <p>Descripción del proyecto 3...</p>
+      </div>
     </div>
-    
-    <main>
-        <section class="principal">
-            <h2>Sección Principal</h2>
-            <p>Esta es la sección principal donde se presenta la información más relevante.</p>
-        </section>
-        
-        <section class="imagenes">
-            <h2>Galería de Imágenes</h2>
-            <div class="galeria">
-                <img src='/images/aboutus1.jpg' alt="Imagen 1">
-                <img src='/images/aboutus2.jpg' alt="Imagen 2">
-                <img src='/images/aboutus3.jpg' alt="Imagen 3">
-            </div>
-        </section>
-        
-        <section class="carrusel">
-            <h2>Carrusel de Imágenes</h2>
-            <div class="carrusel-container">
-                <div class="carrusel-imagen">
-                    <img src="imagen1.jpg" alt="Imagen 1">
-                </div>
-                <div class="carrusel-imagen">
-                    <img src="imagen2.jpg" alt="Imagen 2">
-                </div>
-                <div class="carrusel-imagen">
-                    <img src="imagen3.jpg" alt="Imagen 3">
-                </div>
-            </div>
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
-        </section>
-        
-        <section class="contacto">
-            <h2>Contacto</h2>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-    
-    <section class="newsletter">
-        <h2>Suscríbete a nuestro Newsletter</h2>
-        <form>
-            <label for="correo">Email:</label>
-            <input type="email" id="correo" name="correo" required>
-            <button type="submit">Suscribirse</button>
-        </form>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
-    </footer>
-    
-    <script src="scripts.js"></script>
+  </section>
+
+  <!-- Carrusel de Imágenes -->
+  <section id="carousel" class="carousel">
+    <h2>Galería</h2>
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <img src="slide1.jpg" alt="Slide 1">
+      </div>
+      <div class="carousel-slide">
+        <img src="slide2.jpg" alt="Slide 2">
+      </div>
+      <div class="carousel-slide">
+        <img src="slide3.jpg" alt="Slide 3">
+      </div>
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contact" class="contact">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter" class="newsletter">
+    <h2>Suscríbete a nuestro Newsletter</h2>
+    <form>
+      <input type="email" placeholder="Email" required>
+      <button type="submit">Suscribirse</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+  </footer>
 </body>
   `,
   cssContent: `
-   /* Estilos generales */
+  /* Estilos Generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Estilos del encabezado */
-header {
-    background-color: #333;
-    color: white;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Barra de Navegación */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-header .logo {
-    font-size: 1.5em;
+.navbar .logo {
+  font-size: 1.5rem;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+.navbar .nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 
-nav ul li {
-    margin-left: 1em;
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5em;
+.navbar .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-nav ul li a:hover {
-    background-color: #555;
+/* Header / Banner */
+.header {
+  background: url('portfolio-header.jpg') no-repeat center center/cover;
+  color: #black;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-/* Estilos del banner */
-.banner {
-    background: url('banner.jpg') no-repeat center center/cover;
-    color: black;
-    text-align: center;
-    padding: 5em 1em;
+/* Sección Principal */
+.about, .portfolio, .contact, .newsletter {
+  padding: 60px 20px;
+  text-align: center;
 }
 
-.banner h1 {
-    margin: 0;
-    font-size: 2.5em;
+/* Sección de Imágenes */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.banner p {
-    font-size: 1.2em;
+.portfolio-item {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-/* Estilos del contenido principal */
-main {
-    padding: 1em;
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-main section {
-    margin-bottom: 2em;
+/* Carrusel de Imágenes */
+.carousel {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.principal, .imagenes, .carrusel, .contacto {
-    background: white;
-    padding: 2em;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.carousel-container {
+  display: flex;
+  overflow: hidden;
 }
 
-.galeria {
-    display: flex;
-    gap: 1em;
+.carousel-slide {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
 }
 
-.galeria img {
-    width: calc(33.333% - 1em);
-    border-radius: 8px;
+.carousel img {
+  width: 100%;
+  height: auto;
 }
 
-/* Estilos del carrusel */
-.carrusel-container {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    display: flex;
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.carrusel-imagen {
-    min-width: 100%;
-    transition: transform 0.5s ease-in-out;
+.prev {
+  left: 10px;
 }
 
-.carrusel-imagen img {
-    width: 100%;
-    border-radius: 8px;
+.next {
+  right: 10px;
 }
 
-button.prev, button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 1em;
-    cursor: pointer;
+/* Contacto */
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-button.prev {
-    left: 0;
+.contact input, .contact textarea, .contact button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-button.next {
-    right: 0;
+.contact button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
 }
 
-/* Estilos del formulario de contacto */
-form label {
-    display: block;
-    margin: 0.5em 0 0.2em;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 1em 2em;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-form button:hover {
-    background-color: #555;
-}
-
-/* Estilos del newsletter */
-.newsletter {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 2em;
-    margin: 2em 0;
-}
-
+/* Newsletter */
 .newsletter form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.newsletter input {
-    padding: 0.5em;
-    border-radius: 4px;
-    border: none;
+.newsletter input, .newsletter button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .newsletter button {
-    background-color: #555;
-    color: white;
-    border: none;
-    padding: 0.5em 1em;
-    cursor: pointer;
-    border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
 }
 
-.newsletter button:hover {
-    background-color: #777;
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
-/* Estilos del pie de página */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+  }
+
+  .portfolio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-slide {
+    min-width: 100%;
+  }
 }
   `,
   jsContent: `
    
-let slideIndex = 0;
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
 
-function showSlides(n) {
-    let slides = document.querySelectorAll(".carrusel-imagen");
-    if (n >= slides.length) { slideIndex = 0 }
-    if (n < 0) { slideIndex = slides.length - 1 }
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  const slides = document.querySelectorAll('.carousel-slide');
+  const prev = document.querySelector('.prev');
+  const next = document.querySelector('.next');
+  let currentIndex = 0;
+
+  const showSlide = (index) => {
+    if (index >= slides.length) {
+      currentIndex = 0;
+    } else if (index < 0) {
+      currentIndex = slides.length - 1;
+    } else {
+      currentIndex = index;
     }
-    slides[slideIndex].style.display = "block";
-}
+    const offset = -currentIndex * 100;
+    slides.forEach(slide => {
+      slide.style.transform = \`translateX(\${offset}%)\`;
+    });
+  };
 
-function moveSlide(n) {
-    slideIndex += n;
-    showSlides(slideIndex);
-}
+  prev.addEventListener('click', () => {
+    showSlide(currentIndex - 1);
+  });
 
-document.addEventListener("DOMContentLoaded", function() {
-    showSlides(slideIndex);
+  next.addEventListener('click', () => {
+    showSlide(currentIndex + 1);
+  });
+
+  showSlide(currentIndex);
 });
       `,
     },
     {
       id: 2,
-      name: 'Plantilla Minimalista',
-      subtheme: 'Portafolio',
+      name: 'Plantilla de Restaurante',
+      subtheme: 'Comida',
       imageUrl:'/images/estructura-web.png',
-      description: 'Una plantilla minimalista para portafolios personales',
+      description: 'Una plantilla para un negocio de comida.',
       htmlContent: `
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <header>
-          <h1>Hello, I'm a Designer</h1>
-          <p>Welcome to my portfolio</p>
-        </header>
-        <section class="portfolio">
-          <h2>My Work</h2>
-          <div class="portfolio-gallery">
-            <!-- Galería de portafolio -->
-          </div>
-        </section>
-        <section class="contact">
-          <h2>Contact Me</h2>
-          <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-            <button type="submit">Send</button>
-          </form>
-        </section>
-        <footer>
-          <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-        </footer>
+<body>
+  <!-- Barra de Navegación -->
+  <nav class="navbar">
+    <div class="logo">Nombre del Restaurante</div>
+    <ul class="nav-links">
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#about">Sobre Nosotros</a></li>
+      <li><a href="#gallery">Galería</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+    <div class="menu-toggle">&#9776;</div>
+  </nav>
+
+  <!-- Header / Banner -->
+  <header id="home" class="header">
+    <h1>Bienvenido al Restaurante</h1>
+    <p>Descubre nuestros deliciosos platillos</p>
+  </header>
+
+  <!-- Sección de Menú -->
+  <section id="menu" class="menu">
+    <h2>Nuestro Menú</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <h3>Platillo 1</h3>
+        <p>Descripción del platillo 1...</p>
+        <span class="price">$10.99</span>
+      </div>
+      <div class="menu-item">
+        <h3>Platillo 2</h3>
+        <p>Descripción del platillo 2...</p>
+        <span class="price">$12.99</span>
+      </div>
+      <div class="menu-item">
+        <h3>Platillo 3</h3>
+        <p>Descripción del platillo 3...</p>
+        <span class="price">$8.99</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección "Sobre Nosotros" -->
+  <section id="about" class="about">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos un restaurante comprometido con la calidad y el servicio...</p>
+  </section>
+
+  <!-- Galería de Imágenes -->
+  <section id="gallery" class="gallery">
+    <h2>Galería</h2>
+    <div class="image-gallery">
+      <img src="food1.jpg" alt="Comida 1">
+      <img src="food2.jpg" alt="Comida 2">
+      <img src="food3.jpg" alt="Comida 3">
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contact" class="contact">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Restaurante Nombre. Todos los derechos reservados.</p>
+  </footer>
+</body>
       `,
       cssContent: `
-        nav {
-          background-color: #fff;
-          color: #333;
-        }
-        nav ul {
-          list-style: none;
-          display: flex;
-          justify-content: space-around;
-        }
-        nav a {
-          color: #333;
-          text-decoration: none;
-        }
-        header {
-          text-align: center;
-          padding: 50px;
-          background-color: #f9f9f9;
-        }
-        .portfolio, .contact {
-          padding: 20px;
-          margin: 20px 0;
-        }
-        .portfolio-gallery {
-          display: flex;
-          flex-wrap: wrap;
-        }
-        .portfolio-gallery div {
-          width: 30%;
-          margin: 5px;
-          background-color: #eaeaea;
-          padding: 10px;
-        }
-        footer {
-          text-align: center;
-          padding: 10px;
-          background-color: #fff;
-          color: #333;
-        }
+       /* Estilos Generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Barra de Navegación */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+}
+
+.navbar .nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Header / Banner */
+.header {
+  background: url('restaurant-header.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+/* Sección de Menú */
+.menu {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-item {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+  padding: 10px;
+}
+
+.menu-item h3 {
+  margin: 10px 0;
+}
+
+.menu-item p {
+  margin-bottom: 10px;
+}
+
+.menu-item .price {
+  display: block;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Galería de Imágenes */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Contacto */
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact input, .contact textarea, .contact button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
       `,
       jsContent: `
-        document.addEventListener('DOMContentLoaded', function() {
-        const carouselContainer = document.querySelector('.carousel-container');
-      });
+      document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+});
       `,
     },
     {
       id: 3,
-      name: 'Plantilla de Eventos',
-      subtheme: 'Conferencias',
+      name: 'Plantilla de Agencia Digital',
+      subtheme: 'Agencia',
       imageUrl:'/images/estructura-web.png',
-      description: 'Una plantilla moderna para eventos y conferencias',
+      description: 'Una plantilla moderna para agencia digital.',
       htmlContent: `
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#speakers">Speakers</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <header>
-          <h1>Join Our Event</h1>
-          <p>Don't miss out on our amazing event</p>
-        </header>
-        <section class="schedule">
-          <h2>Event Schedule</h2>
-          <div class="schedule-details">
-            <!-- Detalles del horario del evento -->
-          </div>
-        </section>
-        <section class="speakers">
-          <h2>Our Speakers</h2>
-          <div class="speakers-list">
-            <!-- Lista de oradores -->
-          </div>
-        </section>
-        <section class="contact">
-          <h2>Contact Us</h2>
-          <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-            <button type="submit">Send</button>
-          </form>
-        </section>
-        <footer>
-          <p>&copy; 2023 Event Inc. All rights reserved.</p>
-        </footer>
+<body>
+  <!-- Barra de Navegación -->
+  <nav class="navbar">
+    <div class="logo">Agencia Digital</div>
+    <ul class="nav-links">
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#about">Sobre Nosotros</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+    <div class="menu-toggle">&#9776;</div>
+  </nav>
+
+  <!-- Header / Banner -->
+  <header id="home" class="header">
+    <h1>Bienvenido a Nuestra Agencia</h1>
+    <p>Ofrecemos soluciones digitales para tu negocio</p>
+  </header>
+
+  <!-- Servicios -->
+  <section id="services" class="services">
+    <h2>Nuestros Servicios</h2>
+    <div class="service-container">
+      <div class="service">
+        <img src="service1.jpg" alt="Servicio 1">
+        <h3>Servicio 1</h3>
+        <p>Descripción del servicio 1.</p>
+      </div>
+      <div class="service">
+        <img src="service2.jpg" alt="Servicio 2">
+        <h3>Servicio 2</h3>
+        <p>Descripción del servicio 2.</p>
+      </div>
+      <div class="service">
+        <img src="service3.jpg" alt="Servicio 3">
+        <h3>Servicio 3</h3>
+        <p>Descripción del servicio 3.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros -->
+  <section id="about" class="about">
+    <h2>Sobre Nosotros</h2>
+    <p>Texto sobre la historia de la agencia y su misión.</p>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="contact">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Agencia Digital. Todos los derechos reservados.</p>
+  </footer>
+</body>
       `,
       cssContent: `
-        nav {
-          background-color: #333;
-          color: #fff;
-        }
-        nav ul {
-          list-style: none;
-          display: flex;
-          justify-content: space-around;
-        }
-        nav a {
-          color: #fff;
-          text-decoration: none;
-        }
-        header {
-          text-align: center;
-          padding: 50px;
-          background-color: #e9e9e9;
-        }
-        .schedule, .speakers, .contact {
-          padding: 20px;
-          margin: 20px 0;
-        }
-        .speakers-list {
-          display: flex;
-          flex-wrap: wrap;
-        }
-        .speakers-list div {
-          width: 30%;
-          margin: 5px;
-          background-color: #f0f0f0;
-          padding: 10px;
-        }
-        footer {
-          text-align: center;
-          padding: 10px;
-          background-color: #333;
-          color: #fff;
-        }
+        /* Estilos Generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Barra de Navegación */
+.navbar {
+  background-color: #34495e;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+}
+
+.navbar .nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Header / Banner */
+.header {
+  background: url('agency-header.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+/* Servicios */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.service img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Sobre Nosotros, Contacto */
+.about, .contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Contacto */
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact input, .contact textarea, .contact button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #34495e;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background-color: #34495e;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+  }
+
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
       `,
       jsContent: `
-        document.addEventListener('DOMContentLoaded', function() {
-          // Código para inicializar detalles de la conferencia
-        });
+        document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+});
       `,
     },
   ];
