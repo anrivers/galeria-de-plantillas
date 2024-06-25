@@ -147,7 +147,7 @@ body {
 /* Header / Banner */
 .header {
   background: url('portfolio-header.jpg') no-repeat center center/cover;
-  color: #black;
+  color: #00000000;
   text-align: center;
   padding: 100px 20px;
 }
