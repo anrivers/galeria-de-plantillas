@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { getTemplateById } from '../services/templateService';
 import { Link } from 'react-router-dom';
+import JSZip from 'jszip';
+import { saveAs } from 'file-saver';
 
 const CardsDetail = ({ id }) => {
   const [template, setTemplate] = useState(null);
@@ -9,8 +11,14 @@ const CardsDetail = ({ id }) => {
     getTemplateById(id).then(data => setTemplate(data)).catch(error => console.error(error));
   }, [id]);
 
-  const handleDownload = () => {
+  const handleDownload = async () => {
     if (!template) return;
+
+    const zip = new JSZip();
+
+    const updatedHtmlContent = template.htmlContent.replace(/src="([^"]+)"/g, (match, p1) => {
+      return `src="images/${p1.split('/').pop()}"`;
+    });
 
     const htmlContent = `
       <!DOCTYPE html>
@@ -22,19 +30,37 @@ const CardsDetail = ({ id }) => {
         <style>${template.cssContent}</style>
       </head>
       <body>
-        ${template.htmlContent}
+        ${updatedHtmlContent}
         <script>${template.jsContent}</script>
       </body>
       </html>
     `;
+    zip.file(`${template.name}.html`, htmlContent);
 
-    const element = document.createElement('a');
-    const file = new Blob([htmlContent], { type: 'text/html' });
-    element.href = URL.createObjectURL(file);
-    element.download = `${template.name}.html`;
-    document.body.appendChild(element);
-    element.click();
-    document.body.removeChild(element);
+    const imagesFolder = zip.folder('images');
+
+    const imageUrls = [
+      'aboutus1.jpg', 'aboutus2.jpg', 'aboutus3.jpg',
+      'slide1.jpg', 'slide2.jpg', 'slide3.jpg',
+      'portfolio-header.jpg'
+    ];
+
+    for (const imageUrl of imageUrls) {
+      try {
+        const response = await fetch(`/images/${imageUrl}`);
+        if (!response.ok) {
+          throw new Error(`Failed to fetch ${imageUrl}`);
+        }
+        const blob = await response.blob();
+        imagesFolder.file(imageUrl, blob);
+      } catch (error) {
+        console.error(`Error fetching image ${imageUrl}:`, error);
+      }
+    }
+
+    zip.generateAsync({ type: 'blob' }).then(content => {
+      saveAs(content, `${template.name}.zip`);
+    });
   };
 
   if (!template) {

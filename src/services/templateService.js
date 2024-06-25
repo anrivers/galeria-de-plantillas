@@ -37,17 +37,17 @@ let templates = [
     <h2>Portafolio</h2>
     <div class="portfolio-container">
       <div class="portfolio-item">
-        <img src="project1.jpg" alt="Proyecto 1">
+        <img src="/images/aboutus1.jpg" alt="Proyecto 1">
         <h3>Proyecto 1</h3>
         <p>Descripción del proyecto 1...</p>
       </div>
       <div class="portfolio-item">
-        <img src="project2.jpg" alt="Proyecto 2">
+        <img src="/images/aboutus2.jpg" alt="Proyecto 2">
         <h3>Proyecto 2</h3>
         <p>Descripción del proyecto 2...</p>
       </div>
       <div class="portfolio-item">
-        <img src="project3.jpg" alt="Proyecto 3">
+        <img src="/images/aboutus3.jpg" alt="Proyecto 3">
         <h3>Proyecto 3</h3>
         <p>Descripción del proyecto 3...</p>
       </div>
@@ -146,7 +146,7 @@ body {
 
 /* Header / Banner */
 .header {
-  background: url('portfolio-header.jpg') no-repeat center center/cover;
+  background: url('/images/portfolio-header.jpg') no-repeat center center/cover;
   color: #00000000;
   text-align: center;
   padding: 100px 20px;
