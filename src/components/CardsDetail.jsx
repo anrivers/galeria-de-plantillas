@@ -16,7 +16,6 @@ const CardsDetail = ({ id }) => {
 
     const zip = new JSZip();
 
-    // Extract image URLs from the HTML content
     const imageUrls = [];
     const imageRegex = /src="([^"]+)"/g;
     let match;
@@ -24,7 +23,6 @@ const CardsDetail = ({ id }) => {
       imageUrls.push(match[1]);
     }
 
-    // Replace image URLs in the HTML content to point to the local 'images' folder
     const updatedHtmlContent = template.htmlContent.replace(/src="([^"]+)"/g, (match, p1) => {
       return `src="images/${p1.split('/').pop()}"`;
     });
@@ -47,8 +45,7 @@ const CardsDetail = ({ id }) => {
     zip.file(`${template.name}.html`, htmlContent);
 
     const imagesFolder = zip.folder('images');
-
-    // Download each image and add it to the zip
+    
     for (const imageUrl of imageUrls) {
       try {
         const response = await fetch(imageUrl);
