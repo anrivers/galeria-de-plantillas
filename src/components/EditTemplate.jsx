@@ -4,7 +4,6 @@ import { getTemplateById } from '../services/templateService';
 import { useDrag, useDrop } from 'react-dnd';
 import JSZip from 'jszip';
 import { saveAs } from 'file-saver';
-import 'draft-js/dist/Draft.css';
 import EditableContent from './EditableContent';
 
 const ItemTypes = {
@@ -48,7 +47,7 @@ const EditTemplate = () => {
         setTemplate(data);
         const sections = data.htmlContent.split('<section>').map((section, index) => ({
           id: index,
-          content: section,
+          content: `<section>${section}</section>`, // Ensure we keep the <section> tags
         }));
         setElements(sections);
       } catch (error) {
@@ -76,8 +75,20 @@ const EditTemplate = () => {
     setElements(updatedElements);
   };
 
+  const handleStyleChange = (index, newContent) => {
+    const updatedElements = [...elements];
+    updatedElements[index].content = newContent;
+    setElements(updatedElements);
+  };
+
+  const handleImageChange = (index, oldSrc, newSrc) => {
+    const updatedElements = [...elements];
+    updatedElements[index].content = updatedElements[index].content.replace(oldSrc, newSrc);
+    setElements(updatedElements);
+  };
+
   const handleDownload = async () => {
-    const htmlContent = elements.map(element => `<section>${element.content}</section>`).join('');
+    const htmlContent = elements.map(element => element.content).join('');
     const cssContent = template.cssContent;
     const jsContent = template.jsContent;
 
@@ -141,20 +152,24 @@ const EditTemplate = () => {
   }
 
   return (
-    <div>
-      <h1>Edita {template.name}</h1>
+    <div className="text-center">
+      <h1 className="text-center font-bold mb-5 text-3xl">Edita {template.name}</h1>
       <div className="template-editor-container">
         {elements.map((element, index) => (
           <DraggableElement key={element.id} id={element.id} index={index} moveElement={moveElement}>
             <EditableContent
               content={element.content}
               cssContent={template.cssContent}
-              onChange={(newContent) => handleContentChange(index, newContent)}
+              onChange={newContent => handleContentChange(index, newContent)}
+              onStyleChange={newContent => handleStyleChange(index, newContent)}
+              onImageChange={(oldSrc, newSrc) => handleImageChange(index, oldSrc, newSrc)}
             />
           </DraggableElement>
         ))}
       </div>
-      <button onClick={handleDownload}>Descarga cambios</button>
+      <button onClick={handleDownload} className="px-6 py-3 bg-blue-700 text-white rounded-md hover:bg-blue-500 transition-colors">
+        Descarga cambios
+      </button>
     </div>
   );
 };
