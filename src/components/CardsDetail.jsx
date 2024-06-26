@@ -16,6 +16,15 @@ const CardsDetail = ({ id }) => {
 
     const zip = new JSZip();
 
+    // Extract image URLs from the HTML content
+    const imageUrls = [];
+    const imageRegex = /src="([^"]+)"/g;
+    let match;
+    while ((match = imageRegex.exec(template.htmlContent)) !== null) {
+      imageUrls.push(match[1]);
+    }
+
+    // Replace image URLs in the HTML content to point to the local 'images' folder
     const updatedHtmlContent = template.htmlContent.replace(/src="([^"]+)"/g, (match, p1) => {
       return `src="images/${p1.split('/').pop()}"`;
     });
@@ -39,20 +48,16 @@ const CardsDetail = ({ id }) => {
 
     const imagesFolder = zip.folder('images');
 
-    const imageUrls = [
-      'aboutus1.jpg', 'aboutus2.jpg', 'aboutus3.jpg',
-      'slide1.jpg', 'slide2.jpg', 'slide3.jpg',
-      'portfolio-header.jpg'
-    ];
-
+    // Download each image and add it to the zip
     for (const imageUrl of imageUrls) {
       try {
-        const response = await fetch(`/images/${imageUrl}`);
+        const response = await fetch(imageUrl);
         if (!response.ok) {
           throw new Error(`Failed to fetch ${imageUrl}`);
         }
         const blob = await response.blob();
-        imagesFolder.file(imageUrl, blob);
+        const imageName = imageUrl.split('/').pop();
+        imagesFolder.file(imageName, blob);
       } catch (error) {
         console.error(`Error fetching image ${imageUrl}:`, error);
       }
