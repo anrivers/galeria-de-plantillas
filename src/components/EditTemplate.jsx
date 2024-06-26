@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import { getTemplateById } from '../services/templateService';
 import { useDrag, useDrop } from 'react-dnd';
+import JSZip from 'jszip';
 import { saveAs } from 'file-saver';
 import 'draft-js/dist/Draft.css';
 import EditableContent from './EditableContent';
@@ -75,12 +76,18 @@ const EditTemplate = () => {
     setElements(updatedElements);
   };
 
-  const handleDownload = () => {
+  const handleDownload = async () => {
     const htmlContent = elements.map(element => `<section>${element.content}</section>`).join('');
     const cssContent = template.cssContent;
     const jsContent = template.jsContent;
 
-    const blob = new Blob([`
+    const updatedHtmlContent = htmlContent.replace(/src="([^"]+)"/g, (match, p1) => {
+      return `src="images/${p1.split('/').pop()}"`;
+    });
+
+    const zip = new JSZip();
+
+    const htmlFileContent = `
       <!DOCTYPE html>
       <html lang="en">
       <head>
@@ -90,13 +97,39 @@ const EditTemplate = () => {
         <style>${cssContent}</style>
       </head>
       <body>
-        ${htmlContent}
+        ${updatedHtmlContent}
         <script>${jsContent}</script>
       </body>
       </html>
-    `], { type: 'text/html;charset=utf-8' });
+    `;
+    zip.file(`${template.name}.html`, htmlFileContent);
 
-    saveAs(blob, `${template.name}.html`);
+    const imagesFolder = zip.folder('images');
+
+    const imageUrls = [];
+    const imageRegex = /src="([^"]+)"/g;
+    let match;
+    while ((match = imageRegex.exec(htmlContent)) !== null) {
+      imageUrls.push(match[1]);
+    }
+
+    for (const imageUrl of imageUrls) {
+      try {
+        const response = await fetch(imageUrl);
+        if (!response.ok) {
+          throw new Error(`Failed to fetch ${imageUrl}`);
+        }
+        const blob = await response.blob();
+        const imageName = imageUrl.split('/').pop();
+        imagesFolder.file(imageName, blob);
+      } catch (error) {
+        console.error(`Error fetching image ${imageUrl}:`, error);
+      }
+    }
+
+    zip.generateAsync({ type: 'blob' }).then(content => {
+      saveAs(content, `${template.name}.zip`);
+    });
   };
 
   if (loading) {
