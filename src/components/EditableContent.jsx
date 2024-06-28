@@ -11,7 +11,7 @@ const EditableContent = ({ content, onChange, cssContent, onStyleChange, onImage
       iframeDocument.open();
       iframeDocument.write(`
         <!DOCTYPE html>
-        <html lang="en">
+        <html lang="es">
         <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@ const EditableContent = ({ content, onChange, cssContent, onStyleChange, onImage
   };
 
   return (
-    <div className="p-4 bg-white rounded shadow-md">
+    <div className="p-4 bg-white rounded shadow-md max-w-full overflow-x-auto">
       <iframe
         ref={iframeRef}
         className="w-full h-[600px] border-none mt-4"
@@ -94,8 +94,8 @@ const EditableContent = ({ content, onChange, cssContent, onStyleChange, onImage
         {content.match(/<img [^>]*src="[^"]*"[^>]*>/g)?.map((imgTag, index) => {
           const imgSrc = imgTag.match(/src="([^"]*)"/)[1];
           return (
-            <div key={index} className="flex items-center gap-2 mb-2">
-              <label className="flex-1">{imgSrc}</label>
+            <div key={index} className="flex flex-col gap-2 mb-2">
+              <label className="break-all">{imgSrc}</label>
               <input type="file" name={imgSrc} onChange={handleImageChange} className="border rounded p-1" />
             </div>
           );
