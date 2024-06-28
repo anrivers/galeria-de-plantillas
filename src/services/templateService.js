@@ -107,43 +107,47 @@ body {
   box-sizing: border-box;
 }
 
-/* Barra de Navegación */
 .navbar {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples líneas */
 }
 
 .navbar .logo {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
-.navbar .nav-links ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar .nav-links a {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease; /* Efecto de transición opcional */
+}
+
+.navbar .nav-links a:hover {
+    background-color: #555; /* Color de fondo al pasar el mouse */
 }
 
 .navbar .menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
-
 /* Header / Banner */
 .header {
   color: #333;
@@ -270,26 +274,31 @@ body {
   padding: 20px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-  .navbar .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
+    .navbar .menu-toggle {
+        display: block; /* Mostrar el icono de menú */
+    }
 
-  .navbar .nav-links.active {
-    display: flex;
-  }
+    .navbar .nav-links {
+        display: none; /* Ocultar los enlaces de navegación */
+        flex-direction: column; /* Alinear en columna para dispositivos móviles */
+        position: absolute;
+        top: 60px; /* Ajusta según la altura de tu barra de navegación */
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 10px 0;
+        z-index: 1000;
+    }
 
-  .navbar .menu-toggle {
-    display: block;
-  }
+    .navbar .nav-links a {
+        padding: 10px 20px;
+    }
 
-  .portfolio-container {
-    flex-direction: column;
-    align-items: center;
-  }
+    .navbar .nav-links.active {
+        display: flex; /* Mostrar enlaces cuando el menú está activo */
+    }
+}
 
   .carousel-slide {
     min-width: 100%;
