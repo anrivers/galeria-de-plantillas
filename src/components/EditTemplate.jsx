@@ -48,6 +48,7 @@ const EditTemplate = () => {
         const sections = data.htmlContent.split('<section>').map((section, index) => ({
           id: index,
           content: `<section>${section}</section>`, // Ensure we keep the <section> tags
+          style: '', // Initialize style attribute
         }));
         setElements(sections);
       } catch (error) {
@@ -75,9 +76,9 @@ const EditTemplate = () => {
     setElements(updatedElements);
   };
 
-  const handleStyleChange = (index, newContent) => {
+  const handleStyleChange = (index, newStyle) => {
     const updatedElements = [...elements];
-    updatedElements[index].content = newContent;
+    updatedElements[index].style = newStyle;
     setElements(updatedElements);
   };
 
@@ -96,6 +97,11 @@ const EditTemplate = () => {
       return `src="images/${p1.split('/').pop()}"`;
     });
 
+    const updatedCssContent = `
+      ${cssContent}
+      ${elements.map(element => element.style).join('\n')}
+    `;
+
     const zip = new JSZip();
 
     const htmlFileContent = `
@@ -105,7 +111,7 @@ const EditTemplate = () => {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>${template.name}</title>
-        <style>${cssContent}</style>
+        <style>${updatedCssContent}</style>
       </head>
       <body>
         ${updatedHtmlContent}
@@ -161,14 +167,14 @@ const EditTemplate = () => {
               content={element.content}
               cssContent={template.cssContent}
               onChange={newContent => handleContentChange(index, newContent)}
-              onStyleChange={newContent => handleStyleChange(index, newContent)}
+              onStyleChange={newStyle => handleStyleChange(index, newStyle)}
               onImageChange={(oldSrc, newSrc) => handleImageChange(index, oldSrc, newSrc)}
             />
           </DraggableElement>
         ))}
       </div>
       <button onClick={handleDownload} className="px-6 py-3 bg-blue-700 text-white rounded-md hover:bg-blue-500 transition-colors">
-        Descarga cambios
+        Descargar cambios
       </button>
     </div>
   );
