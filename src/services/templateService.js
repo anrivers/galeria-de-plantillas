@@ -298,12 +298,11 @@ body {
     .navbar .nav-links.active {
         display: flex; /* Mostrar enlaces cuando el menú está activo */
     }
-}
-
-  .carousel-slide {
+        .carousel-slide {
     min-width: 100%;
   }
 }
+
   `,
   jsContent: `
    
