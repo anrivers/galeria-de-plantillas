@@ -146,8 +146,7 @@ body {
 
 /* Header / Banner */
 .header {
-  background: url('/images/aboutus3.jpg') no-repeat center center/cover;
-  color: #fff;
+  color: #333;
   text-align: center;
   padding: 100px 20px;
 }
