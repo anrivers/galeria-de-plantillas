@@ -47,8 +47,8 @@ const EditTemplate = () => {
         setTemplate(data);
         const sections = data.htmlContent.split('<section>').map((section, index) => ({
           id: index,
-          content: `<section>${section}</section>`, // Ensure we keep the <section> tags
-          style: '', // Initialize style attribute
+          content: `<section>${section}</section>`,
+          style: '',
         }));
         setElements(sections);
       } catch (error) {

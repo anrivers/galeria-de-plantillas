@@ -40,10 +40,10 @@ const EditableContent = ({ content, onChange, cssContent, onStyleChange, onImage
     }
   }, [content, cssContent, onChange]);
 
-  const applyStyle = (styleProperty, value) => {
+  const applyStyle = (selector, styleProperty, value) => {
     const iframeDocument = iframeRef.current.contentDocument;
     const styleTag = iframeDocument.head.querySelector('style');
-    styleTag.innerHTML += `body { ${styleProperty}: ${value}; }`;
+    styleTag.innerHTML += `${selector} { ${styleProperty}: ${value}; }`;
 
     const updatedCssContent = iframeDocument.head.querySelector('style').innerText;
     onStyleChange(updatedCssContent);
@@ -71,11 +71,11 @@ const EditableContent = ({ content, onChange, cssContent, onStyleChange, onImage
         <div className="flex flex-col gap-2">
           <label className="flex items-center gap-2">
             <span>Color de texto:</span>
-            <input type="color" onChange={(e) => applyStyle('color', e.target.value)} className="w-12 h-8 border rounded" />
+            <input type="color" onChange={(e) => applyStyle('body', 'color', e.target.value)} className="w-12 h-8 border rounded" />
           </label>
           <label className="flex items-center gap-2">
             <span>Fuente:</span>
-            <select onChange={(e) => applyStyle('font-family', e.target.value)} className="border rounded p-1">
+            <select onChange={(e) => applyStyle('body', 'font-family', e.target.value)} className="border rounded p-1">
               <option value="">Seleccionar fuente</option>
               <option value="Arial">Arial</option>
               <option value="Verdana">Verdana</option>
@@ -85,21 +85,34 @@ const EditableContent = ({ content, onChange, cssContent, onStyleChange, onImage
           </label>
           <label className="flex items-center gap-2">
             <span>Tamaño de fuente:</span>
-            <input type="number" onChange={(e) => applyStyle('font-size', `${e.target.value}px`)} className="w-16 border rounded p-1" />
+            <input type="number" onChange={(e) => applyStyle('body', 'font-size', `${e.target.value}px`)} className="w-16 border rounded p-1" />
+          </label>
+          <label className="flex items-center gap-2">
+            <span>Color de fondo del footer:</span>
+            <input type="color" onChange={(e) => applyStyle('.footer', 'background-color', e.target.value)} className="w-12 h-8 border rounded" />
+          </label>
+          <label className="flex items-center gap-2">
+            <span>Color de fondo del header:</span>
+            <input type="color" onChange={(e) => applyStyle('.navbar', 'background-color', e.target.value)} className="w-12 h-8 border rounded" />
+          </label>
+          <label className="flex items-center gap-2">
+            <span>Color de fondo del banner:</span>
+            <input type="color" onChange={(e) => applyStyle('.header', 'background-color', e.target.value)} className="w-12 h-8 border rounded" />
           </label>
         </div>
-      </div>
-      <div className="mt-4">
-        <h3 className="text-lg font-semibold mb-2">Cambiar Imágenes</h3>
-        {content.match(/<img [^>]*src="[^"]*"[^>]*>/g)?.map((imgTag, index) => {
-          const imgSrc = imgTag.match(/src="([^"]*)"/)[1];
-          return (
-            <div key={index} className="flex flex-col gap-2 mb-2">
-              <label className="break-all">{imgSrc}</label>
-              <input type="file" name={imgSrc} onChange={handleImageChange} className="border rounded p-1" />
-            </div>
-          );
-        })}
+
+        <div className="mt-4">
+          <h3 className="text-lg font-semibold mb-2">Cambiar Imágenes</h3>
+          {content.match(/<img [^>]*src="[^"]*"[^>]*>/g)?.map((imgTag, index) => {
+            const imgSrc = imgTag.match(/src="([^"]*)"/)[1];
+            return (
+              <div key={index} className="flex flex-col gap-2 mb-2">
+                <label className="break-all">{imgSrc}</label>
+                <input type="file" name={imgSrc} onChange={handleImageChange} className="border rounded p-1" />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
