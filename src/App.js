@@ -8,6 +8,8 @@ import AboutUsPage from './pages/AboutUsPage';
 import CardsDetailPage from './pages/CardsDetailPage';
 import EditPage from './pages/EditPage';
 import ViewPage from './pages/ViewPage';
+import FAQPage from './pages/FAQPage';
+import TemplatesPage from './pages/TemplatesPage'
 
 function App() {
   return (
@@ -21,7 +23,8 @@ function App() {
         <Route path="/CardsDetail/:id" element={<CardsDetailPage/>} />
         <Route path="/ViewTemplate/:id" element={<ViewPage/>} />
         <Route path="/EditTemplate/:id" element={<EditPage/>} />
-    
+        <Route path="/FAQ" element={<FAQPage/>}/>
+        <Route path="/Templates" element={<TemplatesPage/>}/>
         </Routes>
       </Router>
       </DndProvider>
