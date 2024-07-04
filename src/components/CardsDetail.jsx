@@ -76,12 +76,12 @@ const CardsDetail = ({ id }) => {
         <h2 className="text-4xl mt-2">{template.subtheme}</h2>
         <p className="text-2xl mt-4">{template.description}</p>
         <div className="mt-5 flex flex-col lg:flex-row lg:justify-start gap-3 items-center">
-          <button onClick={handleDownload} className="px-6 py-2.5 w-32 bg-blue-700 text-white rounded-md hover:bg-blue-500 transition-colors">Descargar</button>
+          <button onClick={handleDownload} className=" w-32 inline-block rounded-md border border-blue-700 bg-blue-700 px-6 py-2.5  text-sm font-medium text-white hover:bg-transparent hover:text-blue-700 focus:outline-none focus:ring active:text-blue-700">Descargar</button>
           <Link to={`/ViewTemplate/${id}`}>
-            <button className="px-6 py-2.5 w-32 bg-blue-700 text-white rounded-md hover:bg-blue-500 transition-colors">Ver</button>
+            <button className=" w-32 inline-block rounded-md border border-blue-700 bg-blue-700 px-6 py-2.5 text-sm font-medium text-white hover:bg-transparent hover:text-blue-700 focus:outline-none focus:ring active:text-blue-700">Ver</button>
           </Link>
           <Link to={`/EditTemplate/${id}`}>
-            <button className="px-6 py-2.5 w-32 bg-blue-700 text-white rounded-md hover:bg-blue-500 transition-colors">Editar</button>
+            <button className="w-32 inline-block rounded-md border border-blue-700 bg-blue-700 px-6 py-2.5 text-sm font-medium text-white hover:bg-transparent hover:text-blue-700 focus:outline-none focus:ring active:text-blue-700">Editar</button>
           </Link>
         </div>
       </div>

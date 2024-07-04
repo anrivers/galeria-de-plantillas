@@ -9,7 +9,7 @@ const Card = ({ imageUrl, title, description, templateId }) => {
         <h2 className="text-xl sm:text-2xl font-bold mb-2">{title}</h2>
         <p className="mt-2 text-gray-600 text-lg">{description}</p>
         <Link to={`/CardsDetail/${templateId}`}>
-          <button className="mt-4 px-4 py-2 text-white bg-blue-700 rounded-md transition-colors duration-300 hover:bg-blue-500">
+          <button className="mt-4 w-32 inline-block rounded-md border border-blue-700 bg-blue-700 px-6 py-2.5 text-sm font-medium text-white hover:bg-transparent hover:text-blue-700 focus:outline-none focus:ring active:text-blue-700">
             Ver más
           </button>
         </Link>
