@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import backgroundFooter from '../assets/background-footer.svg'; // Importa la imagen de fondo
+import backgroundFooter from '../assets/background-footer.svg'; 
 
 const FooterComponent = () => {
   return (
@@ -22,9 +22,9 @@ const FooterComponent = () => {
               <h2 className="text-lg font-bold mb-4 text-white">Enlaces</h2>
             </div>
             <div className="text-center">
-              <Link to="/Contact" className="block text-gray-300 hover:text-white mb-2">Política de privacidad</Link>
-              <Link to="/Contact" className="block text-gray-300 hover:text-white mb-2">Política de calidad</Link>
-              <Link to="/Contact" className="block text-gray-300 hover:text-white mb-2">Preguntas Frecuentes</Link>
+              <Link to="/FAQ" className="block text-gray-300 hover:text-white mb-2">Política de privacidad</Link>
+              <Link to="/FAQ" className="block text-gray-300 hover:text-white mb-2">Política de calidad</Link>
+              <Link to="/FAQ" className="block text-gray-300 hover:text-white mb-2">Preguntas Frecuentes</Link>
             </div>
           </div>
           <div className="w-full lg:w-1/4 mb-8 lg:mb-0">

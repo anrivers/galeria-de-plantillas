@@ -16,6 +16,7 @@ const Header = () => {
       <nav className={`nav-links ${menuActive ? 'block' : 'hidden'} mt-4 lg:mt-0 lg:flex lg:items-center w-full lg:w-auto lg:justify-center`}>
         <ul className="flex flex-col items-center lg:flex-row gap-4 lg:gap-8 lg:text-lg">
           <li><Link to="/" className="text-black hover:text-white hover:bg-blue-700 px-3 py-1 rounded transition duration-300 block">Inicio</Link></li>
+          <li><Link to="/Templates" className="text-black hover:text-white hover:bg-blue-700 px-3 py-1 rounded transition duration-300 block">Plantillas</Link></li>
           <li><Link to="/Aboutus" className="text-black hover:text-white hover:bg-blue-700 px-3 py-1 rounded transition duration-300 block">Sobre Nosotros</Link></li>
           <li><Link to="/Contact" className="text-black hover:text-white hover:bg-blue-700 px-3 py-1 rounded transition duration-300 block">Contacto</Link></li>
         </ul>
