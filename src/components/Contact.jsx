@@ -39,6 +39,7 @@ const Contact = () => {
               type="text"
               id="FirstName"
               name="first_name"
+              required
               className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
             />
           </div>
@@ -52,6 +53,7 @@ const Contact = () => {
               type="text"
               id="LastName"
               name="last_name"
+              required
               className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
             />
           </div>
@@ -63,17 +65,19 @@ const Contact = () => {
               type="email"
               id="Email"
               name="email"
+              required
               className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
             />
           </div>
 
           <div className="col-span-6 ">
-            <label htmlFor="Password" className="block text-sm font-medium text-gray-700"> Comentarios </label>
+            <label htmlFor="Text" className="block text-sm font-medium text-gray-700"> Comentarios </label>
 
             <input
               type="text"
               id="Text"
               name="text"
+              required
               className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
             />
           </div>
