@@ -26,11 +26,7 @@ export const SectionTwo = () => {
           <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
             <h3 className="text-xl font-medium text-white">Plantilla de Blog</h3>
 
-            <span
-              className="mt-2 inline-block rounded border border-blue-700 bg-blue-700 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white"
-            >
-              Ver plantillas
-            </span>
+            
           </div>
         </Link>
       </li>
@@ -38,7 +34,7 @@ export const SectionTwo = () => {
       <li>
         <Link to="/Templates" className="group relative block">
           <img
-            src="https://images.unsplash.com/photo-1594892185343-0241e1d47d15?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://images.unsplash.com/photo-1518818608552-195ed130cdf4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
             className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
           />
@@ -46,11 +42,7 @@ export const SectionTwo = () => {
           <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
             <h3 className="text-xl font-medium text-white">Plantilla de Agencia</h3>
 
-            <span
-              className="mt-2 inline-block rounded border border-blue-700 bg-blue-700  px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white"
-            >
-            Ver plantillas
-            </span>
+        
           </div>
         </Link>
       </li>
@@ -66,11 +58,7 @@ export const SectionTwo = () => {
           <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
             <h3 className="text-xl font-medium text-white">Plantilla de Portafolio</h3>
 
-            <span
-              className="mt-2 inline-block rounded border border-blue-700 bg-blue-700  px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white"
-            >
-               Ver plantillas
-            </span>
+        
           </div>
         </Link>
       </li>
