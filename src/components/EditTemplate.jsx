@@ -173,7 +173,7 @@ const EditTemplate = () => {
           </DraggableElement>
         ))}
       </div>
-      <button onClick={handleDownload} className="px-6 py-3 bg-blue-700 text-white rounded-md hover:bg-blue-500 transition-colors">
+      <button onClick={handleDownload} className="mt-8 inline-block rounded border border-blue-700 bg-blue-700 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-blue-700 focus:outline-none focus:ring active:text-blue-700">
         Descargar cambios
       </button>
     </div>
