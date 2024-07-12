@@ -71,11 +71,11 @@ const EditableContent = ({ content, onChange, cssContent, onStyleChange, onImage
           <div className="flex flex-col gap-2">
             <label className="flex items-center gap-2">
               <span>Color de texto:</span>
-              <input type="color" onChange={(e) => applyStyle('body, .header, .navbar, .footer', 'color', e.target.value)} className="w-12 h-8 border rounded" />
+              <input type="color" onChange={(e) => applyStyle('body, .header, .navbar, .nav, .side1 h1, .footer', 'color', e.target.value)} className="w-12 h-8 border rounded" />
             </label>
             <label className="flex items-center gap-2">
               <span>Fuente:</span>
-              <select onChange={(e) => applyStyle('body, .header, .navbar, .footer', 'font-family', e.target.value)} className="border rounded p-1">
+              <select onChange={(e) => applyStyle('body, .header, .navbar, .nav, .side1 h1, .footer', 'font-family', e.target.value)} className="border rounded p-1">
                 <option value="">Seleccionar fuente</option>
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
@@ -85,7 +85,7 @@ const EditableContent = ({ content, onChange, cssContent, onStyleChange, onImage
             </label>
             <label className="flex items-center gap-2">
               <span>Tamaño de fuente:</span>
-              <input type="number" onChange={(e) => applyStyle('body, .header, .navbar, .footer', 'font-size', `${e.target.value}px`)} className="w-16 border rounded p-1" />
+              <input type="number" onChange={(e) => applyStyle('body, .header, .navbar, .nav, .footer', 'font-size', `${e.target.value}px`)} className="w-16 border rounded p-1" />
             </label>
             <label className="flex items-center gap-2">
               <span>Color de fondo del footer:</span>

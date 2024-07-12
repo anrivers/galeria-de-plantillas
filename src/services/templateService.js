@@ -600,218 +600,535 @@ body {
       name: 'Plantilla de Agencia Digital',
       subtheme: 'Agencia',
       imageUrl:'/images/estructura-web.png',
-      description: 'Una plantilla moderna para agencia digital.',
+      description: 'Una plantilla para agencia digital.',
       htmlContent: `
 <body>
-  <!-- Barra de Navegación -->
-  <nav class="navbar">
-    <div class="logo">Agencia Digital</div>
-    <ul class="nav-links">
-      <li><a href="#home">Inicio</a></li>
-      <li><a href="#services">Servicios</a></li>
-      <li><a href="#about">Sobre Nosotros</a></li>
-      <li><a href="#contact">Contacto</a></li>
-    </ul>
-    <div class="menu-toggle">&#9776;</div>
-  </nav>
+    <nav class="navbar">
+        <div class="heading">Mi agencia</div>
+        <span class="sideMenuButton" 
+            onclick="openNavbar()">
+            &#9776
+        </span>
 
-  <!-- Header / Banner -->
-  <header id="home" class="header">
-    <h1>Bienvenido a Nuestra Agencia</h1>
-    <p>Ofrecemos soluciones digitales para tu negocio</p>
-  </header>
+        <div >
+            <ul>
+                <li><a href="#Home">Inicio</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Sesión</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <!-- Servicios -->
-  <section id="services" class="services">
-    <h2>Nuestros Servicios</h2>
-    <div class="service-container">
-      <div class="service">
-        <img src="service1.jpg" alt="Servicio 1">
-        <h3>Servicio 1</h3>
-        <p>Descripción del servicio 1.</p>
-      </div>
-      <div class="service">
-        <img src="service2.jpg" alt="Servicio 2">
-        <h3>Servicio 2</h3>
-        <p>Descripción del servicio 2.</p>
-      </div>
-      <div class="service">
-        <img src="service3.jpg" alt="Servicio 3">
-        <h3>Servicio 3</h3>
-        <p>Descripción del servicio 3.</p>
-      </div>
+    <div class="header">
+    <!-- Content -->
+    <div class="line" id="Home">
+        <div class="side1">
+            <h1>AGENCIA   DIGITAL</h1>
+            <button>
+                <a href=
+"https://www.geeksforgeeks.org/">
+                    Ver más
+                </a>
+            </button>
+        </div>
+        <div class="side2">
+            <img src="/images/aboutus1.jpg" alt="Proyecto 1" width="500">
+        </div>
     </div>
-  </section>
+    </div>
 
-  <!-- Sobre Nosotros -->
-  <section id="about" class="about">
-    <h2>Sobre Nosotros</h2>
-    <p>Texto sobre la historia de la agencia y su misión.</p>
-  </section>
+    <section class="about" id="My Projects">
+        <div class="content">
+            <div class="title">
+                <span>Ventajas</span>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic">
+                        <a href="" target="_blank">
+                            VENTAJA 1
+                        </a>
+                    </div>
+                    <p>
+                        Creemos que lo que realmente le aporta valor a nuestros socios comerciales, es asumir y compartir la responsabilidad de sus objetivos de negocio, permitiendo el crecimiento de éste.
+                    </p>
+                </div>
+                <div class="box">
 
-  <!-- Contacto -->
-  <section id="contact" class="contact">
-    <h2>Contacto</h2>
-    <form>
-      <input type="text" placeholder="Nombre" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+                    <div class="topic">
+                        <a href="" target="_blank">
+                            VENTAJA 2
+                        </a>
+                    </div>
+                    <p>
+                        Nuestra metodología nos ayuda a expandir la percepción de marca de nuestros clientes, llevando el reconocimiento al siguiente nivel. Creamos estrategias medibles y replicables que permiten generar resultados en el corto, mediano y largo plazo.
+                    </p>
+                </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2024 Agencia Digital. Todos los derechos reservados.</p>
-  </footer>
+                <div class="box">
+                    <div class="topic">
+                        <a href="" target="_blank">
+                            VENTAJA 3
+                        </a>
+                    </div>
+                    <p>
+                       Como Agencia de Marketing Digital contamos con especialistas en diferentes áreas, un gran equipo multidisciplinario de expertos en digital que refleja multiculturalidad y manejo de diferentes idiomas
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="title"><span>Entrar</span></div>
+            <div class="contactMenu">
+                <div class="input1">
+                    <div class="label1">Tu nombre</div>
+                    <div class="input2">
+                        <input type="text" 
+                            placeholder="Ingresa tu nombre aquí">
+                    </div>
+                    <div class="label1">
+                        <label>Tu correo</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text" required
+                            placeholder="Ingresa tu correo aquí">
+                    </div>
+                    <div class="label1">
+                        <label>Tu contraseña</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text" 
+                            placeholder="Ingresa tu contraseña aquí">
+                    </div>
+                    <div class="button">
+                        <button>Ingresar</button>
+                    </div>
+                </div>
+                <div class="input3">
+                    <div class="rightside1">
+                        <div class="title1">
+                            <span>
+                            Contacto
+                            </span>
+                        </div>
+                        <div class="content1">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis et quasi aut facere vitae vero. 
+                        </div>
+                        <div class="title1">
+                            <span>Mas información</span>
+                        </div>
+                        <div class="content1">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis et quasi aut facere vitae vero. Inventore, minus ab voluptate modi repellat, pariatur tempora quisquam, debitis facilis explicabo voluptatem. A. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis et quasi aut facere vitae vero. Inventore, minus ab voluptate modi repellat, pariatur tempora quisquam, debitis facilis explicabo voluptatem. A.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <footer>
+        <div class="footer">
+            <span>
+                Todos los derechos reservados
+                <a href="https://www.geeksforgeeks.org/" 
+                    target="_blank">
+                    2024
+                </a>
+            </span>
+        </div>
+    </footer>
 </body>
       `,
       cssContent: `
-        /* Estilos Generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    background-color: white;
+    color: black;
+    font-family: "Fira Sans", sans-serif;
+    background-color: white;
 }
 
-/* Barra de Navegación */
-.navbar {
-  background-color: #34495e;
-  color: #fff;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: #8cc099;
 }
 
-.navbar .logo {
-  font-size: 1.5rem;
+nav .heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
 }
 
-.navbar .nav-links ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
+nav ul {
+    display: flex;
+    list-style: none;
 }
 
-.navbar .nav-links a {
-  color: #fff;
-  text-decoration: none;
+nav ul li {
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
 }
 
-.navbar .menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
+nav ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
 }
 
-/* Header / Banner */
-.header {
-  background: url('agency-header.jpg') no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 100px 20px;
+nav ul li:hover {
+    background-color: green;
 }
 
-/* Servicios */
-.services {
-  padding: 60px 20px;
-  text-align: center;
+nav ul li a:hover {
+    color: white;
 }
 
-.service-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+nav .sideMenuButton {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
 }
 
-.service {
-  width: 300px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
+/* responsive navbar css */
+@media screen and (max-width: 600px) {
+    nav .sideMenuButton {
+        display: flex;
+    }
+
+    nav .navbar {
+        display: none;
+    }
+
+    .sideNavigationBar {
+        display: block !important;
+    }
 }
 
-.service img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.sideNavigationBar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: green;
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    padding-top: 60px;
+    display: none;
 }
 
-/* Sobre Nosotros, Contacto */
-.about, .contact {
-  padding: 60px 20px;
-  text-align: center;
+.sideNavigationBar a {
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    color: #d1d1d1;
+    transition: 0.3s;
+    text-decoration: none;
 }
 
-/* Contacto */
-.contact form {
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.sideNavigationBar a button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: green;
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
 }
 
-.contact input, .contact textarea, .contact button {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.sideNavigationBar a:hover {
+    color: white;
 }
 
-.contact button {
-  background-color: #34495e;
-  color: #fff;
-  cursor: pointer;
+.sideNavigationBar .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+}
+
+.line .side1 {
+    padding-right: 50px;
+}
+
+.side1 h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: green;
+}
+
+.side1 button {
+    width: 200px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border-style: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header content responsive */
+@media screen and (max-width: 980px) {
+    .side2 img {
+        width: 350px;
+    }
+
+    .side1 h1 {
+        font-size: 40px;
+    }
+
+    .side1 p {
+        font-size: 17px;
+    }
+
+    .line {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .side1 h1 {
+        font-size: 35px;
+    }
+
+    .line {
+        flex-direction: column;
+    }
+
+    .line .side1 {
+        padding: 30px;
+    }
+}
+
+/* section */
+
+section .topic a {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about .boxes .box {
+    margin: 10px 20px;
+    max-width: calc(100% / 3 - 50px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    cursor: default;
+}
+
+/* Contact Page  */
+
+.contact {
+    padding: 20px;
+}
+
+.contact .content {
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.content .title {
+    width: 80%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.title {
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+
+.contactMenu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input2 {
+    margin-top: 10;
+}
+
+.label1 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: bolder;
+}
+
+.contactMenu .input1 input {
+    border-radius: 13px;
+    padding: 6px;
+}
+
+.input2 input {
+    border-color: rgb(252, 244, 244);
+    width: 400px;
+}
+
+.button {
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.button button {
+    width: 162px;
+    height: 35px;
+    border-radius: 12px;
+    border-color: transparent;
+}
+
+.button button:hover {
+    background-color: #8cc099;
+}
+
+button {
+    width: 162px;
+    height: 35px;
+    border-radius: 12px;
+    border-color: transparent;
+}
+
+button:hover {
+    background-color: #8cc099;
+}
+
+.rightside1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+}
+
+.title1 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+.content1 {
+    width: 450px;
+    margin-top: 2px;
+    color: grey;
 }
 
 /* Footer */
-.footer {
-  background-color: #34495e;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+footer {
+    background: var(--primary-color);
+    padding: 15px 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .navbar .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .navbar .nav-links.active {
-    display: flex;
-  }
-
-  .navbar .menu-toggle {
-    display: block;
-  }
-
-  .service-container {
-    flex-direction: column;
-    align-items: center;
-  }
+footer .footer span {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--white-color);
 }
+
+footer .footer span a {
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+footer .footer span a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1060px) {
+    .contactMenu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightside1 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .content1 {
+        width: 100%;
+        margin-top: 2px;
+        color: grey;
+    }
+
+    .side2 img {
+        width: 95%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .side2 img {
+        width: 100%;
+    }
+
+    section .topic a {
+        font-size: 20px;
+    }
+
+    section .topic p {
+        font-size: 5px;
+    }
+
+    .about .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .boxes .box {
+        max-width: 70%;
+    }
+}
+
       `,
       jsContent: `
-        document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
+function openNavbar() {
+    document.getElementById("sideNavigationBar")
+        .style.width = "50%";
+}
+function closeNavbar() {
+    document.getElementById("sideNavigationBar")
+        .style.width = "0%";
+}
 
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-});
       `,
     },
   ];
