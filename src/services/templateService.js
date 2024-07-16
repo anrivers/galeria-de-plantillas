@@ -4,7 +4,7 @@ let templates = [
     name: 'Plantilla de Portafolio',
     subtheme: 'Freelance',
     imageUrl: '/images/estructura-web.png',
-    description: 'Una plantilla completa para los desarrolladores suban su contenido.',
+    description: 'Una plantilla para los desarrolladores suban su contenido.',
     htmlContent: `
 <body>
   <!-- Barra de Navegación -->
@@ -758,538 +758,810 @@ a.link-to-book:hover {
     },
     {
       id: 3,
-      name: 'Plantilla de Agencia Digital',
+      name: 'Plantilla de Agencia de Viajes',
       subtheme: 'Agencia',
-      imageUrl:'/images/estructura-web.png',
-      description: 'Una plantilla para agencia digital.',
+      imageUrl:'/images/template3/template.png',
+      description: 'Una landing page para agencia digital de viajes.',
       htmlContent: `
-<body>
-    <nav class="navbar">
-        <div class="heading">Mi agencia</div>
-        <span class="sideMenuButton" 
-            onclick="openNavbar()">
-            &#9776
-        </span>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Agencia de viajes Landing Page</title>
+  </head>
+  <body>
+    <main class="main__container">
+      <header class="header">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="../images/template3/website__logo.png" alt="Website Logo" />
+        </div>
 
-        <div >
+        <div class="header__right">
+          <!-- Navbar  -->
+          <nav class="navbar">
             <ul>
-                <li><a href="#Home">Inicio</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Sesión</a></li>
+              <li>
+                <a href="#product"> Producto </a>
+              </li>
+              <li>
+                <a href="#services"> Servicios </a>
+              </li>
+              <li>
+                <a href="#blog"> Blog </a>
+              </li>
+              <li>
+                <a href="#about-us"> Nosotros </a>
+              </li>
+              <li>
+                <a href="#contact-us"> Contacto </a>
+              </li>
             </ul>
-        </div>
-    </nav>
+          </nav>
 
-    <div class="header">
-    <!-- Content -->
-    <div class="line" id="Home">
-        <div class="side1">
-            <h1>AGENCIA   DIGITAL</h1>
-            <button>
-                <a href=
-"https://www.geeksforgeeks.org/">
-                    Ver más
-                </a>
-            </button>
+          <!-- Login and Sign Up -->
+          <button class="login">
+            <a href="#login">Entrar </a>
+          </button>
         </div>
-        <div class="side2">
-            <img src="/images/aboutus1.jpg" alt="Proyecto 1" width="500">
-        </div>
-    </div>
-    </div>
+      </header>
 
-    <section class="about" id="My Projects">
-        <div class="content">
-            <div class="title">
-                <span>Ventajas</span>
+      <!-- Main Section with Text and Image -->
+      <section class="main__section">
+        <div class="main__left">
+          <div>
+            <div class="main__left__heading">
+              <h2 class="typing__text">Viaja con nosotros</h2>
+              <h2 class="typing__text">¡Las mejores aventuras!</h2>
             </div>
-            <div class="boxes">
-                <div class="box">
-                    <div class="topic">
-                        <a href="" target="_blank">
-                            VENTAJA 1
-                        </a>
-                    </div>
-                    <p>
-                        Creemos que lo que realmente le aporta valor a nuestros socios comerciales, es asumir y compartir la responsabilidad de sus objetivos de negocio, permitiendo el crecimiento de éste.
-                    </p>
-                </div>
-                <div class="box">
-
-                    <div class="topic">
-                        <a href="" target="_blank">
-                            VENTAJA 2
-                        </a>
-                    </div>
-                    <p>
-                        Nuestra metodología nos ayuda a expandir la percepción de marca de nuestros clientes, llevando el reconocimiento al siguiente nivel. Creamos estrategias medibles y replicables que permiten generar resultados en el corto, mediano y largo plazo.
-                    </p>
-                </div>
-
-                <div class="box">
-                    <div class="topic">
-                        <a href="" target="_blank">
-                            VENTAJA 3
-                        </a>
-                    </div>
-                    <p>
-                       Como Agencia de Marketing Digital contamos con especialistas en diferentes áreas, un gran equipo multidisciplinario de expertos en digital que refleja multiculturalidad y manejo de diferentes idiomas
-                    </p>
-                </div>
+            <p class="main__left__desc">
+              ¡Contruye tu proximo viaje con nosotros! 
+              Descubre mas de tu viaje con nosotros a continuación.
+            </p>
+            <div class="cta">
+              <button class="btn1">
+                <a href="#get-started"> Explorar </a>
+              </button>
+              <button class="btn2">
+                <a href="#learn-more"> Leer más </a>
+              </button>
             </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="content">
-            <div class="title"><span>Entrar</span></div>
-            <div class="contactMenu">
-                <div class="input1">
-                    <div class="label1">Tu nombre</div>
-                    <div class="input2">
-                        <input type="text" 
-                            placeholder="Ingresa tu nombre aquí">
-                    </div>
-                    <div class="label1">
-                        <label>Tu correo</label>
-                    </div>
-                    <div class="input2">
-                        <input type="text" required
-                            placeholder="Ingresa tu correo aquí">
-                    </div>
-                    <div class="label1">
-                        <label>Tu contraseña</label>
-                    </div>
-                    <div class="input2">
-                        <input type="text" 
-                            placeholder="Ingresa tu contraseña aquí">
-                    </div>
-                    <div class="button">
-                        <button>Ingresar</button>
-                    </div>
+          </div>
+          <div class="main__left__explore">
+            <div class="main__left__explore__heading">
+              <h3>Explora el lugar de tu sueño</h3>
+              <p>Crea un nuevo estandar perzonalizado con nosotros.</p>
+            </div>
+            <div class="main__left__explore__images">
+              <div class="scroll__container">
+                <div class="images__wrapper">
+                  <div>
+                    <img class="" src="../images/template3/europe__monument.png" />
+                    <p>Europe</p>
+                  </div>
+                  <div>
+                    <img class="" src="../images/template3/delhi__monument.png" />
+                    <p>Delhi</p>
+                  </div>
+                
                 </div>
-                <div class="input3">
-                    <div class="rightside1">
-                        <div class="title1">
-                            <span>
-                            Contacto
-                            </span>
-                        </div>
-                        <div class="content1">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis et quasi aut facere vitae vero. 
-                        </div>
-                        <div class="title1">
-                            <span>Mas información</span>
-                        </div>
-                        <div class="content1">
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis et quasi aut facere vitae vero. Inventore, minus ab voluptate modi repellat, pariatur tempora quisquam, debitis facilis explicabo voluptatem. A. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis et quasi aut facere vitae vero. Inventore, minus ab voluptate modi repellat, pariatur tempora quisquam, debitis facilis explicabo voluptatem. A.
-                        </div>
-                    </div>
+              </div>
+              <button class="btn3">
+                <im g class="" src="../images/template3/chevron-right.svg"/>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__right">
+          <div class="carousel">
+            <div class="carousel__item">
+              <div class="bg__image1">
+                <img src="../images/template3/hero__banner1.png" />
+              </div>
+            </div>
+            <div class="carousel__item">
+               <div class="bg__image2">
+
+                 <img src="../images/template3/hero__banner2.png" />
                 </div>
             </div>
+            <div class="carousel__item">
+               <div class="bg__image3">
+
+                 <img src="../images/template3/hero__banner3.png" />
+                </div>
+            </div>
+            <div class="carousel__item">
+               <div class="bg__image4">
+
+                 <img src="../images/template3/hero__banner4.png" />
+                </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- Footer section -->
-    <footer class="footer">
-        
-            <span>
-                Todos los derechos reservados
-                <a href="https://www.geeksforgeeks.org/" 
-                    target="_blank">
-                    2024
-                </a>
-            </span>
-  
-    </footer>
+      </section>
+    </main>
+    <!-- Footer -->
+  <footer class="footer">
+    <p> Todos los derechos reservados Raiv200. &copy; 2024.</p>
+  </footer>
 </body>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("carousel__item");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); 
+      }
+    </script>
+  </body>
+</html>
       `,
       cssContent: `
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: white;
-    color: black;
-    font-family: "Fira Sans", sans-serif;
-    background-color: white;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    background-image: url('/images/template3/bg__image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-nav {
+.main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 1300px;
+    margin: auto;
+    /* border:1px solid black; */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
     width: 100%;
-    height: 80px;
+    padding: 0;
+
+}
+
+.footer {
+
+  color: #000000B2;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo>img {
+    width: 150px;
+    height: 40px;
+    margin: 2px;
+}
+
+.logo>h2 {
+    margin-left: 14px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header__right {
     display: flex;
     justify-content: space-between;
-    padding: 20px 5%;
-    background-color: #8cc099;
+    width: 775px;
 }
 
-nav .heading {
-    font-size: 30px;
-    font-weight: 700;
-    color: white;
-}
-
-nav ul {
+.navbar {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar>ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
 }
 
-nav ul li {
-    padding: 8px 15px;
-    border-radius: 10px;
-    transition: 0.2s ease-in;
+.navbar>ul>li {
+    margin-right: 16px;
+    width: 100px;
+    text-align: center;
+    padding: 2px;
 }
 
-nav ul li a {
-    color: black;
-    font-size: 20px;
-    font-weight: 500;
+.navbar>ul>li>a {
     text-decoration: none;
-    color: white;
+    color: #000000B2;
+    font-size: 14px;
+    font-weight: 400;
 }
 
-nav ul li:hover {
-    background-color: green;
+.navbar>ul>li:hover {
+    background-color: #2D79EB;
+    border-radius: 4px;
+    padding: 2px;
+    transition: all ease 0.4s;
 }
 
-nav ul li a:hover {
-    color: white;
+.navbar>ul>li:hover>a {
+    font-weight: 600;
+    color: #ffffff;
+    transition: all ease 0.4s;
 }
 
-nav .sideMenuButton {
-    font-size: 30px;
-    font-weight: bolder;
+.login {
+      padding: 16px 28px;
+    background-color: #2D79EB;
+    margin-left: 2rem;
+    border-radius: 12px;
+    border: none;
+    width: 233px;
+    height: 100%;
     cursor: pointer;
-    display: none;
 }
 
-/* responsive navbar css */
-@media screen and (max-width: 600px) {
-    nav .sideMenuButton {
-        display: flex;
+.login>a {
+   text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 19px;
+}
+
+.login:hover {
+    background-color: #000000B2;
+    transition: all ease 0.4s;
+}
+
+.login:hover>a {
+    color: #ffffff;
+}
+
+
+
+.main__section {
+    display: flex;
+    flex-basis: 1;
+    height: 100%;
+    width: 1300px;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+
+.main__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 643px;
+
+}
+
+.main__left__heading {
+    position: relative;
+}
+
+.main__left__heading> h2 {
+    font-size: 48px;
+    line-height: 64px;
+    width: 100%;
+    margin: 2px;
+    font-weight: 800;
+    color: #000000CC;
+}
+
+.typing__text{
+    font-size: 48px;
+    line-height: 64px;
+    width: 100%;
+    margin: 2px;
+    font-weight: 800;
+    color: #000000CC;
+    overflow: hidden; 
+    white-space: nowrap; 
+    animation: typing 3.5s steps(40, end),blink-caret .75s step-end infinite;
+}
+
+.main__left__heading>h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 0%;
+    background-color: #000000B2;
+    transition: all ease 0.5s;
+}
+
+.main__left__heading>h2:hover::after {
+    width: 100%;
+}
+
+.main__left__desc {
+    font-size: 16px;
+    font-weight: 400;
+    width: 576px;
+    height: 66px;
+    color: #645f5f;
+    padding: 10px 10px;
+
+}
+
+.cta {
+    width: 480px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.btn1 {
+      padding: 16px 28px;
+    background-color: #2D79EB;
+    margin-left: 2rem;
+    border-radius: 12px;
+    border: none;
+    width: 233px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.btn1>a {
+        text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 19px;
+}
+
+.btn1:hover {
+        background-color: #2d79eb3e;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transition: all ease 0.4s;
+}
+
+.btn1:hover>a {
+    color: #2D79EB
+}
+
+.btn2 {
+    padding: 16px 28px;
+    background-color: #2D79EB;
+    margin-left: 2rem;
+    border-radius: 12px;
+    border: none;
+    width: 233px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: #2d79eb3e;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transition: all ease 0.4s;
+}
+
+.btn2:hover>a {
+    color: #2D79EB
+}
+
+.btn2>a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 19px;
+}
+
+.main__left__explore {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 400px;
+    height: 227px;
+
+}
+
+.main__left__explore__heading {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 298px;
+    height: 47px;
+}
+
+.main__left__explore__heading>h3 {
+    font-size: 16px;
+    line-height: 30px;
+    width: 100%;
+    margin: 2px;
+    font-weight: 800;
+}
+
+.main__left__explore__heading>p {
+    font-size: 10px;
+    line-height: 23px;
+    width: 100%;
+    margin: 2px;
+    font-weight: 300;
+}
+
+.main__left__explore__images {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 150px;
+
+}
+
+.scroll__container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.images__wrapper::after {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    background-image: linear-gradient(to left, #09b9ff);
+    right:0;
+    top:0;
+}
+
+.images__wrapper {
+    display: flex;
+    animation: scrollImages 10s linear infinite;
+    height: 150px;
+}
+
+
+
+.images__wrapper>div>p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    margin: 2px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.images__wrapper>* {
+    margin-right: 16px;
+}
+
+.btn3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2D79EB;
+    color: #ffffff;
+    border-radius: 4px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.main__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 72px);
+    width: 560px;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 72px);
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* Styles for individual carousel items */
+.carousel__item {
+    flex:0 0 100%;
+    transition: transform 2s;
+    height: calc(100vh - 72px);
+}
+
+.carousel__item >{
+ 
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+    
+    border: 2px solid blue;
+}
+
+
+.bg__image1 {
+    background-image: url('./images/bg__image1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+   
+}
+.bg__image1 > img {
+    width: 100%;
+    height: 100%;
+    animation: slideInRight 1s ease-in-out forwards;
+    object-fit:contain;
+}
+
+.bg__image2 {
+    background-image: url('./images/bg__image2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+   
+}
+.bg__image2 > img {
+    width: 100%;
+    height: 100%;
+    animation: slideInRight 1s ease-in-out forwards;
+    object-fit:contain;
+}
+
+.bg__image3 {
+    background-image: url('./images/bg__image3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+   
+}
+.bg__image3 > img {
+    width: 100%;
+    height: 100%;
+    animation: slideInRight 1s ease-in-out forwards;
+    object-fit:contain;
+}
+
+.bg__image4  {
+    background-image: url('./images/bg__image4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.bg__image4 > img {
+    width: 100%;
+    height: 100%;
+    animation: slideInRight 1s ease-in-out forwards;
+    object-fit:contain;
+}
+
+
+@keyframes scrollImages {
+    0% {
+        transform: translateX(100%);
+        /* Start from the right */
     }
 
-    nav .navbar {
+    100% {
+        transform: translateX(-100%);
+        /* Scroll to the left */
+    }
+}
+
+/* The Sliding effect */
+
+@keyframes slideInRight {
+    0% {
+      transform: translateX(30%); 
+    }
+    100% {
+      transform: translateX(0%);
+    }
+}
+
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent; }
+  }
+
+@media only screen and (max-width: 1000px) {
+
+   body {
+    height: 100vh;
+        width: 380px;
+        margin: auto;
+   }
+
+    .main__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        width: 380px;
+        margin: auto;
+    }
+
+    .header {
+        display: flex;
+        width: 320px;
+        height: 72px;
+        padding: 0px;
+    }
+
+    .header__right {
+        width: 120px;
+    }
+
+    .navbar {
         display: none;
     }
 
-    .sideNavigationBar {
-        display: block !important;
-    }
-}
-
-.sideNavigationBar {
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0%;
-    background-color: green;
-    overflow-x: hidden;
-    transition: 0.3s ease-in;
-    padding-top: 60px;
-    display: none;
-}
-
-.sideNavigationBar a {
-    padding: 8px 8px 8px 40px;
-    display: block;
-    font-size: 25px;
-    font-weight: 500;
-    color: #d1d1d1;
-    transition: 0.3s;
-    text-decoration: none;
-}
-
-.sideNavigationBar a button {
-    padding: 10px 20px;
-    border-radius: 10px;
-    color: green;
-    font-size: 16px;
-    border-style: none;
-    font-weight: 700;
-}
-
-.sideNavigationBar a:hover {
-    color: white;
-}
-
-.sideNavigationBar .closeButton {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 20px;
-    margin-left: 50px;
-}
-
-.line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2% 5%;
-}
-
-.line .side1 {
-    padding-right: 50px;
-}
-
-.side1 h1 {
-    font-size: 60px;
-    margin-bottom: 10px;
-    color: green;
-}
-
-.side1 button {
-    width: 200px;
-    padding: 12px 20px;
-    border-radius: 20px;
-    border-style: none;
-    color: black;
-    font-size: 17px;
-    font-weight: 600;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-/* Header content responsive */
-@media screen and (max-width: 980px) {
-    .side2 img {
-        width: 350px;
-    }
-
-    .side1 h1 {
-        font-size: 40px;
-    }
-
-    .side1 p {
-        font-size: 17px;
-    }
-
-    .line {
-        margin-top: 80px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .side1 h1 {
-        font-size: 35px;
-    }
-
-    .line {
-        flex-direction: column;
-    }
-
-    .line .side1 {
-        padding: 30px;
-    }
-}
-
-/* section */
-
-section .topic a {
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.about .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.about .boxes .box {
-    margin: 10px 20px;
-    max-width: calc(100% / 3 - 50px);
-    text-align: center;
-    border-radius: 12px;
-    padding: 30px 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
-    cursor: default;
-}
-
-/* Contact Page  */
-
-.contact {
-    padding: 20px;
-}
-
-.contact .content {
-    margin: 0 auto;
-    padding: 30px 0;
-}
-
-.content .title {
-    width: 80%;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 40px;
-}
-
-.title {
-    margin-bottom: 30px;
-    margin-left: 80px;
-}
-
-.contactMenu {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.input2 {
-    margin-top: 10;
-}
-
-.label1 {
-    font-size: 18px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    font-weight: bolder;
-}
-
-.contactMenu .input1 input {
-    border-radius: 13px;
-    padding: 6px;
-}
-
-.input2 input {
-    border-color: rgb(252, 244, 244);
-    width: 400px;
-}
-
-.button {
-    margin-top: 12px;
-    margin-left: 5px;
-}
-
-.button button {
-    width: 162px;
-    height: 35px;
-    border-radius: 12px;
-    border-color: transparent;
-}
-
-.button button:hover {
-    background-color: #8cc099;
-}
-
-button {
-    width: 162px;
-    height: 35px;
-    border-radius: 12px;
-    border-color: transparent;
-}
-
-button:hover {
-    background-color: #8cc099;
-}
-
-.rightside1 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 300px;
-}
-
-.title1 {
-    font-size: 18px;
-    margin-top: 8px;
-    margin-bottom: 5px;
-    font-weight: bolder;
-}
-
-.content1 {
-    width: 450px;
-    margin-top: 2px;
-    color: grey;
-}
-
-/* Footer */
-footer {
-    background: var(--primary-color);
-    padding: 15px 0;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-}
-
-footer .footer span {
-    font-size: 17px;
-    font-weight: 400;
-    color: var(--white-color);
-}
-
-footer .footer span a {
-    font-weight: 500;
-    color: var(--white-color);
-}
-
-footer .footer span a:hover {
-    text-decoration: underline;
-}
-
-@media screen and (max-width: 1060px) {
-    .contactMenu {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .rightside1 {
+    .main__section {
         display: flex;
         flex-direction: column;
-        margin-left: 0px;
+        flex-basis: 1;
+        height: 100%;
+        width: 380px;
+        margin: auto;
+        margin-top: 40px;
+        padding: 10px 40px;
     }
 
-    .content1 {
-        width: 100%;
-        margin-top: 2px;
-        color: grey;
+    .main__left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 380px;
+
     }
 
-    .side2 img {
-        width: 95%;
-        height: 90%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .side2 img {
-        width: 100%;
+    .main__left__heading>h2 {
+        font-size: 28px;
+        line-height: 32px;
     }
 
-    section .topic a {
+    .main__left__desc {
+        font-size: 13px;
+        font-weight: 400;
+        width: 340px;
+        height: 66px;
+        color: #645f5f;
+        padding: 10px 10px;
+
+    }
+
+    .cta {
+        width: 340px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .btn1 {
+        padding: 2px 10px;
+        width: 200px;
+    }
+
+    .btn1>a {
+        font-size: 16px;
+    }
+
+    .btn2 {
+        padding: 2px 10px;
+        width: 200px;
+    }
+
+    .btn2>a {
+        font-size: 16px;
+    }
+
+    .main__left__explore {
+        width: 340px;
+        height: 227px;
+        margin: 20px 0;
+    }
+
+    .main__left__explore__heading>h3 {
         font-size: 20px;
     }
 
-    section .topic p {
-        font-size: 5px;
+    .main__left__explore__heading>p {
+        font-size: 14px;
+    }
+    .scroll__container {
+        margin-top: 20px;
+    }
+    .main__left__explore__images> button {
+        display: none;
     }
 
-    .about .boxes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
+    .main__right {
+        width: 380px;
+        height: 100%;
+        padding: 10px;
+        
     }
 
-    .about .boxes .box {
-        max-width: 70%;
+    .main__right__image {
+        position: absolute;
+        height: 290px;
+        width: 380px;
+        top:20px;
+        
     }
 }
-
       `,
       jsContent: `
-function openNavbar() {
-    document.getElementById("sideNavigationBar")
-        .style.width = "50%";
-}
-function closeNavbar() {
-    document.getElementById("sideNavigationBar")
-        .style.width = "0%";
-}
 
+
+// Initial display
+showItem(currentIndex);
+
+// Auto-advance the carousel (optional)
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % items.length;
+  showItem(currentIndex);
+}, 3000);
       `,
     },
   ];
