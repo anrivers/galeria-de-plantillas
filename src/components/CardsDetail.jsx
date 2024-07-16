@@ -85,8 +85,8 @@ const CardsDetail = ({ id }) => {
           </Link>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 p-5">
-        <img src={template.imageUrl} alt={template.name} className="rounded-lg w-full" />
+      <div className="w-full lg:w-2/3 p-5">
+        <img src={template.imageUrl} alt={template.name} className="rounded-lg w-full border border-gray-400 h-full object-cover" />
       </div>
     </div>
   );
