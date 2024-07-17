@@ -2,304 +2,467 @@ let templates = [
   {
     id: 1,
     name: 'Plantilla de Portafolio',
-    subtheme: 'Freelance',
-    imageUrl: '/images/estructura-web.png',
+    subtheme: 'Desarrolladores',
+    imageUrl: '/images/template1/template.png',
     description: 'Una plantilla para los desarrolladores suban su contenido.',
     htmlContent: `
-<body>
-  <!-- Barra de Navegación -->
-  <nav class="navbar">
-    <div class="logo">Mi Portafolio</div>
-    <ul class="nav-links">
-      <li><a href="#home">Inicio</a></li>
-      <li><a href="#about">Sobre Mí</a></li>
-      <li><a href="#portfolio">Portafolio</a></li>
-      <li><a href="#contact">Contacto</a></li>
-      <li><a href="#newsletter">Newsletter</a></li>
-    </ul>
-    <div class="menu-toggle">&#9776;</div>
-  </nav>
-
-  <!-- Header / Banner -->
-  <header id="home" class="header">
-    <h1>Bienvenido a Mi Portafolio</h1>
-    <p>Descubre mis proyectos y habilidades</p>
-  </header>
-
-  <!-- Sección Principal -->
-  <section id="about" class="about">
-    <h2>Sobre Mí</h2>
-    <p>Hola, soy un desarrollador web con experiencia en diversas tecnologías...</p>
-  </section>
-
-  <!-- Sección de Imágenes -->
-  <section id="portfolio" class="portfolio">
-    <h2>Portafolio</h2>
-    <div class="portfolio-container">
-      <div class="portfolio-item">
-        <img src="/images/aboutus1.jpg" alt="Proyecto 1">
-        <h3>Proyecto 1</h3>
-        <p>Descripción del proyecto 1...</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="/images/aboutus2.jpg" alt="Proyecto 2">
-        <h3>Proyecto 2</h3>
-        <p>Descripción del proyecto 2...</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="/images/aboutus3.jpg" alt="Proyecto 3">
-        <h3>Proyecto 3</h3>
-        <p>Descripción del proyecto 3...</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Carrusel de Imágenes -->
-  <section id="carousel" class="carousel">
-    <h2>Galería</h2>
-    <div class="carousel-container">
-      <div class="carousel-slide">
-        <img src="slide1.jpg" alt="Slide 1">
-      </div>
-      <div class="carousel-slide">
-        <img src="slide2.jpg" alt="Slide 2">
-      </div>
-      <div class="carousel-slide">
-        <img src="slide3.jpg" alt="Slide 3">
-      </div>
-    </div>
-    <button class="prev">&#10094;</button>
-    <button class="next">&#10095;</button>
-  </section>
-
-  <!-- Sección de Contacto -->
-  <section id="contact" class="contact">
-    <h2>Contacto</h2>
-    <form>
-      <input type="text" placeholder="Nombre" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <!-- Newsletter -->
-  <section id="newsletter" class="newsletter">
-    <h2>Suscríbete a nuestro Newsletter</h2>
-    <form>
-      <input type="email" placeholder="Email" required>
-      <button type="submit">Suscribirse</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
-  </footer>
-</body>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/7a4b62b0a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container">
+        <div class="logo">Portfolio</div>
+        <ul>
+          <a href="#hero">
+            <li>Inicio</li>
+          </a>
+          <a href="#project">
+            <li>Proyectos</li>
+          </a>
+          <a href="#contact">
+            <li>Contacto</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="container">
+          <div class="hero_image animate__animated animate__bounceInLeft">
+            <img src="../images/template1/hero.png" alt="hero image" />
+          </div>
+          <div class="hero_content">
+            <h1>
+              <span class="hi_text">Hola</span> , soy
+              <span class="name_text">John Doe</span>
+            </h1>
+            <h2>Frontend Developer</h2>
+          </div>
+        </div>
+      </section>
+      <section id="project">
+        <h2>PROYECTOS</h2>
+        <div class="container">
+          <div class="project_container">
+            <div class="grid_item">
+              <div class="card">
+                <img src="../images/template1/project1.png" alt="Project 1" />
+                <a href="#">
+                  <div class="card_content">
+                    <h3>Sitio web </h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="card">
+                <img src="../images/template1/Project2.png" alt="Project 2" />
+                <a href="#">
+                  <div class="card_content">
+                    <h3>Aplicación de trabajo</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="card">
+                <img src="../images/template1/project3.png" alt="Project 1" />
+                <a href="#">
+                  <div class="card_content">
+                    <h3>Sitio web</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="card">
+                <img src="../images/template1/project4.png" alt="Project 4" />
+                <a href="#">
+                  <div class="card_content">
+                    <h3>Landing Page</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="card">
+                <img src="../images/template1/project5.png" alt="Project 5" />
+                <a href="#">
+                  <div class="card_content">
+                    <h3>Página Restaurante</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="card">
+                <img src="../images/template1/project6.png" alt="Project 6" />
+                <a href="#">
+                  <div class="card_content">
+                    <h3>Página musica</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="card">
+                <img src="../images/template1/project7.png" alt="Project 7" />
+                <a href="#">
+                  <div class="card_content">
+                    <h3>Youtube Clone</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="card">
+                <img src="../images/template1/project8.png" alt="Project 8" />
+                <a href="#">
+                  <div class="card_content">
+                    <h3>Documentación</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="card">
+                <img src="../images/template1/project9.png" alt="Project 9" />
+                <a href="#">
+                  <div class="card_content">
+                    <h3>Sitio web Blog</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <h2>Puedes encontrarme en...</h2>
+          <div class="top_contact">
+            <div class="contact_way">
+              <i class="fab fa-linkedin"></i>
+              <h3>Linkedin</h3>
+            </div>
+            <div class="contact_way">
+              <i class="fa fa-twitter"></i>
+              <h3>Twitter</h3>
+            </div>
+            <div class="contact_way">
+              <h3>@Enviar Email</h3>
+            </div>
+          </div>
+          <div class="bottom_contact">
+            <div class="contact_way">
+              <i class="fab fa-github"></i>
+              <h3>Github</h3>
+            </div>
+            <div class="contact_way">
+              <i class="fa fa-mobile"></i>
+              <h3>Télefono</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">Todos los derechos reservados 'Coding Channel'. © 2024.</div>
+    </footer>
+  </body>
+</html>
   `,
   cssContent: `
-  /* Estilos Generales */
-body {
-  font-family: 'Arial', sans-serif;
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --lighting-color: #0089b7;
+  --dark-color: #00000;
+  --darker-color: #00000;
+  --secondary-color: #B4B4B4;
+}
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples líneas */
+html {
+  font-size: 62.5%;
+}
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  color: black;
+}
+body {
+  font-size: 1.4rem;
 }
 
-.navbar .logo {
-    font-size: 1.5rem;
-}
-
-.navbar .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: background-color 0.3s ease; /* Efecto de transición opcional */
-}
-
-.navbar .nav-links a:hover {
-    background-color: #555; /* Color de fondo al pasar el mouse */
-}
-
-.navbar .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-/* Header / Banner */
-.header {
-  color: #333;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-/* Sección Principal */
-.about, .portfolio, .contact, .newsletter {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-/* Sección de Imágenes */
-.portfolio-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.portfolio-item {
-  width: 300px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.portfolio-item img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-/* Carrusel de Imágenes */
-.carousel {
-  position: relative;
-  max-width: 1000px;
+.container {
+  max-width: 1300px;
   margin: 0 auto;
 }
-
-.carousel-container {
-  display: flex;
-  overflow: hidden;
-}
-
-.carousel-slide {
-  min-width: 100%;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel img {
-  width: 100%;
-  height: auto;
-}
-
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+a {
+  text-decoration: none;
   color: white;
-  border: none;
+}
+ul {
+  list-style: none;
+}
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #0089b7;
+}
+
+section {
+  scroll-margin-top: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+nav li {
+  font-size: 1.8rem;
+  border-bottom: 0.4rem transparent solid;
+  transition: 0.3s ease-in-out;
+}
+nav li:hover {
+  border-bottom: 0.4rem var(--secondary-color) solid;
+  transition: 0.3s ease-in-out;
+}
+.logo {
   font-size: 2rem;
-  padding: 10px;
-  cursor: pointer;
+  font-weight: 700;
 }
 
-.prev {
-  left: 10px;
+#hero {
+  background: var(--dark-color);
+  padding: 4rem 0;
+  border-bottom: 4px solid var(--lighting-color);
+  max-height: 100vh;
+}
+#hero .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero_content {
+  display: grid;
+  place-items: center;
 }
 
-.next {
-  right: 10px;
+#hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-/* Contacto */
-.contact form {
-  max-width: 600px;
-  margin: 0 auto;
+.hi_text {
+  font-size: 6rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+.name_text {
+  font-size: 5rem;
+}
+
+#hero h2 {
+  font-size: 4rem;
+  font-weight: bold;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* Project Section */
+
+#project {
+  background: var(--darker-color);
+}
+
+#project h2 {
+  font-size: 6rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+.grid_item {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 320px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+}
+.card:hover img {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
+}
+.card:hover .card_content {
+  background: white;
+  color: var(--lighting-color);
+  transform: translateY(0px);
 }
 
-.contact input, .contact textarea, .contact button {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.card_content {
+  padding: 2rem;
+  position: relative;
+  top: -6.5rem;
+  margin-bottom: -6.5rem;
+  transition: 0.5s ease-in-out;
+  transform: translateY(100px);
+}
+.card_content h3 {
+  text-align: center;
 }
 
-.contact button {
-  background-color: #333;
-  color: #fff;
-  cursor: pointer;
+/* Contact Section */
+#contact {
+  background: var(--dark-color);
 }
 
-/* Newsletter */
-.newsletter form {
-  max-width: 600px;
-  margin: 0 auto;
+#contact h2 {
+  font-size: 6rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#contact .container {
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 4rem;
+  justify-content: center;
 }
 
-.newsletter input, .newsletter button {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.top_contact {
+  max-width: 800px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+.contact_way {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
-.newsletter button {
-  background-color: #333;
-  color: #fff;
-  cursor: pointer;
+.contact_way i {
+  font-size: 3rem;
+}
+.contact_way h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.bottom_contact {
+  max-width: 400px;
+  gap: 1rem;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 }
 
 /* Footer */
+
 .footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #0089b7;
+  padding: 2rem;
+  color: white;
+  font-size: 1.6rem;
   text-align: center;
-  padding: 20px;
 }
 
-@media (max-width: 768px) {
-    .navbar .menu-toggle {
-        display: block; /* Mostrar el icono de menú */
-    }
+/* Media Query */
 
-    .navbar .nav-links {
-        display: none; /* Ocultar los enlaces de navegación */
-        flex-direction: column; /* Alinear en columna para dispositivos móviles */
-        position: absolute;
-        top: 60px; /* Ajusta según la altura de tu barra de navegación */
-        left: 0;
-        background-color: #333;
-        width: 100%;
-        padding: 10px 0;
-        z-index: 1000;
-    }
-
-    .navbar .nav-links a {
-        padding: 10px 20px;
-    }
-
-    .navbar .nav-links.active {
-        display: flex; /* Mostrar enlaces cuando el menú está activo */
-    }
-        .carousel-slide {
-    min-width: 100%;
+@media (max-width: 786px) {
+  html {
+    font-size: 40%;
+  }
+  #hero .container {
+    flex-direction: column;
+  }
+  .hero_image {
+    display: grid;
+    place-items: center;
+  }
+  #contact .container {
+    height: 70vh;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 32%;
+  }
+  #hero .container {
+    flex-direction: column;
+  }
+  .hero_image {
+    display: grid;
+    place-items: center;
+  }
+  #contact .container {
+    height: 50vh;
   }
 }
 

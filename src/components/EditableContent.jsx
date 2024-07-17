@@ -119,7 +119,7 @@ const EditableContent = ({ content, onChange, cssContent, onStyleChange, onImage
           <iframe
             ref={iframeRef}
             className="w-full h-full border-none mt-4 lg:mt-0"
-            style={{ minHeight: '600px' }}
+            style={{ minHeight: '1000px' }}
           />
         </div>
       </div>
