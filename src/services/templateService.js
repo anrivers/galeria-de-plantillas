@@ -515,408 +515,13 @@ document.addEventListener('DOMContentLoaded', () => {
       imageUrl:'/images/estructura-web.png',
       description: 'Una plantilla para un negocio de comida.',
       htmlContent: `
-<!DOCTYPE html>
-<html lang="en">
- 
-<head>
-      <title>Homepage for Restaurant</title>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <title>Fooddddie's Kitchen</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-          href=
-"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity=
-"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous">
-</head>
- 
-<body>
- 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-        <a class="navbar-brand" href="#">
-          Restaurante Nombre
-          </a>
-        <button class="navbar-toggler" type="button"
-                data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">
-                      Sobre nosotros
-                      </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#reservation">
-                      Reservación 
-                      </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#menu">
-                      Menú
-                      </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#shop">
-                      Tienda
-                      </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
- 
-    <!-- Hero Section -->
-    <div class="header">
-    <section class="hero-section text-center">
-        <div class="container">
-            <h1 class="display-4">
-              Bienvenido a tu restaurante de comida 
-              </h1>
-            <p class="lead">
-              Aquí podrás encotrar los 
-              mejores platillos de comida.
-              </p>
-            <a class="btn btn-primary btn-lg" href="#reservations">
-              Ver más 
-              </a>
-        </div>
-    </section>
-     </div>
- 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2 class="section-heading">
-                      ¿Quiénes somos?
-                      </h2>
-                    <p class="">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis et quasi aut facere vitae vero. Inventore, minus ab voluptate modi repellat, pariatur tempora quisquam.
-                    </p>
-                </div>
-                <div class="col-lg-6">
-                      <img src="/images/aboutus3.jpg" alt="Proyecto 1" width="500"
-                        class="img-fluid" alt="About Image">
-                </div>
-            </div>
-        </div>
-    </section>
- 
-    <!-- Carousel Section -->
-    <section class="carousel-section">
-        <div id="carouselExampleControls"
-             class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/images/aboutus3.jpg" alt="Proyecto 1" width="500"
-                         class="d-block w-100"
-                         alt="Food Image 1">
-                </div>
-            </div>
-          
-        </div>
-    </section>
- 
-    <!-- Reservation and Contact Section -->
-    <section id="reservations" class="reservation-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2 class="section-heading">
-                      Contáctanos 
-                      </h2>
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Tu nombre</label>
-                            <input type="text" class="form-control"
-                                   id="name" placeholder="Ingresa tu correo">
-                        </div>
-                        <div class="form-group">
-                            <label for="phoneNumber">
-                              Télefono 
-                              </label>
-                            <input type="text"
-                                   class="form-control" id="phoneNumber"
-                                   placeholder="Ingresa tu número">
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                          Enviar
-                          </button>
-                    </form>
-                </div>
-                <div class="col-lg-6 opening-time">
-                    <h2 class="section-heading">Horarios</h2>
-                    <p class="text-muted">
-                        <span>Lunes—Jueves: 08:00 — 22:00</span><br>
-                        <span>Viernes—Sabado: 09:00 — 23:00</span><br>
-                        <span>Domingo: 10:00 — 17:00</span>
-                    </p>
-                    <h2 class="section-heading">Contact</h2>
-                    <p class="text-muted">
-                        <span>410-602-8008</span><br>
-                        <span>CDMX México</span><br>
-                        <span>Palo-Alto, 1111 CA</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
- 
-    <!-- Footer Section -->
-      
-    <footer class="footer footer-section text-center">
-        <div class="container">
-            <p>© 2024 Nombre de restaurante. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-    
-</body>
- 
-</html>
+
       `,
       cssContent: `
 
-.navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples líneas */
-}
-.nav-flex-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: absolute;
-    z-index: 100;
-    left: 0;
-    width: 100%;
-    padding: 0;
-}
- 
-.nav-flex-row li {
-    text-decoration: none;
-    list-style-type: none;
-    padding: 20px 15px;
-}
- 
-.nav-flex-row li a {
-    font-family: 'Big Shoulders Text', cursive;
-    color: #000;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: 300;
-}
- 
-.nav-flex-row li a:hover {
-    background: #E7E7E7;
-}
- 
-.section-intro {
-    height: 820px;
-    background-image: url(img/foddiee.png);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
- 
-.section-intro h1 {
-    text-align: center;
-    color: #000;
-    font-size: 4em;
-    font-weight: 700;
-}
- 
-.section-intro header {
-    display: flex;
-    flex: 4;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
- 
-.link-to-book-wrapper {
-    flex: 1;
-}
- 
-.about-section {
-    display: flex;
-    align-items: center;
-    background-color: #f3f3f3c0;
-    padding: 50px 30px;
-}
- 
-.link-to-book {
-    color: #ffffff;
-    display: block;
-    border: 2px solid #ffffff;
-    padding: 5px 10px;
-}
- 
-a.link-to-book:hover {
-    background-color: #ffffff;
-    color: #95999e;
-    text-decoration: none;
-}
- 
-.about-section p,
-.about-section h3 {
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    font-family: ;
-    font-size: 1.4em;
-    text-transform: uppercase;
-}
- 
-.carousel-inner {
-    height: 700px;
-}
- 
-.row-flex {
-    display: flex;
-    flex-direction: row;
-}
- 
-.flex-column-form {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin: 30px 20px;
-}
- 
-.btn.btn-primary {
-    font-family: 'Big Shoulders Text', cursive;
-    color: #ffffff;
-    background-color: #95999e;
-    text-transform: uppercase;
-    font-size: 16px;
-    padding: 5px 10px;
-    letter-spacing: 2px;
-    border: 0;
-}
- 
-.btn.btn-primary:hover {
-    background-color: #747474;
-}
- 
-.opening-time,
-.contact-address {
-    flex: 1;
-    margin: 30px 20px;
-    font-size: 1.2em;
-}
- 
-.form-group p {
-    font-size: 1.2em;
-}
- 
-.opening-time p span,
-.contact-address p span {
-    display: block;
-}
-    
-.footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
- 
-@media (min-width:577px) and (max-width: 800px) {
- 
-    .section-intro {
-        height: 500px;
-    }
- 
-    .about-section p,
-    .about-section h3 {
-        font-size: 20px;
-    }
- 
-    .carousel-inner {
-        height: auto;
-    }
- 
-    .row-flex {
-        display: flex;
-        flex-direction: column;
-    }
-}
- 
-@media screen and (max-width: 576px) {
-    .section-intro {
-        height: 300px;
-    }
- 
-    .about-section {
-        padding: 30px;
-    }
- 
-    .section-intro h1 {
-        font-size: 2em;
-    }
- 
-    .about-section p,
-    .about-section h3 {
-        font-size: 15px;
-    }
- 
-    .carousel-inner {
-        height: auto;
-    }
- 
-    .row-flex {
-        display: flex;
-        flex-direction: column;
-    }
- 
-    .row-flex h3 {
-        font-size: 25px;
-        text-align: center;
-    }
- 
-    .form-group p {
-        font-size: 15px;
-    }
- 
-    .opening-time p span,
-    .contact-address p span {
-        font-size: 15px;
-        text-align: center;
-    }
- 
-}
- 
-.carousel-item img {
-    background-repeat: no-repeat;
-    background-size: cover;
-}
       `,
       jsContent: `
-<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+
       `,
     },
     {
@@ -1725,6 +1330,647 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % items.length;
   showItem(currentIndex);
 }, 3000);
+      `,
+    },
+    {
+      id: 4,
+      name: 'Plantilla de Muebles',
+      subtheme: 'Muebles',
+      imageUrl:'/images/estructura-web.png',
+      description: 'Una landing de platilla de muebles donde sale información del lugar.',
+      htmlContent: `
+
+      `,
+      cssContent: `
+
+      `,
+      jsContent: `
+
+      `,
+    },
+    {
+      id: 5,
+      name: 'Plantilla de Administrador',
+      subtheme: 'Administrador',
+      imageUrl:'/images/template5/template.png',
+      description: 'Una landing page para que los ususarios promocionen su app.',
+      htmlContent: `
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Landing Page Website Design</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar sections starts  -->
+    <header class="header">
+        <div class="logo">
+            <img src="../images/template5/logo-bookmark.svg" alt="logo-bookmark">
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Inicio</a>
+            <a href="#features">Elementos</a>
+            <a href="#download">Descargar</a>
+            <a href="#footer">Contacto</a>
+            <a href="#" class="btn">Entrar</a>
+        </nav>
+
+
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </header>
+    <!-- navbar sections starts  -->
+
+   
+    <!-- home section stars  -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Administrador de marcadores simple</h1>
+            <p>Una interfaz limpia y sencilla para organizar sus sitios web favoritos. Abra una pestaña del navegador y vea cómo sus sitios se cargan al instante. ¡¡Pruébalo gratis!!</p>
+
+            <a href="#" class="home-btn">Consíguelo en Chrome</a>
+        </div>
+
+
+        <div class="image">
+            <img src="../images/template5/illustration-hero.svg" alt="illustration-hero">
+        </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- features sectin starts  -->
+
+    <section class="features" id="features">
+        <div class="heading">
+            <h1>ELEMENTOS</h1>
+            <p>Our aim is to make it quick and easy for you to access your favorite websites. your bookmarks sync between your devices so you can access them on the go</p>
+        </div>
+
+
+        <div class="row">
+            <!-- 1 Tab  -->
+            <div class="image">
+                <img src="../images/template5/illustration-features-tab-1.svg" alt="illustration-features-tab-1">
+            </div>
+
+
+            <div class="content">
+                <h1>Bookmark in one click</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sint odit tempora, maiores quos qui quisquam accusamus ad officiis sapiente.</p>
+                <a href="#" class="all-btn">more info</a>
+            </div>
+
+            <!-- 1 Tab  -->
+
+            <!-- 2 Tab  -->
+            <div class="content">
+                <h1>Intelligent search</h1>
+                <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                <a href="#" class="all-btn">more info</a>
+            </div>
+
+            <div class="image">
+                <img src="../images/template5/illustration-features-tab-2.svg" alt="illustration-features-tab-2">
+            </div>
+
+            <!-- 2 Tab  -->
+
+            <div class="image">
+                <img src="../images/template5/illustration-features-tab-3.svg" alt="illustration-features-tab-3">
+            </div>
+
+            <div class="content">
+                <h1>Share your bookmarks</h1>
+                <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                <a href="#" class="all-btn">more info</a>
+            </div>
+
+
+            <!-- 3 Tab  -->
+
+        </div>
+    </section>
+
+
+    <!-- features sectin ends -->
+
+
+    <!-- downloads section starts  -->
+
+    <section class="download" id="download">
+        <div class="heading">
+            <h1>Download Extension</h1>
+            <p>We've got more browsers in the pipeline. Please do le us know if you got've got a favorite you'd like us to prioritize</p>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="../images/template5/logo-chrome.svg" alt="logo-chrome">
+
+                <h3>Add to Chrome</h3>
+                <p>Minimum Version 63</p>
+                <a href="#" class="all-btn">install</a>
+            </div>
+
+            <div class="box">
+                <img src="../images/template5/logo-firefox.svg" alt="logo-firefox">
+
+                <h3>Add to Firefox</h3>
+                <p>Minimum Version 55</p>
+                <a href="#" class="all-btn">install</a>
+            </div>
+
+            <div class="box">
+                <img src="../images/template5/logo-opera.svg" alt="logo-opera">
+
+                <h3>Add to Opera</h3>
+                <p>Minimum Version 46</p>
+                <a href="#" class="all-btn">install</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- downloads section ends -->
+
+
+
+    <!-- footer section starts  -->
+
+   <section class="footer" id="footer">
+       <div class="box-container">
+           <div class="box">
+               <h3>quick links</h3>
+               <a href="#"><i class="fas fa-chevron-right"></i>home</a>
+               <a href="#"><i class="fas fa-chevron-right"></i>features</a>
+               <a href="#"><i class="fas fa-chevron-right"></i>download</a>
+               <a href="#"><i class="fas fa-chevron-right"></i>contact</a>
+            </div>
+            
+            
+            <div class="box">
+                <h3>our services</h3>
+                <a href="#"><i class="fas fa-chevron-right"></i>bookmark extension</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>chrome themes</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>firefox themes</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>screen recorder extension</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>screen shot extension</a>
+           </div>
+
+           <div class="box">
+               <h3>contact info</h3>
+               <a href="#"><i class="fas fa-phone"></i>+123-456-789</a>
+               <a href="#"><i class="fas fa-phone"></i>+111-222-3333</a>
+               <a href="#"><i class="fas fa-envelope"></i>company@example.com</a>
+               <a href="#"><i class="fas fa-envelope"></i>company@example.com</a>
+               <a href="#"><i class="fas fa-map-marker-alt"></i>Mumbai, india - 12345</a>
+           </div>
+
+           <div class="box">
+               <h3>follow us</h3>
+               <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+               <a href="#"><i class="fab fa-twitter"></i>facebook</a>
+               <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+               <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+               <a href="#"><i class="fab fa-pinterest"></i>pinterest</a>
+           </div>
+       </div>
+
+
+       <div class="credit">
+        <span> Todos los derechos reservados 'Pranav Raj'. © 2024. </span> 
+       </div>
+   </section>
+
+    <!-- footer section ends -->
+</body>
+
+</html>
+      `,
+      cssContent: `
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: 0.2s ease-in-out;
+    color: #000;
+    text-decoration: none;
+}
+
+
+::selection{
+    background-color: var(--Soft-Red);
+    color: #fff;
+}
+
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--Soft-Blue);
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--Very-Dark-Blue);
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+
+.heading h1{
+    padding-bottom: 2rem;
+    color: var(--Very-Dark-Blue); 
+}
+
+
+.heading p{
+    max-width: 60rem;
+    margin: auto;
+    color: var(--Grayish-Blue);
+    font-size: 1.7rem;
+}
+
+
+.all-btn{
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    background-color: var(--Soft-Blue);
+    border-radius: .5rem;
+    color: #fff;
+}
+
+.all-btn:hover{
+    background-color: transparent;
+    color: var(--Soft-Blue);
+    border: 2px solid var(--Soft-Blue);
+}
+
+
+:root{
+    --Soft-Blue: hsl(231, 69%, 60%);
+    --Soft-Red: hsl(0, 94%, 66%);
+    --Grayish-Blue: hsl(229, 8%, 60%);
+    --Very-Dark-Blue: hsl(229, 31%, 21%);
+    --box-shadow: .5rem .5rem  0 hsl(231, 69%, 60%);
+    --text-shadow: .4rem .4rem  0 rgba(0, 0, 0, .2);
+    --border: .2rem  solid var(--green);
+}
+
+
+/* navbar sections starts */
+.header{
+    padding: 3rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    left: 0;
+    z-index: 10000;
+    background-color: #fff;
+    box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+
+.header .logo{
+    cursor: pointer;
+}
+
+
+.header .navbar a{
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+
+.header .navbar a:hover{
+    color: var(--Soft-Red);
+}
+
+
+.header .navbar .btn{
+    padding: .6rem 3rem;
+    background-color: var(--Soft-Red);
+    color: #fff;
+    border-radius: .5rem;
+}
+
+.header .navbar .btn:hover{
+    color: var(--Soft-Red);
+    background-color: transparent;
+    border: 2px solid var(--Soft-Red);
+}
+
+#menu-btn{
+    padding: 1rem 1rem;
+    background-color: #eee;
+    font-size: 3rem;
+    color: var(--Soft-Blue);
+    border-radius: .5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* Media Queries */
+
+
+
+
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+    
+}
+
+@media (max-width: 768px){
+    #menu-btn{
+        display: initial;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        box-shadow: var(--box-shadow);
+        width: 33rem;
+        border-radius: .5rem;
+        border: 2px solid var(--Soft-Blue);
+        background-color: #fff;
+        transform: scale(0);
+        transform-origin: top right;
+    }
+
+    .header .navbar.active{
+        transform: scale(1);
+    }
+
+    .header .navbar a{
+        margin: 2.5rem;
+        text-align: center;
+        display: block;
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+}
+/* navbar sections ends */
+
+
+/* home section starts  */
+
+.home{
+    padding-top: 15rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* main property for responsiveness */
+    gap: 1.5rem;
+}
+
+
+.home .image{
+    flex: 1 1 45rem;
+}
+
+
+.home .image img{
+    width: 100%;
+    margin-top: 5rem;
+}
+
+
+.home .content{
+    flex: 1 1 45rem;
+}
+
+
+.home .content h1{
+    font-size: 4.5rem;
+    padding-block-end: 1rem 0;
+    color: var(--Very-Dark-Blue);
+}
+
+.home .content p{
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    max-width: 40rem;
+    color: var(--Grayish-Blue);
+    padding-bottom: 4rem;
+}
+
+.home .content .home-btn{
+    padding: 1.3rem 2rem;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.4rem;
+    box-shadow: .5rem .5rem hsl(231, 69%, 60%);
+    border: 2px solid var(--Soft-Blue);
+    border-radius: .5rem;
+}
+
+
+.home .content .home-btn:hover{
+    background-color: var(--Soft-Blue);
+    box-shadow: none;
+    color: #fff;
+}
+
+
+
+
+/* home section ends */
+
+
+
+/* features section starts  */
+
+.features .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 3rem 0;
+}
+
+.features .row .image{
+    flex: 1 1 45rem;
+}
+
+
+.features .row .image img{
+    width: 100%;
+}
+
+
+
+.features .row .content{
+    flex: 1 1 45rem;
+}
+
+
+.features .row .content h1{
+    font-size: 4rem;
+    padding: 1rem 0;
+    color: var(--Very-Dark-Blue);
+}
+
+
+.features .row .content p{
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    color: var(--Grayish-Blue);
+    padding-bottom: 4rem;
+}
+/* features section ends */
+
+
+/* downloads section starts  */
+
+.download .box-container{
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.download .box{
+    border: 2px solid var(--Soft-Blue);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 2.5rem;
+}
+.download .box:hover{
+    border: 2px solid var(--Soft-Blue);
+    box-shadow: none;
+}
+
+
+.download .box h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--Very-Dark-Blue);
+}
+
+
+
+.download .box p{
+    font-size: 1.7rem;
+    padding-bottom: 2.5rem;
+    color: var(--Grayish-Blue);
+}
+
+/* downloads section ends */
+
+
+
+/* footer section starts */
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap:2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color:var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color:var(--green);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right:1rem;
+}
+
+
+.footer .credit{
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+
+.footer .credit span{
+    color: var(--Soft-Red);
+    cursor: pointer;
+}
+
+
+/* footer section ends */
+      `,
+      jsContent: `
+let menu = document.querySelector("#menu-btn")
+let navbar = document.querySelector(".navbar")
+
+
+menu.onclick = () =>{
+    menu.classList.toggle("fa-times")
+    navbar.classList.toggle("active")
+}
+
+
+window.onscroll = () =>{
+    menu.classList.remove("fa-times")
+    navbar.classList.remove("active")
+}
       `,
     },
   ];
