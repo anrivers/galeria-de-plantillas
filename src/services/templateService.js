@@ -512,13 +512,731 @@ document.addEventListener('DOMContentLoaded', () => {
       id: 2,
       name: 'Plantilla de Restaurante',
       subtheme: 'Comida',
-      imageUrl:'/images/estructura-web.png',
+      imageUrl:'/images/template2/template.png',
       description: 'Una plantilla para un negocio de comida.',
       htmlContent: `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Zomato_logo.png/220px-Zomato_logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Restaurante</title>
+  </head>
+  <body>
+    <section class="hero__section">
+      <header>
+        <nav class="navbar">
+          <a href="#">Descarga la app</a>
+          <div class="navbar__menu_container">
+            <a href="#" class="link">Afiliados</a>
+            <a href="#" class="link">Lugares</a>
+            <a href="#" class="link">Entrar</a>
+            <a href="#" class="link">Resgistro</a>
+            <a href="#" class="user__icon">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </div>
+        </nav>
+      </header>
+      <div class="hero__section_container">
+         <h1 class="hero__section_title">
+          NOMBRE DEL RESTAURANTE
+        </h1>
+        <h1 class="hero__section_title">
+          La mejor comida y bebida de la ciudad
+        </h1>
+        <div class="hero__section_input_container">
+          <input
+            class="input_container_location"
+            type="text"
+            placeholder="CDMX, mex 1234"
+          />
+          <input
+            class="input_container_search"
+            type="text"
+            placeholder="Buscar tu restaurante cercano"
+          />
+        </div>
+      </div>
+    </section>
 
+    <section class="container we__offer">
+      <div class="card">
+        <img src="../images/template2/item1.png" alt="" />
+        <h2>Ordena en línea</h2>
+        <p>Quedate en casa y orderna desde ahí</p>
+      </div>
+      <div class="card">
+        <img src="../images/template2/item2.png" alt="" />
+        <h2>Cena</h2>
+        <p>Cena tu comida favorita con nosotros </p>
+      </div>
+      <div class="card">
+        <img src="../images/template2/item3.png" alt="" />
+        <h2>Tragos y licor</h2>
+        <p>En la noche pueden acompañarnos</p>
+      </div>
+    </section>
+
+   
+    <section class="container get__the_app">
+      <div class="semiContainer">
+        <div class="left">
+          <img src="../images/template2/mobileBanner.png" alt="banner" />
+        </div>
+        <div class="right">
+          <h1>Descarga la app</h1>
+
+          <p>
+            Cuando te mandadmos el link, abrelo para descargar la app.
+          </p>
+
+          <div class="radio__buttons_container">
+            <div>
+              <input type="radio" id="email" name="download_app" />
+              <label for="email" style="font-size: 14px">Correo</label>
+            </div>
+            <div>
+              <input type="radio" id="phone" name="download_app" />
+              <label for="phone" style="font-size: 14px">Teléfono</label>
+            </div>
+          </div>
+
+          <div class="input_container">
+            <input type="text" placeholder="Correo" />
+            <button>Compartir link</button>
+          </div>
+
+          <div class="download__app_container">
+            <h5>Descarga la app desde</h5>
+            <div>
+              <img src="../images/template2/playStore.png" alt="" />
+              <img src="../images/template2/appleStore.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer_section1">
+         <h1 class="hero__section_title">
+          NOMBRE DEL RESTAURANTE
+        </h1>
+        <div class="section1__buttonContainer">
+          <button>
+            <img
+              src="https://flagcdn.com/w40/mx.png"
+              alt="México"
+              style="width: 17px"
+            />
+            México
+          </button>
+          <button>
+            <i class="fa fa-globe" aria-hidden="true"></i> Español
+          </button>
+        </div>
+      </div>
+      <div class="navigation_container">
+        <div class="link__container">
+          <h5>Sobre nosotros</h5>
+          <a class="footer__link" href="#">Who we are</a>
+          <a class="footer__link" href="#">Blogs</a>
+          <a class="footer__link" href="#">Work with us</a>
+          <a class="footer__link" href="#">Investor Relations</a>
+          <a class="footer__link" href="#">Report Fraud</a>
+        </div>
+
+        <div class="link__container">
+          <h5>ZOMAVERSE</h5>
+          <a class="footer__link" href="#">Zomato</a>
+          <a class="footer__link" href="#">Feeding India</a>
+          <a class="footer__link" href="#">Hyperpuer</a>
+          <a class="footer__link" href="#">Zomaland</a>
+        </div>
+
+        <div class="link__container">
+          <h5>FOR RESTAURANTS</h5>
+          <a class="footer__link" href="#">Partner With Us</a>
+          <a class="footer__link" href="#">App For You</a>
+          <br />
+          <h5>FOR ENTERPRISES</h5>
+          <a class="footer__link" href="#">Zomato For Work</a>
+        </div>
+
+        <div class="link__container">
+          <h5>LERN MORE</h5>
+          <a class="footer__link" href="#">Privacy</a>
+          <a class="footer__link" href="#">Security</a>
+          <a class="footer__link" href="#">Terms</a>
+          <a class="footer__link" href="#">Sitemap</a>
+        </div>
+
+        <div class="link__container">
+          <h5>SOCIAL LINKS</h5>
+          <div class="social__links_container">
+            <button><i class="fa-brands fa-linkedin-in"></i></button>
+            <button><i class="fa-brands fa-instagram"></i></button>
+            <button><i class="fa-brands fa-twitter"></i></button>
+            <button><i class="fa-brands fa-youtube"></i></button>
+            <button><i class="fa-brands fa-facebook-f"></i></button>
+          </div>
+          <br />
+          <img src="../images/template2/appleStore.png" alt="" class="footer__store_logos" />
+          <img src="../images/template2/playStore.png" alt="" class="footer__store_logos" />
+        </div>
+      </div>
+      <p class="disclamer">
+        By continuing past this page, you agree to our Terms of Service, Cookie
+        Policy, Privacy Policy and Content Policies. All trademarks are
+        properties of their respective owners. 2008-2022 © Zomato™ Ltd. All
+        rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
       `,
       cssContent: `
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
+.hero__section {
+  background: url("https://images.unsplash.com/photo-1530329650488-10f6eff05388?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  min-height: 60vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 48px;
+  height: 60px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  /* font-weight: 300; */
+}
+
+.navbar__menu_container {
+  display: flex;
+  gap: 20px;
+}
+
+.user__icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border: solid 1px white;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.hero__section_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(60vh - 60px);
+  gap: 32px;
+}
+
+.hero__section_logo {
+  width: 250px;
+  height: auto;
+}
+
+.hero__section_title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.hero__section_input_container {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.input_container_location,
+.input_container_search {
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.input_container_search {
+  width: 70%;
+}
+
+.input_container_location {
+  width: 30%;
+  border-right: 2px solid #e0e0e0;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar__menu_container .link {
+    display: none;
+  }
+
+  .user__icon {
+    display: flex;
+  }
+
+  .navbar {
+    padding: 16px;
+  }
+
+  .hero__section {
+    min-height: 80vh;
+  }
+
+  .hero__section_input_container {
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .input_container_location,
+  .input_container_search {
+    padding: 15px;
+    border-radius: 10px;
+    width: 90%;
+  }
+
+  .hero__section_container {
+    height: calc(80vh - 60px);
+  }
+
+  .input_container_location {
+    border-right: none;
+  }
+}
+
+.container {
+  margin: 48px auto;
+  width: 80%;
+}
+
+.we__offer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.we__offer .card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  transition: all 300ms ease-out;
+}
+
+.we__offer .card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.we__offer .card h2 {
+  padding: 10px 10px 0 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.we__offer .card p {
+  font-size: 13px;
+  padding: 0 10px 15px 10px;
+}
+
+.we__offer .card:hover {
+  transform: scale(1.05);
+}
+
+.collections h1 {
+  font-weight: 400;
+}
+
+.collections .sub__heading_container {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.sub__heading_container span:nth-child(2) {
+  color: #ff7e8b;
+  font-size: 13px;
+}
+
+.collections_card_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.collections_card_container .card {
+  height: 300px;
+  min-width: 240px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card1 {
+  background-image: url("../images/template2/collection1.jpg");
+}
+
+.card2 {
+  background-image: url("../images/template2/collection2.jpg");
+}
+
+.card3 {
+  background-image: url("../images/template2/collection3.jpg");
+}
+
+.card4 {
+  background-image: url("../images/template2/collection4.jpg");
+}
+
+.overlay {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.05) 85%
+  );
+  width: 100%;
+  height: 100%;
+  display: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+.collections_card_container .card .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.content h4 {
+  font-weight: 400;
+}
+
+.get__the_app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 251, 247);
+  width: 100%;
+  padding: 48px 48px;
+}
+
+.get__the_app .semiContainer {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.get__the_app .semiContainer .left {
+  flex: 2;
+}
+
+.get__the_app .semiContainer .left img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.get__the_app .semiContainer .right {
+  flex: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.right h1 {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.right p {
+  font-size: 14px;
+}
+
+.semiContainer .right .radio__buttons_container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.semiContainer .right .radio__buttons_container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.semiContainer .right .radio__buttons_container div input {
+  height: 15px;
+  width: 15px;
+  accent-color: rgb(239, 79, 95);
+}
+
+.semiContainer .right .input_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.input_container button,
+.input_container input {
+  padding: 10px 12px;
+}
+
+.input_container input {
+  border: 1.5px solid gray;
+  outline: none;
+  border-radius: 5px;
+  flex: auto;
+}
+
+.input_container button {
+  border: none;
+  background-color: rgb(239, 79, 95);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.right .download__app_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.download__app_container h5 {
+  font-weight: 400;
+  color: gray;
+}
+
+.download__app_container div {
+  display: flex;
+  gap: 16px;
+}
+
+.download__app_container div img {
+  width: 35%;
+}
+
+@media only screen and (max-width: 1300px) {
+  .get__the_app .semiContainer .left {
+    flex: 1;
+  }
+
+  .get__the_app .semiContainer .right {
+    flex: 1;
+  }
+
+  .get__the_app .semiContainer {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .get__the_app {
+    padding: 2rem;
+  }
+
+  .get__the_app .semiContainer {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .get__the_app {
+    padding: 3rem 0;
+  }
+  .get__the_app .semiContainer {
+    width: 80%;
+    flex-direction: column;
+  }
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer_section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.footer_section1 img {
+  width: 120px;
+  height: auto;
+}
+
+.section1__buttonContainer {
+  display: flex;
+  gap: 16px;
+}
+
+.section1__buttonContainer button {
+  padding: 5px;
+  width: 90px;
+  border: 1px solid gray;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigation_container {
+  display: grid;
+  width: 90%;
+  margin: auto;
+
+  /* grid-template-columns:  1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 1rem;
+  padding: 48px 0;
+}
+
+.link__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.link__container h5 {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+  letter-spacing: 0.8px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: gray;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.footer__link:hover {
+  color: black;
+}
+
+.social__links_container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social__links_container button {
+  background-color: black;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__links_container button i {
+  color: white;
+  font-size: 13px;
+}
+
+.footer__store_logos {
+  width: 100%;
+}
+
+.footer .disclamer {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  font-size: 12px;
+  color: gray;
+  border-top: 1px solid gray;
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation_container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footer_section1 {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .navigation_container {
+    grid-template-columns: 1fr;
+  }
+}
       `,
       jsContent: `
 
@@ -1412,7 +2130,7 @@ setInterval(() => {
     <section class="features" id="features">
         <div class="heading">
             <h1>ELEMENTOS</h1>
-            <p>Our aim is to make it quick and easy for you to access your favorite websites. your bookmarks sync between your devices so you can access them on the go</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis et quasi aut facere vitae vero. Inventore, minus ab voluptate modi repellat, pariatur tempora quisquam, debitis facilis explicabo voluptatem. A.</p>
         </div>
 
 
@@ -1424,18 +2142,18 @@ setInterval(() => {
 
 
             <div class="content">
-                <h1>Bookmark in one click</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sint odit tempora, maiores quos qui quisquam accusamus ad officiis sapiente.</p>
-                <a href="#" class="all-btn">more info</a>
+                <h1>En un solo clic</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis et quasi aut facere vitae vero.</p>
+                <a href="#" class="all-btn">Ver más</a>
             </div>
 
             <!-- 1 Tab  -->
 
             <!-- 2 Tab  -->
             <div class="content">
-                <h1>Intelligent search</h1>
-                <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-                <a href="#" class="all-btn">more info</a>
+                <h1>Busqueda inteligente</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis et quasi aut facere vitae vero. </p>
+                <a href="#" class="all-btn">Ver más</a>
             </div>
 
             <div class="image">
@@ -1449,9 +2167,9 @@ setInterval(() => {
             </div>
 
             <div class="content">
-                <h1>Share your bookmarks</h1>
-                <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-                <a href="#" class="all-btn">more info</a>
+                <h1>Comparte tus guardados</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis et quasi aut facere vitae vero.</p>
+                <a href="#" class="all-btn">Ver más</a>
             </div>
 
 
@@ -1468,33 +2186,33 @@ setInterval(() => {
 
     <section class="download" id="download">
         <div class="heading">
-            <h1>Download Extension</h1>
-            <p>We've got more browsers in the pipeline. Please do le us know if you got've got a favorite you'd like us to prioritize</p>
+            <h1>DESCARGA LA EXTENSIÓN</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis et quasi aut facere vitae vero.</p>
         </div>
 
         <div class="box-container">
             <div class="box">
                 <img src="../images/template5/logo-chrome.svg" alt="logo-chrome">
 
-                <h3>Add to Chrome</h3>
-                <p>Minimum Version 63</p>
-                <a href="#" class="all-btn">install</a>
+                <h3>Agregar a Chrome</h3>
+                <p>Minimo Versión 63</p>
+                <a href="#" class="all-btn">instalar</a>
             </div>
 
             <div class="box">
                 <img src="../images/template5/logo-firefox.svg" alt="logo-firefox">
 
-                <h3>Add to Firefox</h3>
-                <p>Minimum Version 55</p>
-                <a href="#" class="all-btn">install</a>
+                <h3>Agregar a Firefox</h3>
+                <p>Minimo Versión 55</p>
+                <a href="#" class="all-btn">instalar</a>
             </div>
 
             <div class="box">
                 <img src="../images/template5/logo-opera.svg" alt="logo-opera">
 
-                <h3>Add to Opera</h3>
-                <p>Minimum Version 46</p>
-                <a href="#" class="all-btn">install</a>
+                <h3>Agregar a Opera</h3>
+                <p>Minimo Version 46</p>
+                <a href="#" class="all-btn">instalar</a>
             </div>
         </div>
     </section>
@@ -1509,30 +2227,30 @@ setInterval(() => {
    <section class="footer" id="footer">
        <div class="box-container">
            <div class="box">
-               <h3>quick links</h3>
-               <a href="#"><i class="fas fa-chevron-right"></i>home</a>
-               <a href="#"><i class="fas fa-chevron-right"></i>features</a>
-               <a href="#"><i class="fas fa-chevron-right"></i>download</a>
-               <a href="#"><i class="fas fa-chevron-right"></i>contact</a>
+               <h3>Links</h3>
+               <a href="#"><i class="fas fa-chevron-right"></i>Inicio</a>
+               <a href="#"><i class="fas fa-chevron-right"></i>Elementos</a>
+               <a href="#"><i class="fas fa-chevron-right"></i>Descargar</a>
+               <a href="#"><i class="fas fa-chevron-right"></i>Contacto</a>
             </div>
             
             
             <div class="box">
                 <h3>our services</h3>
-                <a href="#"><i class="fas fa-chevron-right"></i>bookmark extension</a>
-                <a href="#"><i class="fas fa-chevron-right"></i>chrome themes</a>
-                <a href="#"><i class="fas fa-chevron-right"></i>firefox themes</a>
-                <a href="#"><i class="fas fa-chevron-right"></i>screen recorder extension</a>
-                <a href="#"><i class="fas fa-chevron-right"></i>screen shot extension</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>bookmark extensión</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>chrome temas</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>firefox temas</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>Captura video extensión</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>Captura imágen extensión</a>
            </div>
 
            <div class="box">
                <h3>contact info</h3>
                <a href="#"><i class="fas fa-phone"></i>+123-456-789</a>
                <a href="#"><i class="fas fa-phone"></i>+111-222-3333</a>
-               <a href="#"><i class="fas fa-envelope"></i>company@example.com</a>
-               <a href="#"><i class="fas fa-envelope"></i>company@example.com</a>
-               <a href="#"><i class="fas fa-map-marker-alt"></i>Mumbai, india - 12345</a>
+               <a href="#"><i class="fas fa-envelope"></i>company@ejemplo.com</a>
+               <a href="#"><i class="fas fa-envelope"></i>company@ejemplo.com</a>
+               <a href="#"><i class="fas fa-map-marker-alt"></i>CDMX, mex - 12345</a>
            </div>
 
            <div class="box">
@@ -1547,7 +2265,7 @@ setInterval(() => {
 
 
        <div class="credit">
-        <span> Todos los derechos reservados 'Pranav Raj'. © 2024. </span> 
+       Todos los derechos reservados 'Pranav Raj'. © 2024. 
        </div>
    </section>
 
