@@ -1250,804 +1250,1925 @@ document.addEventListener('DOMContentLoaded', () => {
       description: 'Una landing page para agencia digital de viajes.',
       htmlContent: `
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Agencia de viajes Landing Page</title>
-  </head>
-  <body>
-    <main class="main__container">
-      <header class="header">
-        <!-- Logo -->
-        <div class="logo">
-          <img src="../images/template3/website__logo.png" alt="Website Logo" />
-        </div>
+<html lang="en">
 
-        <div class="header__right">
-          <!-- Navbar  -->
-          <nav class="navbar">
-            <ul>
-              <li>
-                <a href="#product"> Producto </a>
-              </li>
-              <li>
-                <a href="#services"> Servicios </a>
-              </li>
-              <li>
-                <a href="#blog"> Blog </a>
-              </li>
-              <li>
-                <a href="#about-us"> Nosotros </a>
-              </li>
-              <li>
-                <a href="#contact-us"> Contacto </a>
-              </li>
-            </ul>
-          </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourest - Explore the World</title>
 
-          <!-- Login and Sign Up -->
-          <button class="login">
-            <a href="#login">Entrar </a>
-          </button>
-        </div>
-      </header>
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-      <!-- Main Section with Text and Image -->
-      <section class="main__section">
-        <div class="main__left">
-          <div>
-            <div class="main__left__heading">
-              <h2 class="typing__text">Viaja con nosotros</h2>
-              <h2 class="typing__text">¡Las mejores aventuras!</h2>
-            </div>
-            <p class="main__left__desc">
-              ¡Contruye tu proximo viaje con nosotros! 
-              Descubre mas de tu viaje con nosotros a continuación.
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#">
+        <h1 class="logo">VIAJES</h1>
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">inicio</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Sobre nosotros</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Tours</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Destinos</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Contacto</a>
+          </li>
+
+        </ul>
+
+        <a href="#" class="btn btn-secondary">Buscar ahora</a>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero"
+        style="background-image: url('../images/template3/hero-bg-bottom.png') url('../images/template3/hero-bg-top.png')">
+        <div class="container">
+
+          <img src="../images/template3/shape-1.png" width="61" height="61" alt="Vector Shape" class="shape shape-1">
+
+          <img src="../images/template3/shape-2.png" width="56" height="74" alt="Vector Shape" class="shape shape-2">
+
+          <img src="../images/template3/shape-3.png" width="57" height="72" alt="Vector Shape" class="shape shape-3">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle">Explora tu viaje</p>
+
+            <h2 class="hero-title">Agencia de viajes</h2>
+
+            <p class="hero-text">
+              Viaja con nosotros, tenemos los mejores paquetes en promoción para ti.
             </p>
-            <div class="cta">
-              <button class="btn1">
-                <a href="#get-started"> Explorar </a>
-              </button>
-              <button class="btn2">
-                <a href="#learn-more"> Leer más </a>
-              </button>
+
+            <div class="btn-group">
+              <a href="#" class="btn btn-primary">Contacto</a>
+
+              <a href="#" class="btn btn-outline">Leer Más</a>
             </div>
+
           </div>
-          <div class="main__left__explore">
-            <div class="main__left__explore__heading">
-              <h3>Explora el lugar de tu sueño</h3>
-              <p>Crea un nuevo estandar perzonalizado con nosotros.</p>
-            </div>
-            <div class="main__left__explore__images">
-              <div class="scroll__container">
-                <div class="images__wrapper">
-                  <div>
-                    <img class="" src="../images/template3/europe__monument.png" />
-                    <p>Europe</p>
-                  </div>
-                  <div>
-                    <img class="" src="../images/template3/delhi__monument.png" />
-                    <p>Delhi</p>
-                  </div>
-                
-                </div>
-              </div>
-              <button class="btn3">
-                <im g class="" src="../images/template3/chevron-right.svg"/>
-              </button>
-            </div>
-          </div>
-        </div>
 
-        <div class="main__right">
-          <div class="carousel">
-            <div class="carousel__item">
-              <div class="bg__image1">
-                <img src="../images/template3/hero__banner1.png" />
-              </div>
-            </div>
-            <div class="carousel__item">
-               <div class="bg__image2">
+          <figure class="hero-banner">
+            <img src="../images/template3/hero-banner.png" width="686" height="812" loading="lazy" alt="hero banner"
+              class="w-100">
+          </figure>
 
-                 <img src="../images/template3/hero__banner2.png" />
-                </div>
-            </div>
-            <div class="carousel__item">
-               <div class="bg__image3">
-
-                 <img src="../images/template3/hero__banner3.png" />
-                </div>
-            </div>
-            <div class="carousel__item">
-               <div class="bg__image4">
-
-                 <img src="../images/template3/hero__banner4.png" />
-                </div>
-            </div>
-          </div>
         </div>
       </section>
-    </main>
-    <!-- Footer -->
-  <footer class="footer">
-    <p> Todos los derechos reservados Raiv200. &copy; 2024.</p>
-  </footer>
-</body>
-    <script>
-      let slideIndex = 0;
-      showSlides();
 
-      function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("carousel__item");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 3000); 
-      }
-    </script>
-  </body>
+
+
+
+
+      <!-- 
+        - #DESTINATION
+      -->
+
+      <section class="section destination">
+        <div class="container">
+
+          <p class="section-subtitle">Destinations</p>
+
+          <h2 class="h2 section-title">Choose Your Place</h2>
+
+          <ul class="destination-list">
+
+            <li class="w-50">
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="../images/template3/destination-1.jpg" width="1140" height="1100" loading="lazy"
+                    alt="Malé, Maldives" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Malé</p>
+
+                  <h3 class="h3 card-title">Maldives</h3>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="w-50">
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="../images/template3/destination-2.jpg" width="1140" height="1100" loading="lazy"
+                    alt="Bangkok, Thailand" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Bangkok</p>
+
+                  <h3 class="h3 card-title">Thailand</h3>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="../images/template3/destination-3.jpg" width="1110" height="480" loading="lazy"
+                    alt="Kuala Lumpur, Malaysia" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Kuala Lumpur</p>
+
+                  <h3 class="h3 card-title">Malaysia</h3>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="../images/template3/destination-4.jpg" width="1110" height="480" loading="lazy"
+                    alt="Kathmandu, Nepal" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Kathmandu</p>
+
+                  <h3 class="h3 card-title">Nepal</h3>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="../images/template3/destination-5.jpg" width="1110" height="480" loading="lazy"
+                    alt="Jakarta, Indonesia" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Jakarta</p>
+
+                  <h3 class="h3 card-title">Indonesia</h3>
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #POPULAR
+      -->
+
+      <section class="section popular">
+        <div class="container">
+
+          <p class="section-subtitle">Featured Tours</p>
+
+          <h2 class="h2 section-title">Most Popular Tours</h2>
+
+          <ul class="popular-list">
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="../images/template3/popular-1.jpg" width="740" height="518" loading="lazy"
+                      alt="Kuala Lumpur, Malaysia" class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="P12D">12 Days</time>
+                  </span>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-price">From $50.00</div>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+
+                      <data value="2">(2)</data>
+                    </div>
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
+                  </h3>
+
+                  <address class="card-location">Kuala Lumpur, Malaysia</address>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="../images/template3/popular-2.jpg" width="740" height="518" loading="lazy"
+                      alt="Kuala Lumpur, Malaysia" class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="P12D">12 Days</time>
+                  </span>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-price">From $50.00</div>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+
+                      <data value="2">(2)</data>
+                    </div>
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
+                  </h3>
+
+                  <address class="card-location">Kuala Lumpur, Malaysia</address>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="../images/template3/popular-3.jpg" width="740" height="518" loading="lazy"
+                      alt="Kuala Lumpur, Malaysia" class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="P12D">12 Days</time>
+                  </span>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-price">From $50.00</div>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+
+                      <data value="2">(2)</data>
+                    </div>
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
+                  </h3>
+
+                  <address class="card-location">Kuala Lumpur, Malaysia</address>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">Explore all tour of the world with us.</h2>
+
+            <p class="about-text">
+              Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+              randomised words
+              which don't look even slightly believable.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="compass"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Tour guide</h3>
+
+                  <p class="about-item-text">
+                    Lorem Ipsum available, but the majority have suffered alteration in some.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="briefcase"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Friendly price</h3>
+
+                  <p class="about-item-text">
+                    Lorem Ipsum available, but the majority have suffered alteration in some.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="umbrella"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Reliable tour</h3>
+
+                  <p class="about-item-text">
+                    Lorem Ipsum available, but the majority have suffered alteration in some.
+                  </p>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <a href="#" class="btn btn-primary">Booking Now</a>
+
+          </div>
+
+          <figure class="about-banner">
+            <img src="../images/template3/about-banner.png" width="756" height="842" loading="lazy" alt="" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog">
+        <div class="container">
+
+          <p class="section-subtitle">From The Blog Post</p>
+
+          <h2 class="h2 section-title">Latest News & Articles</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="../images/template3/popular-1.jpg" width="740" height="518" loading="lazy"
+                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="12-04">04 Dec</time>
+                  </span>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                        <img src="../images/template3/author-avatar.png" width="30" height="30" alt="Jony bristow">
+                      </figure>
+
+                      <div>
+                        <a href="#" class="author-name">Jony bristow</a>
+
+                        <p class="author-title">Admin</p>
+                      </div>
+                    </div>
+
+                    <time class="publish-time" datetime="10:30">10:30 AM</time>
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      A good traveler has no fixed plans and is not intent on arriving.
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="../images/template3/blog-2.jpg" width="740" height="518" loading="lazy"
+                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="12-04">04 Dec</time>
+                  </span>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                        <img src="../images/template3/author-avatar.png" width="30" height="30" alt="Jony bristow">
+                      </figure>
+
+                      <div>
+                        <a href="#" class="author-name">Jony bristow</a>
+
+                        <p class="author-title">Admin</p>
+                      </div>
+                    </div>
+
+                    <time class="publish-time" datetime="10:30">10:30 AM</time>
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      A good traveler has no fixed plans and is not intent on arriving.
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="../images/template3/blog-3.jpg" width="740" height="518" loading="lazy"
+                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="12-04">04 Dec</time>
+                  </span>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                        <img src="../images/template3/author-avatar.png" width="30" height="30" alt="Jony bristow">
+                      </figure>
+
+                      <div>
+                        <a href="#" class="author-name">Jony bristow</a>
+
+                        <p class="author-title">Admin</p>
+                      </div>
+                    </div>
+
+                    <time class="publish-time" datetime="10:30">10:30 AM</time>
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      A good traveler has no fixed plans and is not intent on arriving.
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('../images/template3/footer-bg.png')">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Top destination</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Indonesia, Jakarta</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Maldives, Malé</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Australia, Canberra</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Thailand, Bangkok</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Morocco, Rabat</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Categories</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Travel</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Lifestyle</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Fashion</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Education</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Food & Drink</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Quick links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Tours</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Booking</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Get a newsletter</p>
+
+          <p class="newsletter-text">
+            For the latest deals and tips, travel no further than your inbox
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email" required placeholder="Email address" class="newsletter-input">
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <a href="#" class="logo">Tourest</a>
+
+        <p class="copyright">
+          &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reserved
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-google"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top aria-label="Go To Top">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
 </html>
       `,
       cssContent: `
-body {
-    margin: 0;
-    padding: 0;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: 'Poppins', sans-serif;
-    background-image: url('/images/template3/bg__image.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+
+  /**
+   * colors
+   */
+
+  --battleship-gray: hsl(0, 0%, 53%);
+  --viridian-green: hsl(180, 98%, 31%);
+  --silver-chalice: hsl(0, 0%, 69%);
+  --mikado-yellow: hsl(47, 98%, 50%);
+  --granite-gray: hsl(0, 0%, 40%);
+  --independence: hsl(219, 20%, 32%);
+  --spanish-gray: hsl(0, 0%, 61%);
+  --oxford-blue: hsl(222, 46%, 17%);
+  --black-coral: hsl(223, 8%, 44%);
+  --eerie-black: hsl(210, 11%, 15%);
+  --light-gray: hsl(0, 0%, 80%);
+  --white-2: hsl(0, 0%, 98%);
+  --white-1: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --jet: hsl(0, 0%, 20%);
+
+  /**
+   * typography
+   */
+
+  --ff-abril-fatface: 'Abril Fatface', cursive;
+  --ff-comforter-brush: 'Comforter Brush', cursive;
+  --ff-heebo: 'Heebo', sans-serif;
+
+  --fs-1: 3.4rem;
+  --fs-2: 3.2rem;
+  --fs-3: 3rem;
+  --fs-4: 2.4rem;
+  --fs-5: 1.8rem;
+  --fs-6: 1.7rem;
+  --fs-7: 1.4rem;
+  --fs-8: 1.2rem;
+
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /**
+   * border radius
+   */
+
+  --radius-6: 6px;
+
+  /**
+   * spacing
+   */
+
+  --section-padding: 40px;
+
+  /**
+   * transition
+   */
+
+  --transition-1: 0.15s ease;
+  --transition-2: 0.35s ease;
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02);
+
 }
 
-.main__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    width: 1300px;
-    margin: auto;
-    /* border:1px solid black; */
+
+
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+a,
+img,
+span,
+input,
+button,
+ion-icon { display: block; }
+
+input,
+button {
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+button { cursor: pointer; }
+
+input { width: 100%; }
+
+img { height: auto; }
+
+address { font-style: normal; }
+
+:focus-visible { outline-offset: 5px; }
+
+html {
+  font-family: var(--ff-heebo);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--white-1);
+  font-size: 1.6rem;
+}
+
+::-webkit-scrollbar { width: 10px; }
+
+::-webkit-scrollbar-track { background: hsl(0, 0%, 95%); }
+
+::-webkit-scrollbar-thumb { background: hsl(0, 0%, 80%); }
+
+::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
+
+
+
+
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+.container { padding-inline: 15px; }
+
+.btn {
+  background: var(--background, var(--white-1));
+  color: var(--color, var(--viridian-green));
+  font-weight: var(--fw-700);
+  width: max-content;
+  padding: 10px 25px;
+  border: 2px solid var(--border-color, var(--white-1));
+  border-radius: var(--radius-6);
+}
+
+.btn-secondary:is(:hover, :focus) {
+  --background: transparent;
+  --color: var(--white-1);
+}
+
+.btn-primary {
+  --background: var(--viridian-green);
+  --color: var(--white-1);
+  --border-color: var(--viridian-green);
+}
+
+.btn-primary:is(:hover, :focus) {
+  --background: transparent;
+  --color: var(--viridian-green);
+}
+
+.btn-outline {
+  --color: var(--oxford-blue);
+  --border-color: var(--silver-chalice);
+}
+
+.btn-outline:is(:hover, :focus) {
+  --color: var(--viridian-green);
+  --border-color: var(--viridian-green);
+}
+
+.section { padding-block: var(--section-padding); }
+
+.section-subtitle {
+  font-family: var(--ff-comforter-brush);
+  color: var(--mikado-yellow);
+  font-size: var(--fs-3);
+}
+
+.w-100 { width: 100%; }
+
+.h2 {
+  color: var(--jet);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-500);
+}
+
+.h3 {
+  font-size: var(--fs-4);
+  font-weight: var(--fw-400);
+}
+
+.section-title { font-family: var(--ff-abril-fatface); }
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-banner { background: var(--silver-chalice); }
+
+:is(.popular, .blog) .section-subtitle {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+:is(.popular, .blog) .section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.popular-list,
+.blog-list {
+  display: grid;
+  gap: 30px;
+}
+
+.popular-card,
+.blog-card {
+  box-shadow: 0 10px 30px hsla(0, 0%, 0%, 0.1);
+  border-radius: var(--radius-6);
+  overflow: hidden;
+}
+
+:is(.popular, .blog) .card-banner { position: relative; }
+
+.card-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--mikado-yellow);
+  color: var(--white-1);
+  padding: 14px 10px;
+  border-radius: var(--radius-6);
+}
+
+.card-badge ion-icon {
+  --ionicon-stroke-width: 60px;
+  font-size: 20px;
+  margin-inline: auto;
+}
+
+.card-badge time { font-weight: var(--fw-700); }
+
+:is(.popular, .blog) .card-content { padding: 30px 15px; }
+
+.card-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+:is(.popular, .blog) .card-title {
+  color: var(--granite-gray);
+  font-size: var(--fs-5);
+  margin-block: 20px;
+}
+
+:is(.popular, .blog) .card-title > a { color: inherit; }
+
+:is(.popular, .blog) .card-title > a:is(:hover, :focus) { color: var(--viridian-green); }
+
+
+
+
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
 
 .header {
-    display: flex;
-    align-items: center;
-    height: 72px;
-    flex-direction: row;
-    justify-content: center;
-    position: absolute;
-    z-index: 100;
-    left: 0;
-    width: 100%;
-    padding: 0;
-
+  background: var(--viridian-green);
+  padding-block: 20px;
+  height: 88px;
+  overflow: hidden;
+  transition: 0.25s var(--cubic-out);
 }
 
-.footer {
+.header.active {
+  height: 425px;
+  transition-duration: 0.35s;
+}
 
-  color: #000000B2;
-  text-align: center;
-  padding: 20px;
+.header .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  color: var(--white-1);
+  font-size: var(--fs-2);
+  font-weight: var(--fw-600);
 }
 
-.logo:hover {
-    cursor: pointer;
-}
+.nav-toggle-btn.active .open,
+.nav-toggle-btn .close { display: none; }
 
-.logo>img {
-    width: 150px;
-    height: 40px;
-    margin: 2px;
-}
+.nav-toggle-btn .open,
+.nav-toggle-btn.active .close { display: block; }
 
-.logo>h2 {
-    margin-left: 14px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.header__right {
-    display: flex;
-    justify-content: space-between;
-    width: 775px;
+.nav-toggle-btn ion-icon {
+  color: var(--white-1);
+  font-size: 35px;
+  --ionicon-stroke-width: 40px;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+  width: 100%;
+  padding: 20px 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-1);
 }
 
-.navbar>ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: baseline;
+.header.active .navbar {
+  opacity: 1;
+  visibility: visible;
 }
 
-.navbar>ul>li {
-    margin-right: 16px;
-    width: 100px;
-    text-align: center;
-    padding: 2px;
+.navbar-list { margin-bottom: 15px; }
+
+.navbar-link {
+  color: var(--white-1);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-500);
+  padding-block: 10px 0;
+  border-bottom: 2px solid transparent;
+  width: max-content;
 }
 
-.navbar>ul>li>a {
-    text-decoration: none;
-    color: #000000B2;
-    font-size: 14px;
-    font-weight: 400;
+.navbar-link:is(:hover, :focus) { border-color: var(--white-1); }
+
+
+
+
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+
+.shape { display: none; }
+
+.hero {
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, top right;
 }
 
-.navbar>ul>li:hover {
-    background-color: #2D79EB;
-    border-radius: 4px;
-    padding: 2px;
-    transition: all ease 0.4s;
+.hero-content { margin-bottom: 50px; }
+
+.hero .section-subtitle { margin-bottom: 15px; }
+
+.hero-title {
+  color: var(--oxford-blue);
+  font-size: var(--fs-1);
+  font-family: var(--ff-abril-fatface);
+  font-weight: var(--fw-500);
+  line-height: 1.2;
+  max-width: 11ch;
+  margin-bottom: 15px;
 }
 
-.navbar>ul>li:hover>a {
-    font-weight: 600;
-    color: #ffffff;
-    transition: all ease 0.4s;
+.hero-text {
+  color: var(--black-coral);
+  font-size: var(--fs-7);
+  line-height: 1.7;
+  margin-bottom: 15px;
 }
 
-.login {
-      padding: 16px 28px;
-    background-color: #2D79EB;
-    margin-left: 2rem;
-    border-radius: 12px;
-    border: none;
-    width: 233px;
-    height: 100%;
-    cursor: pointer;
-}
-
-.login>a {
-   text-decoration: none;
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 19px;
-}
-
-.login:hover {
-    background-color: #000000B2;
-    transition: all ease 0.4s;
-}
-
-.login:hover>a {
-    color: #ffffff;
-}
-
-
-
-.main__section {
-    display: flex;
-    flex-basis: 1;
-    height: 100%;
-    width: 1300px;
-    margin: auto;
-    justify-content: space-between;
-
-}
-
-
-.main__left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    height: 100%;
-    width: 643px;
-
-}
-
-.main__left__heading {
-    position: relative;
-}
-
-.main__left__heading> h2 {
-    font-size: 48px;
-    line-height: 64px;
-    width: 100%;
-    margin: 2px;
-    font-weight: 800;
-    color: #000000CC;
-}
-
-.typing__text{
-    font-size: 48px;
-    line-height: 64px;
-    width: 100%;
-    margin: 2px;
-    font-weight: 800;
-    color: #000000CC;
-    overflow: hidden; 
-    white-space: nowrap; 
-    animation: typing 3.5s steps(40, end),blink-caret .75s step-end infinite;
-}
-
-.main__left__heading>h2::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 5px;
-    width: 0%;
-    background-color: #000000B2;
-    transition: all ease 0.5s;
-}
-
-.main__left__heading>h2:hover::after {
-    width: 100%;
-}
-
-.main__left__desc {
-    font-size: 16px;
-    font-weight: 400;
-    width: 576px;
-    height: 66px;
-    color: #645f5f;
-    padding: 10px 10px;
-
-}
-
-.cta {
-    width: 480px;
-    height: 62px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.btn1 {
-      padding: 16px 28px;
-    background-color: #2D79EB;
-    margin-left: 2rem;
-    border-radius: 12px;
-    border: none;
-    width: 233px;
-    height: 100%;
-    cursor: pointer;
-}
-
-.btn1>a {
-        text-decoration: none;
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 19px;
-}
-
-.btn1:hover {
-        background-color: #2d79eb3e;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    transition: all ease 0.4s;
-}
-
-.btn1:hover>a {
-    color: #2D79EB
-}
-
-.btn2 {
-    padding: 16px 28px;
-    background-color: #2D79EB;
-    margin-left: 2rem;
-    border-radius: 12px;
-    border: none;
-    width: 233px;
-    height: 100%;
-    cursor: pointer;
-}
-
-.btn2:hover {
-    background-color: #2d79eb3e;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    transition: all ease 0.4s;
-}
-
-.btn2:hover>a {
-    color: #2D79EB
-}
-
-.btn2>a {
-    text-decoration: none;
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 19px;
-}
-
-.main__left__explore {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    width: 400px;
-    height: 227px;
-
-}
-
-.main__left__explore__heading {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 298px;
-    height: 47px;
-}
-
-.main__left__explore__heading>h3 {
-    font-size: 16px;
-    line-height: 30px;
-    width: 100%;
-    margin: 2px;
-    font-weight: 800;
-}
-
-.main__left__explore__heading>p {
-    font-size: 10px;
-    line-height: 23px;
-    width: 100%;
-    margin: 2px;
-    font-weight: 300;
-}
-
-.main__left__explore__images {
-    display: flex;
-    align-items: center;
-    width: 400px;
-    height: 150px;
-
-}
-
-.scroll__container {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-}
-
-.images__wrapper::after {
-    content: '';
-    display: block;
-    width: 300px;
-    height: 150px;
-    position: absolute;
-    background-image: linear-gradient(to left, #09b9ff);
-    right:0;
-    top:0;
-}
-
-.images__wrapper {
-    display: flex;
-    animation: scrollImages 10s linear infinite;
-    height: 150px;
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 
 
-.images__wrapper>div>p {
-    font-size: 16px;
-    line-height: 20px;
-    width: 100%;
-    margin: 2px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.images__wrapper>* {
-    margin-right: 16px;
-}
-
-.btn3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2D79EB;
-    color: #ffffff;
-    border-radius: 4px;
-    width: 25px;
-    height: 25px;
-    border: none;
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-.main__right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 72px);
-    width: 560px;
-    position: relative;
-}
-
-.carousel {
-    display: flex;
-    width: 100%;
-    height: calc(100vh - 72px);
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-/* Styles for individual carousel items */
-.carousel__item {
-    flex:0 0 100%;
-    transition: transform 2s;
-    height: calc(100vh - 72px);
-}
-
-.carousel__item >{
- 
-    width: 100%;
-    height: 100%; 
-    object-fit: contain;
-    
-    border: 2px solid blue;
-}
 
 
-.bg__image1 {
-    background-image: url('./images/bg__image1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-   
-}
-.bg__image1 > img {
-    width: 100%;
-    height: 100%;
-    animation: slideInRight 1s ease-in-out forwards;
-    object-fit:contain;
+/*-----------------------------------*\
+  #DESTINATION
+\*-----------------------------------*/
+
+.destination .section-subtitle {
+  text-align: center;
+  margin-bottom: 15px;
 }
 
-.bg__image2 {
-    background-image: url('./images/bg__image2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-   
-}
-.bg__image2 > img {
-    width: 100%;
-    height: 100%;
-    animation: slideInRight 1s ease-in-out forwards;
-    object-fit:contain;
+.destination .section-title {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
-.bg__image3 {
-    background-image: url('./images/bg__image3.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-   
-}
-.bg__image3 > img {
-    width: 100%;
-    height: 100%;
-    animation: slideInRight 1s ease-in-out forwards;
-    object-fit:contain;
+.destination-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.bg__image4  {
-    background-image: url('./images/bg__image4.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+.destination-card {
+  position: relative;
+  border-radius: var(--radius-6);
+  overflow: hidden;
 }
-.bg__image4 > img {
-    width: 100%;
-    height: 100%;
-    animation: slideInRight 1s ease-in-out forwards;
-    object-fit:contain;
+
+.destination-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(hsla(222, 46%, 17%, 0), hsla(222, 46%, 17%, 0.7));
+}
+
+.destination-card img { transition: var(--transition-2); }
+
+.destination-card:is(:hover, :focus) img { transform: scale(1.1); }
+
+.destination-card .card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  z-index: 1;
+}
+
+.destination-card .card-subtitle {
+  color: var(--mikado-yellow);
+  font-family: var(--ff-comforter-brush);
+  font-size: var(--fs-5);
+}
+
+.destination-card .card-title {
+  color: var(--white-1);
+  font-family: var(--ff-abril-fatface);
 }
 
 
-@keyframes scrollImages {
-    0% {
-        transform: translateX(100%);
-        /* Start from the right */
-    }
 
-    100% {
-        transform: translateX(-100%);
-        /* Scroll to the left */
-    }
+
+
+/*-----------------------------------*\
+  #POPULAR
+\*-----------------------------------*/
+
+.popular-card :is(.card-price, .card-rating) {
+  color: var(--white-1);
+  font-size: var(--fs-8);
+  padding: 5px 8px;
+  border-radius: var(--radius-6);
 }
 
-/* The Sliding effect */
+.popular-card .card-price { background: var(--viridian-green); }
 
-@keyframes slideInRight {
-    0% {
-      transform: translateX(30%); 
-    }
-    100% {
-      transform: translateX(0%);
-    }
+.popular-card .card-rating {
+  background: var(--mikado-yellow);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.popular-card .card-rating ion-icon { font-size: 17px; }
+
+.popular-card .card-rating data { margin-left: 4px; }
+
+.popular-card .card-location { color: var(--spanish-gray); }
+
+
+
+
+
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
+
+.about-content { margin-bottom: 50px; }
+
+.about .section-subtitle { margin-bottom: 10px; }
+
+.about .section-title { margin-bottom: 20px; }
+
+.about-text,
+.about-item-text {
+  color: var(--battleship-gray);
+  font-size: var(--fs-6);
+  line-height: 1.7;
+}
+
+.about-text { margin-bottom: 30px; }
+
+.about-list {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.about-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.about-item-icon {
+  background: var(--viridian-green);
+  color: var(--white-1);
+  font-size: 26px;
+  padding: 16px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.about-item-title {
+  color: var(--granite-gray);
+  font-weight: var(--fw-600);
+  margin-bottom: 5px;
 }
 
 
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+
+
+
+/*-----------------------------------*\
+  #BLOG
+\*-----------------------------------*/
+
+.blog { padding-bottom: 100px; }
+
+.blog-card .author-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.blog-card .card-wrapper {
+  color: var(--spanish-gray);
+  font-size: var(--fs-8);
+  justify-content: space-between;
+}
+
+.author-name {
+  color: var(--granite-gray);
+  font-weight: var(--fw-500);
+}
+
+.btn-link {
+  color: var(--viridian-green);
+  font-weight: var(--fw-700);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-link ion-icon { font-size: 20px; }
+
+.btn-link:is(:hover, :focus) { color: var(--oxford-blue); }
+
+
+
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.footer {
+  background-color: var(--oxford-blue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--light-gray);
+  padding-block: 60px;
+}
+
+.footer a:not(.logo) { color: inherit; }
+
+.footer-top {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.footer-list-title {
+  color: var(--white-1);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  font-size: var(--fs-7);
+  padding-block: 5px;
+}
+
+.footer .footer-link:is(:hover, :focus) { color: var(--white-1); }
+
+.newsletter-text {
+  font-size: var(--fs-7);
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.newsletter-form { position: relative; }
+
+.newsletter-input {
+  background: var(--white-1);
+  border-radius: var(--radius-6);
+  padding: 24px;
+  color: var(--eerie-black);
+}
+
+.newsletter-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px hsla(216, 98%, 52%, 0.25);
+}
+
+.newsletter-form .btn-primary {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.newsletter-form .btn-primary:is(:hover, :focus) {
+  --background: var(--viridian-green);
+  --color: var(--white-1);
+}
+
+.footer-bottom .logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: var(--fs-7);
+}
+
+.copyright-link {
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.copyright-link:is(:hover, :focus) { text-decoration: none; }
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-link {
+  font-size: 17px;
+  background: var(--independence);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.social-link:is(:hover, :focus) { background: var(--viridian-green); }
+
+
+
+
+
+/*-----------------------------------*\
+  #GO TO TOP
+\*-----------------------------------*/
+
+.go-top {
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  background: var(--viridian-green);
+  color: var(--white-1);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: var(--radius-6);
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transition-1);
+}
+
+.go-top.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-15px);
+}
+
+.go-top:is(:hover, :focus) { transform: translateY(-25px); }
+
+
+
+
+
+/*-----------------------------------*\
+  #RESPONSIVE
+\*-----------------------------------*/
+
+/**
+ * responsive for larger than 575px screen 
+ */
+
+@media (min-width: 575px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * typography
+     */
+
+    --fs-1: 5rem;
+    --fs-3: 4rem;
+    --fs-8: 1.4rem;
+
   }
+
+
+
+  /**
+   * HERO
+   */
+
+  .hero-text { --fs-7: 1.8rem; }
+
+
+
+  /**
+   * FOOTER
+   */
+
+  .footer-top { grid-template-columns: 1fr 1fr; }
+
+}
+
+
+
+
+
+/**
+ * responsive for larger than 768px screen 
+ */
+
+@media (min-width: 768px) {
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container {
+    max-width: 750px;
+    margin-inline: auto;
+  }
+
+  .popular-list,
+  .blog-list { grid-template-columns: 1fr 1fr; }
+
+
+
+  /**
+   * HERO
+   */
+
+  .hero {
+    min-height: 550px;
+    display: grid;
+    place-items: center;
+  }
+
+  .hero .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
   
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: transparent; }
+
+  /**
+   * DESTINATION
+   */
+
+  .destination-list > li { width: calc(33.33% - 20px); }
+
+  .destination-list .w-50 { width: calc(50% - 20px); }
+
+
+
+  /**
+   * FOOTER
+   */
+
+  .footer { --fs-7: 1.6rem; }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-@media only screen and (max-width: 1000px) {
+  .footer-bottom .logo,
+  .copyright { margin-bottom: 0; }
 
-   body {
-    height: 100vh;
-        width: 380px;
-        margin: auto;
-   }
-
-    .main__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 100vh;
-        width: 380px;
-        margin: auto;
-    }
-
-    .header {
-        display: flex;
-        width: 320px;
-        height: 72px;
-        padding: 0px;
-    }
-
-    .header__right {
-        width: 120px;
-    }
-
-    .navbar {
-        display: none;
-    }
-
-    .main__section {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 1;
-        height: 100%;
-        width: 380px;
-        margin: auto;
-        margin-top: 40px;
-        padding: 10px 40px;
-    }
-
-    .main__left {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-evenly;
-        height: 100%;
-        width: 380px;
-
-    }
-
-    .main__left__heading>h2 {
-        font-size: 28px;
-        line-height: 32px;
-    }
-
-    .main__left__desc {
-        font-size: 13px;
-        font-weight: 400;
-        width: 340px;
-        height: 66px;
-        color: #645f5f;
-        padding: 10px 10px;
-
-    }
-
-    .cta {
-        width: 340px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .btn1 {
-        padding: 2px 10px;
-        width: 200px;
-    }
-
-    .btn1>a {
-        font-size: 16px;
-    }
-
-    .btn2 {
-        padding: 2px 10px;
-        width: 200px;
-    }
-
-    .btn2>a {
-        font-size: 16px;
-    }
-
-    .main__left__explore {
-        width: 340px;
-        height: 227px;
-        margin: 20px 0;
-    }
-
-    .main__left__explore__heading>h3 {
-        font-size: 20px;
-    }
-
-    .main__left__explore__heading>p {
-        font-size: 14px;
-    }
-    .scroll__container {
-        margin-top: 20px;
-    }
-    .main__left__explore__images> button {
-        display: none;
-    }
+}
 
 
-    .main__right {
-        width: 380px;
-        height: 100%;
-        padding: 10px;
-        
-    }
 
-    .main__right__image {
-        position: absolute;
-        height: 290px;
-        width: 380px;
-        top:20px;
-        
-    }
+
+
+/**
+ * responsive for larger than 992px screen 
+ */
+
+@media (min-width: 992px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * typography
+     */
+
+    --fs-2: 3.5rem;
+    --fs-3: 4.4rem;
+
+    /**
+     * spacing
+     */
+
+    --section-padding: 60px;
+
+  }
+
+
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container { max-width: 980px; }
+
+  .popular-list,
+  .blog-list { grid-template-columns: repeat(3, 1fr); }
+
+
+
+  /**
+   * HEADER
+   */
+
+  .nav-toggle-btn { display: none; }
+
+  .header,
+  .header.active { height: unset; }
+
+  .navbar {
+    all: unset;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .navbar-list {
+    margin-bottom: 0;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .navbar-link {
+    font-weight: var(--fw-700);
+    margin-bottom: 8px;
+  }
+
+
+
+  /**
+   * HERO
+   */
+
+  .hero {
+    position: relative;
+    min-height: 680px;
+  }
+
+  .hero-title,
+  .hero-text { margin-bottom: 35px; }
+
+  .shape {
+    display: block;
+    position: absolute;
+    animation: rotate 8s linear infinite;
+  }
+
+  .shape-1 {
+    top: 60px;
+    left: 47%;
+  }
+
+  .shape-2 {
+    top: 20%;
+    right: 50px;
+    animation-delay: 0.25s;
+  }
+
+  .shape-3 {
+    left: 40%;
+    bottom: 20%;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes rotate {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(1turn); }
+  }
+
+
+
+  /**
+   * DESTINATION
+   */
+
+  .destination {
+    --fs-4: 3.2rem;
+    --fs-5: 2.6rem;
+  }
+
+
+
+  /**
+   * ABOUT
+   */
+
+  .about .container {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .about-content { margin-bottom: 0; }
+
+
+
+  /**
+   * FOOTER
+   */
+
+  .footer-top { grid-template-columns: 1fr 1fr 1fr 2fr; }
+
+}
+
+
+
+
+
+/**
+ * responsive for larger than 1200px screen 
+ */
+
+@media (min-width: 1200px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * typography
+     */
+
+    --fs-1: 6rem;
+
+  }
+
+
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container { max-width: 1150px; }
+
+  :is(.popular, .blog) .card-content { padding: 30px; }
+
+
+
+  /**
+   * HEADER
+   */
+
+  .navbar-list { gap: 50px; }
+
+
+
+  /**
+   * ABOUT
+   */
+
+  .about .container { grid-template-columns: 0.7fr 1fr; }
+
 }
       `,
       jsContent: `
+'use strict';
+
+/**
+ * navbar toggle
+ */
+
+const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
+const header = document.querySelector("[data-header]");
+
+navToggleBtn.addEventListener("click", function () {
+  this.classList.toggle("active");
+  header.classList.toggle("active");
+});
 
 
-// Initial display
-showItem(currentIndex);
 
-// Auto-advance the carousel (optional)
-setInterval(() => {
-  currentIndex = (currentIndex + 1) % items.length;
-  showItem(currentIndex);
-}, 3000);
+/**
+ * show go top btn when scroll window to 500px
+ */
+
+const goTopBtn = document.querySelector("[data-go-top]");
+
+window.addEventListener("scroll", function () {
+  window.scrollY >= 500 ? goTopBtn.classList.add("active")
+    : goTopBtn.classList.remove("active");
+});
       `,
     },
     {
