@@ -97,7 +97,7 @@ const EditableContent = ({ content, onChange, cssContent, onStyleChange, onImage
             </label>
             <label className="flex items-center gap-2">
               <span>Color de los botones:</span>
-              <input type="color" onChange={(e) => applyStyle('.btn1, .btn2, .login, .all-btn, .header .navbar .btn, .home .content .home-btn, .input_container button, .section1__buttonContainer button, .social__links_container button', 'background-color', e.target.value)} className="w-12 h-8 border rounded" />
+              <input type="color" onChange={(e) => applyStyle('.btn1, .btn2, .login, .all-btn, .header .navbar .btn, .home .content .home-btn, .input_container button, .section1__buttonContainer button, .social__links_container button, .btn-secondary', 'background-color', e.target.value)} className="w-12 h-8 border rounded" />
             </label>
           </div>
 
