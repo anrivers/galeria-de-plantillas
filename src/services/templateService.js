@@ -3187,19 +3187,9 @@ window.addEventListener("scroll", function () {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plantilla APP</title>
 
-  <!-- 
-    - favicon
-  -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@700;900&display=swap"
@@ -3872,22 +3862,6 @@ window.addEventListener("scroll", function () {
 </html>
       `,
       cssContent: `
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
   /**
@@ -3960,12 +3934,6 @@ window.addEventListener("scroll", function () {
 
 
 
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
-
 *,
 *::before,
 *::after {
@@ -4025,10 +3993,6 @@ body {
 
 
 
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding-inline: 15px; }
 
@@ -4124,9 +4088,6 @@ body {
 
 
 
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
 
 .header {
   position: absolute;
@@ -4211,10 +4172,6 @@ body {
 
 
 
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
 .hero {
   background-color: var(--russian-violet);
   color: var(--white);
@@ -4231,9 +4188,7 @@ body {
 
 
 
-/*-----------------------------------*\
-  #FEATURES
-\*-----------------------------------*/
+
 
 .features .section-title { margin-block-end: 30px; }
 
@@ -4285,10 +4240,6 @@ body {
 
 
 
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
-
 .about { background-color: var(--cultured-3); }
 
 .about .about-banner { margin-block-end: 20px; }
@@ -4316,12 +4267,6 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #ABOUT 2
-\*-----------------------------------*/
-
 .about-2 .section-text:last-of-type { margin-block: 30px; }
 
 .about-2 .about-content { margin-block-end: 30px; }
@@ -4330,9 +4275,6 @@ body {
 
 
 
-/*-----------------------------------*\
-  #APP
-\*-----------------------------------*/
 
 .app {
   background-color: var(--russian-violet);
@@ -4349,9 +4291,6 @@ body {
 
 
 
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
 
 .blog .section-title { margin-block-end: 30px; }
 
@@ -4407,13 +4346,6 @@ body {
 
 .blog-card .card-title:is(:hover, :focus) { color: var(--pumpkin); }
 
-
-
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
 
 .footer { background-color: var(--cultured-3); }
 
@@ -4499,10 +4431,6 @@ body {
 
 
 
-/*-----------------------------------*\
-  #BACK TO TOP
-\*-----------------------------------*/
-
 .back-top-btn {
   position: fixed;
   bottom: 30px;
@@ -4528,9 +4456,7 @@ body {
 
 
 
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
+
 
 /**
  * responsive for larger than 575px screen
@@ -4894,9 +4820,7 @@ body {
 
 
 
-/**
- * add event on element
- */
+
 
 const addEventOnElem = function (elem, type, callback) {
   if (elem.length > 1) {
@@ -4910,9 +4834,6 @@ const addEventOnElem = function (elem, type, callback) {
 
 
 
-/**
- * navbar toggle
- */
 
 const navbar = document.querySelector("[data-navbar]");
 const navToggler = document.querySelector("[data-nav-toggler]");
@@ -4928,9 +4849,6 @@ addEventOnElem(navLinks, "click", closeNavbar);
 
 
 
-/**
- * header active
- */
 
 const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
@@ -5579,40 +5497,25 @@ window.onscroll = () =>{
       description: 'Una landing page para agencias digitales suban su contenido.',
       htmlContent: `
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 
-    - primary meta tags
-  -->
   <title>Adex</title>
   <meta name="title" content="Adex">
   <meta name="description" content="This is a business agency html template made by codewithsadee">
 
-  <!-- 
-    - favicon
-  -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - preload images
-  -->
+
   <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg">
