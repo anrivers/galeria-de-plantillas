@@ -1258,19 +1258,12 @@ document.addEventListener('DOMContentLoaded', () => {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tourest - Explore the World</title>
 
-  <!-- 
-    - favicon
-  -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- 
-    - custom css link
-  -->
+
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - google font link
-  -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -2089,18 +2082,6 @@ document.addEventListener('DOMContentLoaded', () => {
     <ion-icon name="chevron-up-outline"></ion-icon>
   </a>
 
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
@@ -3192,8 +3173,7 @@ window.addEventListener("scroll", function () {
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@700;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
 </head>
 
 <body id="top">
@@ -4084,17 +4064,12 @@ body {
   transition: var(--transition-2);
 }
 
-
-
-
-
-
 .header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--white);
+  background-color: white ;
   padding-block: 15px;
   z-index: 4;
 }
@@ -4347,7 +4322,9 @@ body {
 .blog-card .card-title:is(:hover, :focus) { color: var(--pumpkin); }
 
 
-.footer { background-color: var(--cultured-3); }
+.footer { 
+background-color: ; 
+}
 
 .footer-top .container {
   display: grid;
@@ -6345,9 +6322,7 @@ window.onscroll = () =>{
 </html>
       `,
       cssContent: `
-/*-----------------------------------*\
-  #main.css
-\*-----------------------------------*/
+
 
 /**
  * copyright 2022 codewithsadee
@@ -7052,9 +7027,9 @@ body.nav-active { overflow: hidden; }
 \*-----------------------------------*/
 
 .footer {
-  background-color: var(--charcoal);
+
   padding-block: 60px 100px;
-  color: var(--light-gray);
+
 }
 
 .footer-brand .footer-text { margin-block: 20px; }

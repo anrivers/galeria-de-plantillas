@@ -89,7 +89,7 @@ const EditableContent = ({ content, onChange, cssContent, onStyleChange, onImage
             </label>
             <label className="flex items-center gap-2">
               <span>Color de fondo del footer:</span>
-              <input type="color" onChange={(e) => applyStyle('.footer', 'background-color', e.target.value)} className="w-12 h-8 border rounded" />
+              <input type="color" onChange={(e) => applyStyle('.footer ', 'background-color', e.target.value)} className="w-12 h-8 border rounded" />
             </label>
             <label className="flex items-center gap-2">
               <span>Color de fondo del header:</span>
