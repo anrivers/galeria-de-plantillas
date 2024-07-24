@@ -3861,14 +3861,6 @@ window.addEventListener("scroll", function () {
   </a>
 
 
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js" defer></script>
-
   <!-- 
     - ionicon link
   -->
@@ -6438,14 +6430,6 @@ window.onscroll = () =>{
     </div>
   </footer>
 
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
 
   <!-- 
     - ionicon
