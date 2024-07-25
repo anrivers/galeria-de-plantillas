@@ -5611,7 +5611,7 @@ window.onscroll = () =>{
       -->
 
       <section class="section hero has-bg-image" aria-label="home"
-        style="background-image: url('../images/template6/hero-bg.jpg')">
+        style="background: #372B70">
         <div class="container">
 
           <div class="hero-content">
