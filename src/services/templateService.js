@@ -2084,22 +2084,6 @@ document.addEventListener('DOMContentLoaded', () => {
 </html>
       `,
       cssContent: `
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
   /**
@@ -2167,13 +2151,6 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
-
 *,
 *::before,
 *::after {
@@ -2229,13 +2206,6 @@ body {
 
 ::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
-
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding-inline: 15px; }
 
@@ -2370,12 +2340,6 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
-
 .header {
   background: var(--viridian-green);
   padding-block: 20px;
@@ -2442,12 +2406,6 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
 .shape { display: none; }
 
 .hero {
@@ -2483,12 +2441,6 @@ body {
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #DESTINATION
-\*-----------------------------------*/
 
 .destination .section-subtitle {
   text-align: center;
@@ -2545,12 +2497,6 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #POPULAR
-\*-----------------------------------*/
-
 .popular-card :is(.card-price, .card-rating) {
   color: var(--white-1);
   font-size: var(--fs-8);
@@ -2575,11 +2521,6 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
 
 .about-content { margin-bottom: 50px; }
 
@@ -2626,11 +2567,6 @@ body {
 
 
 
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
 .blog { padding-bottom: 100px; }
 
 .blog-card .author-wrapper {
@@ -2664,12 +2600,6 @@ body {
 .btn-link:is(:hover, :focus) { color: var(--oxford-blue); }
 
 
-
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
 
 .footer {
   background-color: var(--oxford-blue);
@@ -2770,12 +2700,6 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #GO TO TOP
-\*-----------------------------------*/
-
 .go-top {
   position: fixed;
   bottom: 0;
@@ -2799,12 +2723,6 @@ body {
 .go-top:is(:hover, :focus) { transform: translateY(-25px); }
 
 
-
-
-
-/*-----------------------------------*\
-  #RESPONSIVE
-\*-----------------------------------*/
 
 /**
  * responsive for larger than 575px screen 
@@ -6325,12 +6243,6 @@ window.onscroll = () =>{
 
 
 
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
   /**
@@ -6407,12 +6319,6 @@ window.onscroll = () =>{
 
 
 
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
-
 *,
 *::before,
 *::after {
@@ -6477,11 +6383,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding-inline: 16px; }
 
@@ -6574,12 +6475,6 @@ body.nav-active { overflow: hidden; }
 .w-100 { width: 100%; }
 
 
-
-
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
 
 .header .btn { display: none; }
 
@@ -6699,10 +6594,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
 .hero {
   padding-block-start: calc(var(--section-padding) + 70px);
   text-align: center;
@@ -6794,11 +6685,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-/*-----------------------------------*\
-  #SERVICE
-\*-----------------------------------*/
-
 .service { text-align: center; }
 
 .service .section-title { margin-block-end: 50px; }
@@ -6840,11 +6726,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
 
 .about .container {
   display: grid;
@@ -6890,11 +6771,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-/*-----------------------------------*\
-  #FEATURES
-\*-----------------------------------*/
-
 .feature .container {
   display: grid;
   gap: 50px;
@@ -6926,10 +6802,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-/*-----------------------------------*\
-  #STATS
-\*-----------------------------------*/
-
 .stats { background-image: linear-gradient(to bottom, var(--white) 50%, var(--cultured) 50%); }
 
 .stats-card {
@@ -6947,9 +6819,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-/*-----------------------------------*\
-  #PROJECT
-\*-----------------------------------*/
 
 .project { background-color: var(--cultured); }
 
@@ -6990,11 +6859,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-/*-----------------------------------*\
-  #CTA
-\*-----------------------------------*/
-
 .cta { background-color: var(--charcoal); }
 
 .cta .container {
@@ -7015,11 +6879,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
 
 .footer {
 
@@ -7075,11 +6934,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
 
 /**
  * responsive for large than 575px screen
