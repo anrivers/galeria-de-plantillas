@@ -1,3 +1,18 @@
+# Galería de plantillas
+
+Galería de plantillas prediseñadas para que los usuarios puedan elegir y personalizar según sus necesidades, facilitando así el desarrollo de sitios web profesionales y atractivos. 
+
+## Tecnologías Utilizadas
+
+- React.js
+- Tailwind CSS
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
