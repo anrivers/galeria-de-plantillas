@@ -2336,7 +2336,7 @@ body {
 
 
 .header {
-  background: var(--viridian-green);
+  background: hsl(180, 98%, 31%);
   padding-block: 20px;
   height: 88px;
   overflow: hidden;
@@ -2603,7 +2603,7 @@ body {
 
 
 .footer {
-  background-color: var(--oxford-blue);
+  background-color:  hsl(222, 46%, 17%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
