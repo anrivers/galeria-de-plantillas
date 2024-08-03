@@ -660,40 +660,40 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="navigation_container">
         <div class="link__container">
           <h5>Sobre nosotros</h5>
-          <a class="footer__link" href="#">Who we are</a>
+          <a class="footer__link" href="#">Quiénes somos</a>
           <a class="footer__link" href="#">Blogs</a>
-          <a class="footer__link" href="#">Work with us</a>
-          <a class="footer__link" href="#">Investor Relations</a>
-          <a class="footer__link" href="#">Report Fraud</a>
+          <a class="footer__link" href="#">Como trabajamos</a>
+          <a class="footer__link" href="#">Lugares</a>
+          <a class="footer__link" href="#">Reportar </a>
         </div>
 
         <div class="link__container">
-          <h5>ZOMAVERSE</h5>
-          <a class="footer__link" href="#">Zomato</a>
-          <a class="footer__link" href="#">Feeding India</a>
-          <a class="footer__link" href="#">Hyperpuer</a>
-          <a class="footer__link" href="#">Zomaland</a>
+          <h5>MENÚ</h5>
+          <a class="footer__link" href="#">Pizza</a>
+          <a class="footer__link" href="#">Hamburguesa</a>
+          <a class="footer__link" href="#">Pasta</a>
+          <a class="footer__link" href="#">Buffet</a>
         </div>
 
         <div class="link__container">
-          <h5>FOR RESTAURANTS</h5>
-          <a class="footer__link" href="#">Partner With Us</a>
-          <a class="footer__link" href="#">App For You</a>
+          <h5>RESTAURANTES</h5>
+          <a class="footer__link" href="#">Cerca de ti</a>
+          <a class="footer__link" href="#">App para ti</a>
           <br />
-          <h5>FOR ENTERPRISES</h5>
-          <a class="footer__link" href="#">Zomato For Work</a>
+          <h5>PARA EMPRESAS</h5>
+          <a class="footer__link" href="#">Para empresas</a>
         </div>
 
         <div class="link__container">
-          <h5>LERN MORE</h5>
-          <a class="footer__link" href="#">Privacy</a>
-          <a class="footer__link" href="#">Security</a>
-          <a class="footer__link" href="#">Terms</a>
-          <a class="footer__link" href="#">Sitemap</a>
+          <h5>VER MÁS</h5>
+          <a class="footer__link" href="#">Privacidad</a>
+          <a class="footer__link" href="#">Securidad</a>
+          <a class="footer__link" href="#">Terminos</a>
+          <a class="footer__link" href="#">Sitios</a>
         </div>
 
         <div class="link__container">
-          <h5>SOCIAL LINKS</h5>
+          <h5>REDES SOCIALES</h5>
           <div class="social__links_container">
             <button><i class="fa-brands fa-linkedin-in"></i></button>
             <button><i class="fa-brands fa-instagram"></i></button>
@@ -707,10 +707,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
       <p class="disclamer">
-        By continuing past this page, you agree to our Terms of Service, Cookie
-        Policy, Privacy Policy and Content Policies. All trademarks are
-        properties of their respective owners. 2008-2022 © Zomato™ Ltd. All
-        rights reserved.
+      2024 © Zomato™ Ltd. Todos los derechos resavardos.
       </p>
     </footer>
   </body>
@@ -1250,7 +1247,7 @@ document.addEventListener('DOMContentLoaded', () => {
       description: 'Una landing page para agencia digital de viajes.',
       htmlContent: `
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -1380,9 +1377,9 @@ document.addEventListener('DOMContentLoaded', () => {
       <section class="section destination">
         <div class="container">
 
-          <p class="section-subtitle">Destinations</p>
+          <p class="section-subtitle">Destinos</p>
 
-          <h2 class="h2 section-title">Choose Your Place</h2>
+          <h2 class="h2 section-title">Elige tu lugar</h2>
 
           <ul class="destination-list">
 
@@ -1487,9 +1484,9 @@ document.addEventListener('DOMContentLoaded', () => {
       <section class="section popular">
         <div class="container">
 
-          <p class="section-subtitle">Featured Tours</p>
+          <p class="section-subtitle">Tours populares</p>
 
-          <h2 class="h2 section-title">Most Popular Tours</h2>
+          <h2 class="h2 section-title">Los más populares</h2>
 
           <ul class="popular-list">
 
@@ -1505,14 +1502,14 @@ document.addEventListener('DOMContentLoaded', () => {
                   <span class="card-badge">
                     <ion-icon name="time-outline"></ion-icon>
 
-                    <time datetime="P12D">12 Days</time>
+                    <time datetime="P12D">12 Días</time>
                   </span>
                 </figure>
 
                 <div class="card-content">
 
                   <div class="card-wrapper">
-                    <div class="card-price">From $50.00</div>
+                    <div class="card-price">Desde $1000.00</div>
 
                     <div class="card-rating">
                       <ion-icon name="star"></ion-icon>
@@ -1526,7 +1523,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   </div>
 
                   <h3 class="card-title">
-                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
+                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
                   </h3>
 
                   <address class="card-location">Kuala Lumpur, Malaysia</address>
@@ -1548,14 +1545,14 @@ document.addEventListener('DOMContentLoaded', () => {
                   <span class="card-badge">
                     <ion-icon name="time-outline"></ion-icon>
 
-                    <time datetime="P12D">12 Days</time>
+                    <time datetime="P12D">12 Días</time>
                   </span>
                 </figure>
 
                 <div class="card-content">
 
                   <div class="card-wrapper">
-                    <div class="card-price">From $50.00</div>
+                    <div class="card-price">Desde $1000.00</div>
 
                     <div class="card-rating">
                       <ion-icon name="star"></ion-icon>
@@ -1569,7 +1566,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   </div>
 
                   <h3 class="card-title">
-                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
+                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
                   </h3>
 
                   <address class="card-location">Kuala Lumpur, Malaysia</address>
@@ -1591,14 +1588,14 @@ document.addEventListener('DOMContentLoaded', () => {
                   <span class="card-badge">
                     <ion-icon name="time-outline"></ion-icon>
 
-                    <time datetime="P12D">12 Days</time>
+                    <time datetime="P12D">12 Días</time>
                   </span>
                 </figure>
 
                 <div class="card-content">
 
                   <div class="card-wrapper">
-                    <div class="card-price">From $50.00</div>
+                    <div class="card-price">Desde $1000.00</div>
 
                     <div class="card-rating">
                       <ion-icon name="star"></ion-icon>
@@ -1612,7 +1609,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   </div>
 
                   <h3 class="card-title">
-                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
+                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
                   </h3>
 
                   <address class="card-location">Kuala Lumpur, Malaysia</address>
@@ -1642,12 +1639,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             <p class="section-subtitle">About Us</p>
 
-            <h2 class="h2 section-title">Explore all tour of the world with us.</h2>
+            <h2 class="h2 section-title">Explora todos los tours que tenemos para ti</h2>
 
             <p class="about-text">
-              Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
-              randomised words
-              which don't look even slightly believable.
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis et quasi aut facere vitae vero.
             </p>
 
             <ul class="about-list">
@@ -1659,7 +1654,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
 
                 <div class="about-item-content">
-                  <h3 class="h3 about-item-title">Tour guide</h3>
+                  <h3 class="h3 about-item-title">Guía del tour</h3>
 
                   <p class="about-item-text">
                     Lorem Ipsum available, but the majority have suffered alteration in some.
@@ -1675,7 +1670,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
 
                 <div class="about-item-content">
-                  <h3 class="h3 about-item-title">Friendly price</h3>
+                  <h3 class="h3 about-item-title">Precios</h3>
 
                   <p class="about-item-text">
                     Lorem Ipsum available, but the majority have suffered alteration in some.
@@ -1691,7 +1686,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
 
                 <div class="about-item-content">
-                  <h3 class="h3 about-item-title">Reliable tour</h3>
+                  <h3 class="h3 about-item-title">Los mejores tours</h3>
 
                   <p class="about-item-text">
                     Lorem Ipsum available, but the majority have suffered alteration in some.
@@ -1702,7 +1697,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             </ul>
 
-            <a href="#" class="btn btn-primary">Booking Now</a>
+            <a href="#" class="btn btn-primary">Buscar ahora</a>
 
           </div>
 
@@ -1724,9 +1719,9 @@ document.addEventListener('DOMContentLoaded', () => {
       <section class="section blog">
         <div class="container">
 
-          <p class="section-subtitle">From The Blog Post</p>
+          <p class="section-subtitle">Blogs</p>
 
-          <h2 class="h2 section-title">Latest News & Articles</h2>
+          <h2 class="h2 section-title">Últimas noticia</h2>
 
           <ul class="blog-list">
 
@@ -1737,7 +1732,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                   <a href="#">
                     <img src="../images/template3/popular-1.jpg" width="740" height="518" loading="lazy"
-                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                      alt="Lorem ipsum dolor sit amet consectetur adipisicing elit." class="img-cover">
                   </a>
 
                   <span class="card-badge">
@@ -1758,7 +1753,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       </figure>
 
                       <div>
-                        <a href="#" class="author-name">Jony bristow</a>
+                        <a href="#" class="author-name">Paty Rivera</a>
 
                         <p class="author-title">Admin</p>
                       </div>
@@ -1770,12 +1765,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                   <h3 class="card-title">
                     <a href="#">
-                      A good traveler has no fixed plans and is not intent on arriving.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </a>
                   </h3>
 
                   <a href="#" class="btn-link">
-                    <span>Read More</span>
+                    <span>Ver Más</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                   </a>
@@ -1792,7 +1787,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                   <a href="#">
                     <img src="../images/template3/blog-2.jpg" width="740" height="518" loading="lazy"
-                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                      alt="Lorem ipsum dolor sit amet consectetur adipisicing elit." class="img-cover">
                   </a>
 
                   <span class="card-badge">
@@ -1813,7 +1808,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       </figure>
 
                       <div>
-                        <a href="#" class="author-name">Jony bristow</a>
+                        <a href="#" class="author-name">Luis Castañeda</a>
 
                         <p class="author-title">Admin</p>
                       </div>
@@ -1825,12 +1820,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                   <h3 class="card-title">
                     <a href="#">
-                      A good traveler has no fixed plans and is not intent on arriving.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </a>
                   </h3>
 
                   <a href="#" class="btn-link">
-                    <span>Read More</span>
+                    <span>Ver Más</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                   </a>
@@ -1847,7 +1842,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                   <a href="#">
                     <img src="../images/template3/blog-3.jpg" width="740" height="518" loading="lazy"
-                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                      alt="Lorem ipsum dolor sit amet consectetur adipisicing elit." class="img-cover">
                   </a>
 
                   <span class="card-badge">
@@ -1868,7 +1863,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       </figure>
 
                       <div>
-                        <a href="#" class="author-name">Jony bristow</a>
+                        <a href="#" class="author-name">Angel Rivera</a>
 
                         <p class="author-title">Admin</p>
                       </div>
@@ -1880,12 +1875,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                   <h3 class="card-title">
                     <a href="#">
-                      A good traveler has no fixed plans and is not intent on arriving.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </a>
                   </h3>
 
                   <a href="#" class="btn-link">
-                    <span>Read More</span>
+                    <span>Ver Más</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                   </a>
@@ -1911,7 +1906,7 @@ document.addEventListener('DOMContentLoaded', () => {
     - #FOOTER
   -->
 
-  <footer class="footer" style="background-image: url('../images/template3/footer-bg.png')">
+  <footer class="footer">
     <div class="container">
 
       <div class="footer-top">
@@ -1919,7 +1914,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Top destination</p>
+            <p class="footer-list-title">Top destinos</p>
           </li>
 
           <li>
@@ -1947,15 +1942,15 @@ document.addEventListener('DOMContentLoaded', () => {
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Categories</p>
+            <p class="footer-list-title">Categorias</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Travel</a>
+            <a href="#" class="footer-link">Viajar</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Lifestyle</a>
+            <a href="#" class="footer-link">Estilo de vida</a>
           </li>
 
           <li>
@@ -1963,11 +1958,11 @@ document.addEventListener('DOMContentLoaded', () => {
           </li>
 
           <li>
-            <a href="#" class="footer-link">Education</a>
+            <a href="#" class="footer-link">Educación</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Food & Drink</a>
+            <a href="#" class="footer-link">Comida y bebida</a>
           </li>
 
         </ul>
@@ -1975,15 +1970,15 @@ document.addEventListener('DOMContentLoaded', () => {
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Quick links</p>
+            <p class="footer-list-title">Links</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">About</a>
+            <a href="#" class="footer-link">Sobre nosotros</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Contact</a>
+            <a href="#" class="footer-link">Contacto</a>
           </li>
 
           <li>
@@ -1991,27 +1986,27 @@ document.addEventListener('DOMContentLoaded', () => {
           </li>
 
           <li>
-            <a href="#" class="footer-link">Booking</a>
+            <a href="#" class="footer-link">Buscar</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Terms & Conditions</a>
+            <a href="#" class="footer-link">Condiciones</a>
           </li>
 
         </ul>
 
         <div class="footer-list">
 
-          <p class="footer-list-title">Get a newsletter</p>
+          <p class="footer-list-title">Ir a newsletter</p>
 
           <p class="newsletter-text">
-            For the latest deals and tips, travel no further than your inbox
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
 
           <form action="" class="newsletter-form">
             <input type="email" name="email" required placeholder="Email address" class="newsletter-input">
 
-            <button type="submit" class="btn btn-primary">Subscribe</button>
+            <button type="submit" class="btn btn-primary">Suscribir</button>
           </form>
 
         </div>
@@ -2020,10 +2015,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
       <div class="footer-bottom">
 
-        <a href="#" class="logo">Tourest</a>
+        <a href="#" class="logo">Tours</a>
 
         <p class="copyright">
-          &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reserved
+          &copy; 2024 codewithsadee. Todos los derechos reservados
         </p>
 
         <ul class="social-list">
@@ -2346,6 +2341,12 @@ body {
   height: 88px;
   overflow: hidden;
   transition: 0.25s var(--cubic-out);
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: var(--shadow-1);
+  z-index: 4;
 }
 
 .header.active {
@@ -3073,7 +3074,7 @@ window.addEventListener("scroll", function () {
       description: 'Una landing page para que los ususarios promocionen su app..',
       htmlContent: `
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -3899,13 +3900,13 @@ body {
 }
 
 .btn-primary,
-.btn-secondary:is(:hover, :focus) { background-color: var(--pumpkin); }
+.btn-secondary:is(:hover, :focus) { background-color: hsl(22, 90%, 56%); }
 
 .btn-primary:is(:hover, :focus),
-.btn-secondary { background-color: var(--russian-violet); }
+.btn-secondary { background-color: hsl(269, 36%, 22%); }
 
 .btn-outline {
-  --color: var(--pumpkin);
+  --color: hsl(22, 90%, 56%);
   --width: 100%;
   text-align: center;
   font-weight: var(--fw-500);
@@ -3913,7 +3914,7 @@ body {
 }
 
 .btn-outline:is(:hover, :focus) {
-  background-color: var(--pumpkin);
+  background-color: hsl(22, 90%, 56%);;
   color: var(--white);
 }
 
@@ -3978,12 +3979,11 @@ body {
 }
 
 .header {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: white ;
-  padding-block: 15px;
+  padding-block: 20px;
+  box-shadow: var(--shadow-1);
   z-index: 4;
 }
 
@@ -4708,48 +4708,44 @@ background-color: ;
       jsContent: `
 'use strict';
 
-
-
-
-
 const addEventOnElem = function (elem, type, callback) {
-  if (elem.length > 1) {
-    for (let i = 0; i < elem.length; i++) {
-      elem[i].addEventListener(type, callback);
-    }
-  } else {
+  if (elem instanceof NodeList) {
+    elem.forEach(el => el.addEventListener(type, callback));
+  } else if (elem instanceof HTMLElement) {
     elem.addEventListener(type, callback);
   }
 }
-
-
-
 
 const navbar = document.querySelector("[data-navbar]");
 const navToggler = document.querySelector("[data-nav-toggler]");
 const navLinks = document.querySelectorAll("[data-nav-link]");
 
-const toggleNavbar = function () { navbar.classList.toggle("active"); }
+const toggleNavbar = function () {
+  if (navbar) navbar.classList.toggle("active");
+}
 
-addEventOnElem(navToggler, "click", toggleNavbar);
+if (navToggler) {
+  addEventOnElem(navToggler, "click", toggleNavbar);
+}
 
-const closeNavbar = function () { navbar.classList.remove("active"); }
+const closeNavbar = function () {
+  if (navbar) navbar.classList.remove("active");
+}
 
 addEventOnElem(navLinks, "click", closeNavbar);
-
-
-
 
 const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 100) {
-    header.classList.add("active");
-    backTopBtn.classList.add("active");
-  } else {
-    header.classList.remove("active");
-    backTopBtn.classList.remove("active");
+  if (header && backTopBtn) {
+    if (window.scrollY > 100) {
+      header.classList.add("active");
+      backTopBtn.classList.add("active");
+    } else {
+      header.classList.remove("active");
+      backTopBtn.classList.remove("active");
+    }
   }
 });
       `,
@@ -5588,10 +5584,10 @@ window.onscroll = () =>{
       <section class="section service" aria-labelledby="service-label">
         <div class="container">
 
-          <p class="section-subtitle" id="service-label">What We Do?</p>
+          <p class="section-subtitle" id="service-label">¿Qué somos?</p>
 
           <h2 class="h2 section-title">
-            The service we offer is specifically designed to meet your needs.
+            El servicio que nosotros ofrecemos es diseñado a lo que necesites.
           </h2>
 
           <ul class="grid-list">
@@ -5603,7 +5599,7 @@ window.onscroll = () =>{
                   <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
                 </div>
 
-                <h3 class="h4 card-title">24/7 Support</h3>
+                <h3 class="h4 card-title">24/7 Suporte</h3>
 
                 <p class="card-text">
                   Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras
@@ -5611,7 +5607,7 @@ window.onscroll = () =>{
                 </p>
 
                 <a href="#" class="btn-text">
-                  <span class="span">Learn More</span>
+                  <span class="span">Ver Más</span>
 
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                 </a>
@@ -5626,7 +5622,7 @@ window.onscroll = () =>{
                   <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
                 </div>
 
-                <h3 class="h4 card-title">Secure Payments</h3>
+                <h3 class="h4 card-title">Pagos seguros</h3>
 
                 <p class="card-text">
                   Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras
@@ -5634,7 +5630,7 @@ window.onscroll = () =>{
                 </p>
 
                 <a href="#" class="btn-text">
-                  <span class="span">Learn More</span>
+                  <span class="span">Ver Más</span>
 
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                 </a>
@@ -5649,7 +5645,7 @@ window.onscroll = () =>{
                   <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
                 </div>
 
-                <h3 class="h4 card-title">Daily Updates</h3>
+                <h3 class="h4 card-title">Actualizaciones</h3>
 
                 <p class="card-text">
                   Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras
@@ -5657,7 +5653,7 @@ window.onscroll = () =>{
                 </p>
 
                 <a href="#" class="btn-text">
-                  <span class="span">Learn More</span>
+                  <span class="span">Ver Más</span>
 
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                 </a>
@@ -5672,7 +5668,7 @@ window.onscroll = () =>{
                   <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
                 </div>
 
-                <h3 class="h4 card-title">Market Research</h3>
+                <h3 class="h4 card-title">Busqueda</h3>
 
                 <p class="card-text">
                   Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras
@@ -5680,7 +5676,7 @@ window.onscroll = () =>{
                 </p>
 
                 <a href="#" class="btn-text">
-                  <span class="span">Learn More</span>
+                  <span class="span">Ver Más</span>
 
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                 </a>
@@ -5711,10 +5707,10 @@ window.onscroll = () =>{
 
           <div class="about-content">
 
-            <p class="section-subtitle" id="about-label">Why Choose Us?</p>
+            <p class="section-subtitle" id="about-label">¿Qué hacemos?</p>
 
             <h2 class="h2 section-title">
-              We bring solutions to make life easier for our clients.
+              Ofrecemos soluciones para facilitar a nuestros clientes.
             </h2>
 
             <ul>
@@ -5726,7 +5722,7 @@ window.onscroll = () =>{
                     <button class="accordion-btn" data-accordion-btn>
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <spna class="span h5">Professional Design</spna>
+                      <spna class="span h5">Diseño Profesionales</spna>
                     </button>
                   </h3>
 
@@ -5746,7 +5742,7 @@ window.onscroll = () =>{
                     <button class="accordion-btn" data-accordion-btn>
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <spna class="span h5">Top-Notch Support</spna>
+                      <spna class="span h5">El mejor soporte</spna>
                     </button>
                   </h3>
 
@@ -5766,7 +5762,7 @@ window.onscroll = () =>{
                     <button class="accordion-btn" data-accordion-btn>
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <spna class="span h5">Exclusive Assets</spna>
+                      <spna class="span h5">Accesos exclusivos</spna>
                     </button>
                   </h3>
 
@@ -5804,10 +5800,10 @@ window.onscroll = () =>{
 
           <div class="feature-content">
 
-            <p class="section-subtitle" id="feautre-label">Our Solutions</p>
+            <p class="section-subtitle" id="feautre-label">Nuestas soluciones</p>
 
             <h2 class="h2 section-title">
-              We make your spending stress-free for you to have the perfect control.
+              Queremos que tengas el control perfecto de las cosas.
             </h2>
 
             <p class="section-text">
@@ -5897,7 +5893,7 @@ window.onscroll = () =>{
               <p class="card-text">
                 <span class="h1">7518</span>
 
-                <spna class="span">Completed Projects</spna>
+                <spna class="span">Proyectos completados</spna>
               </p>
             </li>
 
@@ -5905,7 +5901,7 @@ window.onscroll = () =>{
               <p class="card-text">
                 <span class="h1">3472</span>
 
-                <spna class="span">Happy Customers</spna>
+                <spna class="span">Buenos diseñadores</spna>
               </p>
             </li>
 
@@ -5913,7 +5909,7 @@ window.onscroll = () =>{
               <p class="card-text">
                 <span class="h1">2184</span>
 
-                <spna class="span">Expert Employees</spna>
+                <spna class="span">Expertos desarolladores</spna>
               </p>
             </li>
 
@@ -5921,7 +5917,7 @@ window.onscroll = () =>{
               <p class="card-text">
                 <span class="h1">4523</span>
 
-                <spna class="span">Awards Won</spna>
+                <spna class="span">Nuestros premios</spna>
               </p>
             </li>
 
@@ -5941,10 +5937,10 @@ window.onscroll = () =>{
       <section class="section project" aria-labelledby="project-label">
         <div class="container">
 
-          <p class="section-subtitle" id="project-label">Case Studies</p>
+          <p class="section-subtitle" id="project-label">Casos éxito</p>
 
           <h2 class="h2 section-title">
-            Check out some of our awesome projects with creative ideas and great design.
+            Checa algunos de nuestros proyectos con creatividad y gran diseño.
           </h2>
 
           <ul class="grid-list">
@@ -5979,7 +5975,7 @@ window.onscroll = () =>{
                     <li class="card-meta-item">
                       <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
 
-                      <span class="meta-text">Coding</span>
+                      <span class="meta-text">Código</span>
                     </li>
 
                   </ul>
@@ -6019,7 +6015,7 @@ window.onscroll = () =>{
                     <li class="card-meta-item">
                       <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
 
-                      <span class="meta-text">Workspace</span>
+                      <span class="meta-text">Espacio de trabajo</span>
                     </li>
 
                   </ul>
@@ -6059,7 +6055,7 @@ window.onscroll = () =>{
                     <li class="card-meta-item">
                       <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
 
-                      <span class="meta-text">Meeting</span>
+                      <span class="meta-text">Llamada</span>
                     </li>
 
                   </ul>
@@ -6086,10 +6082,10 @@ window.onscroll = () =>{
         <div class="container">
 
           <h2 class="h2 section-title">
-            Join our community by using our services and grow your business.
+            Únete a nuestra usando nuestros servicios y negocios.
           </h2>
 
-          <a href="#" class="btn btn-primary">Try it For Free</a>
+          <a href="#" class="btn btn-primary">Consulta gratis</a>
 
         </div>
       </section>
@@ -6115,7 +6111,7 @@ window.onscroll = () =>{
         </a>
 
         <p class="footer-text">
-          &copy; 2022 codewithsadee. <br> All rights reserved.
+          &copy; 2024 codewithsadee. <br> Todos los derechos reservados.
         </p>
 
         <ul class="social-list">
@@ -6157,7 +6153,7 @@ window.onscroll = () =>{
       <ul class="footer-list">
 
         <li>
-          <p class="h4 footer-list-title">Get in Touch</p>
+          <p class="h4 footer-list-title">Entrar para ver</p>
         </li>
 
         <li>
@@ -6179,43 +6175,43 @@ window.onscroll = () =>{
       <ul class="footer-list">
 
         <li>
-          <p class="h4 footer-list-title">Learn More</p>
+          <p class="h4 footer-list-title">Leer más</p>
         </li>
 
         <li>
-          <a href="#" class="footer-link">About Us</a>
+          <a href="#" class="footer-link">Sobre nosotros</a>
         </li>
 
         <li>
-          <a href="#" class="footer-link">Our Story</a>
+          <a href="#" class="footer-link">Nuestra historia</a>
         </li>
 
         <li>
-          <a href="#" class="footer-link">Projects</a>
+          <a href="#" class="footer-link">Proyectos</a>
         </li>
 
         <li>
-          <a href="#" class="footer-link">Terms of Use</a>
+          <a href="#" class="footer-link">Condiciones</a>
         </li>
 
         <li>
-          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Privacidad</a>
         </li>
 
       </ul>
 
       <div class="footer-list">
 
-        <p class="h4 footer-list-title">Our Newsletter</p>
+        <p class="h4 footer-list-title">Nuestro Newsletter</p>
 
         <p class="footer-text">
-          Subscribe to our newsletter to get our news & deals delivered to you.
+          Suscribete para recibir las últimas noticias para ti.
         </p>
 
         <form action="" class="input-wrapper">
           <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
 
-          <button type="submit" class="submit-btn">Join</button>
+          <button type="submit" class="submit-btn">Entrar</button>
         </form>
 
       </div>
