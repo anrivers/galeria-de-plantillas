@@ -5530,7 +5530,7 @@ window.onscroll = () =>{
 
           <div class="hero-content">
 
-            <h1 class="h1 hero-title">Crea tus proyectos con suliciones especificas.</h1>
+            <h1 class="h1 hero-title">Crea tus proyectos con soluciones especificas.</h1>
 
             <p class="hero-text">
              Nosotros somos una compañia que esta enfocada en establecer terminos largos de relaciones.
